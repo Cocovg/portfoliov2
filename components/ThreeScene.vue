@@ -246,11 +246,11 @@ const init = () => {
   
   // Create paths
   const radius = 3 // Distance from center
-  const path1Height = 1.5 // Upper circle
-  const path2Height = -1.5 // Lower circle
+  const path1Height = 1 // Upper circle
+  const path2Height = -1 // Lower circle
   
   // Create paths with different rotations
-  const path1 = createPath(radius, path1Height, 0xFFF600)
+  const path1 = createPath(radius, path1Height, 0xffffff)
   const path2 = createPath(radius, path2Height, 0xffffff)
   
   // Store paths for animation
@@ -271,7 +271,7 @@ const init = () => {
   // Create points for upper circle (path1)
   for (let i = 0; i < numPoints; i++) {
     const angle = i * angleStep + Math.PI / 4 // Add 45 degrees to match path rotation
-    const point = createPoint(radius, angle, path1Height, 0xFFF600)
+    const point = createPoint(radius, angle, path1Height, 0xffffff)
     point.userData.isPoint = true
     point.userData.pathIndex = 1
     point.userData.pointIndex = i
@@ -350,6 +350,40 @@ const init = () => {
   const internalLight = new THREE.PointLight(0xffffff, 500, 500)
   internalLight.position.set(0, 0, 0)
   scene.add(internalLight)
+
+  // Add reflective lights
+  const spotLight1 = new THREE.SpotLight(0x00ffff, 100)
+  spotLight1.position.set(5, 5, 5)
+  spotLight1.angle = Math.PI / 4
+  spotLight1.penumbra = 0.1
+  spotLight1.decay = 2
+  spotLight1.distance = 200
+  scene.add(spotLight1)
+
+  const spotLight2 = new THREE.SpotLight(0xff00ff, 100)
+  spotLight2.position.set(-5, -5, 5)
+  spotLight2.angle = Math.PI / 4
+  spotLight2.penumbra = 0.1
+  spotLight2.decay = 2
+  spotLight2.distance = 200
+  scene.add(spotLight2)
+
+  // Create reflective materials for paths
+  const path1Material = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    shininess: 100,
+    specular: 0xffffff,
+    reflectivity: 0.5
+  })
+  path1.material = path1Material
+
+  const path2Material = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    shininess: 100,
+    specular: 0xffffff,
+    reflectivity: 0.5
+  })
+  path2.material = path2Material
   
   // Load the GLB model
   const loader = new GLTFLoader()
