@@ -13,6 +13,9 @@ const container = ref(null)
 let scene, camera, renderer, model, controls, starField, paths, points
 let raycaster = new Raycaster()
 let mouse = new THREE.Vector2()
+let isInPointView = false
+let mouseDownPosition = null // Track mouse down position
+let hasMoved = false // Track if mouse has moved
 
 const createPath = (radius, height, color) => {
   const points = []
@@ -32,8 +35,8 @@ const createPath = (radius, height, color) => {
 }
 
 const createPoint = (radius, angle, height, color) => {
-  const geometry = new THREE.SphereGeometry(0.08, 16, 16)
-  const material = new THREE.MeshPhongMaterial({ color: color })
+  const geometry = new THREE.SphereGeometry(0.08, 32, 32)
+  const material = new THREE.MeshPhongMaterial({ color: color,  opacity: 0.2})
   const point = new THREE.Mesh(geometry, material)
   point.position.x = radius * Math.cos(angle)
   point.position.y = height
@@ -42,9 +45,10 @@ const createPoint = (radius, angle, height, color) => {
 }
 
 const focusCameraOnPoint = (point) => {
+  isInPointView = true // Set flag when focusing on a point
   const targetPosition = point.position.clone()
-  const radius = 5 // Increased from 3 to 5 for better view
-  const duration = 1500 // Increased duration for smoother transition
+  const radius = 5
+  const duration = 1500
   const startTime = Date.now()
   const startPosition = camera.position.clone()
   
@@ -87,8 +91,9 @@ const focusCameraOnPoint = (point) => {
 }
 
 const resetCamera = () => {
+  isInPointView = false // Reset the flag when resetting camera
   const radius = 5
-  const duration = 1500 // Increased duration for smoother transition
+  const duration = 1500
   const startTime = Date.now()
   const startPosition = camera.position.clone()
   
@@ -130,6 +135,34 @@ const resetCamera = () => {
   animateCamera()
 }
 
+const onMouseDown = (event) => {
+  mouseDownPosition = {
+    x: event.clientX,
+    y: event.clientY
+  }
+  hasMoved = false
+}
+
+const onMouseMove = (event) => {
+  if (mouseDownPosition) {
+    const dx = event.clientX - mouseDownPosition.x
+    const dy = event.clientY - mouseDownPosition.y
+    // If mouse has moved more than 5 pixels, consider it a drag
+    if (Math.sqrt(dx * dx + dy * dy) > 5) {
+      hasMoved = true
+    }
+  }
+}
+
+const onMouseUp = (event) => {
+  if (!hasMoved) {
+    // Only process click if mouse hasn't moved
+    onMouseClick(event)
+  }
+  mouseDownPosition = null
+  hasMoved = false
+}
+
 const onMouseClick = (event) => {
   // Calculate mouse position in normalized device coordinates
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1
@@ -152,8 +185,8 @@ const onMouseClick = (event) => {
     }
   }
   
-  // If we didn't click a point, reset the camera
-  if (!clickedPoint) {
+  // Only reset if we're in a point view and didn't click a point
+  if (!clickedPoint && isInPointView) {
     resetCamera()
   }
 }
@@ -164,7 +197,7 @@ const init = () => {
   scene.background = new THREE.Color('#0B071B')
   
   // Create paths
-  const radius = 4 // Distance from center
+  const radius = 3 // Distance from center
   const path1Height = 1.5 // Upper circle
   const path2Height = -1.5 // Lower circle
   
@@ -206,8 +239,10 @@ const init = () => {
     scene.add(point)
   }
   
-  // Add event listener for mouse clicks
-  window.addEventListener('click', onMouseClick)
+  // Add event listeners for mouse events
+  window.addEventListener('mousedown', onMouseDown)
+  window.addEventListener('mousemove', onMouseMove)
+  window.addEventListener('mouseup', onMouseUp)
   
   // Create star field
   const starGeometry = new THREE.BufferGeometry()
@@ -323,7 +358,9 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onWindowResize)
-  window.removeEventListener('click', onMouseClick)
+  window.removeEventListener('mousedown', onMouseDown)
+  window.removeEventListener('mousemove', onMouseMove)
+  window.removeEventListener('mouseup', onMouseUp)
   // Clean up Three.js resources
   if (model) {
     scene.remove(model)
