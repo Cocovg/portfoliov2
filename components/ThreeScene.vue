@@ -1,5 +1,13 @@
 <template>
-  <div ref="container" class="three-container"></div>
+  <div ref="container" class="three-container">
+    <PointPopup
+      :is-visible="showPopup"
+      :title="popupTitle"
+      :content="popupContent"
+      :position="popupPosition"
+      @close="closePopup"
+    />
+  </div>
 </template>
 
 <script setup>
@@ -8,6 +16,7 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { Raycaster } from 'three'
+import PointPopup from './PointPopup.vue'
 
 const container = ref(null)
 let scene, camera, renderer, model, controls, starField, paths, points
@@ -17,6 +26,54 @@ let isInPointView = false
 let mouseDownPosition = null
 let hasMoved = false
 let time = 0 // Add time variable for point movement
+
+// Add popup state
+const showPopup = ref(false)
+const popupTitle = ref('')
+const popupContent = ref('')
+
+// Add popup position state
+const popupPosition = ref({ x: 0, y: 0 })
+
+// Add popup content for each point
+const pointContents = [
+  {
+    title: 'Point 1',
+    content: 'This is the first point in the upper circle. It represents the beginning of your journey.'
+  },
+  {
+    title: 'Point 2',
+    content: 'The second point symbolizes growth and development in your path.'
+  },
+  {
+    title: 'Point 3',
+    content: 'This point represents challenges and obstacles you may encounter.'
+  },
+  {
+    title: 'Point 4',
+    content: 'The fourth point shows the culmination of your journey.'
+  },
+  {
+    title: 'Point 5',
+    content: 'This point in the lower circle represents reflection and learning.'
+  },
+  {
+    title: 'Point 6',
+    content: 'The sixth point symbolizes adaptation and change in your path.'
+  },
+  {
+    title: 'Point 7',
+    content: 'This point represents the balance between different aspects of your journey.'
+  },
+  {
+    title: 'Point 8',
+    content: 'The final point shows the completion of one cycle and the beginning of another.'
+  }
+]
+
+const closePopup = () => {
+  showPopup.value = false
+}
 
 const createPath = (radius, height, color) => {
   const points = []
@@ -199,6 +256,24 @@ const onMouseClick = (event) => {
     if (intersect.object.userData.isPoint) {
       focusCameraOnPoint(intersect.object)
       clickedPoint = true
+      
+      // Calculate screen position of the point
+      const vector = intersect.object.position.clone()
+      vector.project(camera)
+      const x = (vector.x * 0.5 + 0.5) * window.innerWidth
+      const y = (-vector.y * 0.5 + 0.5) * window.innerHeight
+      
+      // Update popup position
+      popupPosition.value = { x, y }
+      
+      // Show popup with point content
+      const pointIndex = intersect.object.userData.pointIndex
+      const pathIndex = intersect.object.userData.pathIndex
+      const contentIndex = (pathIndex - 1) * 4 + pointIndex
+      popupTitle.value = pointContents[contentIndex].title
+      popupContent.value = pointContents[contentIndex].content
+      showPopup.value = true
+      
       break
     }
   }
@@ -206,6 +281,7 @@ const onMouseClick = (event) => {
   // Only reset if we're in a point view and didn't click a point
   if (!clickedPoint && isInPointView) {
     resetCamera()
+    closePopup()
   }
 }
 
