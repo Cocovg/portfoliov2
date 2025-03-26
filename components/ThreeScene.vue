@@ -14,8 +14,9 @@ let scene, camera, renderer, model, controls, starField, paths, points
 let raycaster = new Raycaster()
 let mouse = new THREE.Vector2()
 let isInPointView = false
-let mouseDownPosition = null // Track mouse down position
-let hasMoved = false // Track if mouse has moved
+let mouseDownPosition = null
+let hasMoved = false
+let time = 0 // Add time variable for point movement
 
 const createPath = (radius, height, color) => {
   const points = []
@@ -36,12 +37,29 @@ const createPath = (radius, height, color) => {
 
 const createPoint = (radius, angle, height, color) => {
   const geometry = new THREE.SphereGeometry(0.08, 32, 32)
-  const material = new THREE.MeshPhongMaterial({ color: color,  opacity: 0.2})
+  const material = new THREE.MeshPhongMaterial({ color: color, opacity: 0.2 })
   const point = new THREE.Mesh(geometry, material)
-  point.position.x = radius * Math.cos(angle)
-  point.position.y = height
-  point.position.z = radius * Math.sin(angle)
+  point.userData.radius = radius // Store radius for animation
+  point.userData.height = height // Store height for animation
+  point.userData.color = color // Store color for animation
+  point.userData.initialAngle = angle // Store initial angle
   return point
+}
+
+const updatePointPosition = (point, time) => {
+  const radius = point.userData.radius
+  const height = point.userData.height
+  const initialAngle = point.userData.initialAngle
+  const speed = 0.05 // Base speed of point movement
+  
+  // Determine direction based on path index
+  const direction = point.userData.pathIndex === 1 ? 1 : -1
+  
+  // Calculate new position based on time and direction
+  const angle = initialAngle + time * speed * direction
+  point.position.x = radius * Math.cos(angle)
+  point.position.z = radius * Math.sin(angle)
+  point.position.y = height
 }
 
 const focusCameraOnPoint = (point) => {
@@ -191,6 +209,36 @@ const onMouseClick = (event) => {
   }
 }
 
+const animate = () => {
+  requestAnimationFrame(animate)
+  
+  // Update controls
+  controls.update()
+  
+  // Update time
+  time += 0.01
+  
+  // Rotate star field slowly
+  if (starField) {
+    starField.rotation.y += 0.0001
+  }
+
+  // Rotate paths in opposite directions
+  if (paths) {
+    paths[0].rotation.y += 0.001 // Clockwise rotation for first path
+    paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
+  }
+
+  // Update point positions
+  if (points) {
+    points.forEach(point => {
+      updatePointPosition(point, time)
+    })
+  }
+  
+  renderer.render(scene, camera)
+}
+
 const init = () => {
   // Create scene
   scene = new THREE.Scene()
@@ -204,6 +252,9 @@ const init = () => {
   // Create paths with different rotations
   const path1 = createPath(radius, path1Height, 0xFFF600)
   const path2 = createPath(radius, path2Height, 0xffffff)
+  
+  // Store paths for animation
+  paths = [path1, path2]
   
   // Rotate paths to cross each other
   path1.rotation.y = Math.PI / 4 // 45 degrees
@@ -335,20 +386,6 @@ const onWindowResize = () => {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
-}
-
-const animate = () => {
-  requestAnimationFrame(animate)
-  
-  // Update controls
-  controls.update()
-  
-  // Rotate star field slowly
-  if (starField) {
-    starField.rotation.y += 0.0001
-  }
-  
-  renderer.render(scene, camera)
 }
 
 onMounted(() => {
