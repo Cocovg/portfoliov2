@@ -1,5 +1,6 @@
 <template>
   <div ref="container" class="three-container">
+    <StartingScreen v-if="showStartingScreen" @complete="onStartingScreenComplete" />
     <PointPopup
       :is-visible="showPopup"
       :title="popupTitle"
@@ -7,6 +8,7 @@
       :position="popupPosition"
       @close="closePopup"
     />
+    <PersistentLogo />
   </div>
 </template>
 
@@ -17,6 +19,8 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { Raycaster } from 'three'
 import PointPopup from './PointPopup.vue'
+import StartingScreen from './StartingScreen.vue'
+import PersistentLogo from './PersistentLogo.vue'
 
 const container = ref(null)
 let scene, camera, renderer, model, controls, starField, paths, points
@@ -26,6 +30,9 @@ let isInPointView = false
 let mouseDownPosition = null
 let hasMoved = false
 let time = 0 // Add time variable for point movement
+
+// Add starting screen state
+const showStartingScreen = ref(true)
 
 // Add popup state
 const showPopup = ref(false)
@@ -313,6 +320,10 @@ const animate = () => {
   }
   
   renderer.render(scene, camera)
+}
+
+const onStartingScreenComplete = () => {
+  showStartingScreen.value = false
 }
 
 const init = () => {

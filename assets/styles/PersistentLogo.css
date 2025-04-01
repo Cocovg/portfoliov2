@@ -1,0 +1,19 @@
+.persistent-logo {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.persistent-logo .logo {
+  width: 120px;
+  height: auto;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
+  transition: opacity 0.3s ease;
+}
+
+.persistent-logo .logo:hover {
+  opacity: 1;
+} 
