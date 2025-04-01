@@ -3,9 +3,8 @@
     <StartingScreen v-if="showStartingScreen" @complete="onStartingScreenComplete" />
     <PointPopup
       :is-visible="showPopup"
-      :title="popupTitle"
-      :content="popupContent"
       :position="popupPosition"
+      :current-point="currentPoint"
       @close="closePopup"
     />
     <PersistentLogo />
@@ -21,6 +20,14 @@ import { Raycaster } from 'three'
 import PointPopup from './PointPopup.vue'
 import StartingScreen from './StartingScreen.vue'
 import PersistentLogo from './PersistentLogo.vue'
+import Point1 from './points/Point1.vue'
+import Point2 from './points/Point2.vue'
+import Point3 from './points/Point3.vue'
+import Point4 from './points/Point4.vue'
+import Point5 from './points/Point5.vue'
+import Point6 from './points/Point6.vue'
+import Point7 from './points/Point7.vue'
+import Point8 from './points/Point8.vue'
 
 const container = ref(null)
 let scene, camera, renderer, model, controls, starField, paths, points
@@ -36,47 +43,23 @@ const showStartingScreen = ref(true)
 
 // Add popup state
 const showPopup = ref(false)
-const popupTitle = ref('')
-const popupContent = ref('')
-
-// Add popup position state
 const popupPosition = ref({ x: 0, y: 0 })
+const currentPoint = ref(null)
 
-// Add popup content for each point
-const pointContents = [
-  {
-    title: 'Point 1',
-    content: 'This is the first point in the upper circle. It represents the beginning of your journey.'
-  },
-  {
-    title: 'Point 2',
-    content: 'The second point symbolizes growth and development in your path.'
-  },
-  {
-    title: 'Point 3',
-    content: 'This point represents challenges and obstacles you may encounter.'
-  },
-  {
-    title: 'Point 4',
-    content: 'The fourth point shows the culmination of your journey.'
-  },
-  {
-    title: 'Point 5',
-    content: 'This point in the lower circle represents reflection and learning.'
-  },
-  {
-    title: 'Point 6',
-    content: 'The sixth point symbolizes adaptation and change in your path.'
-  },
-  {
-    title: 'Point 7',
-    content: 'This point represents the balance between different aspects of your journey.'
-  },
-  {
-    title: 'Point 8',
-    content: 'The final point shows the completion of one cycle and the beginning of another.'
-  }
-]
+// Add pause state
+const isPaused = ref(false)
+
+// Add point components mapping
+const pointComponents = {
+  0: Point1,
+  1: Point2,
+  2: Point3,
+  3: Point4,
+  4: Point5,
+  5: Point6,
+  6: Point7,
+  7: Point8
+}
 
 const closePopup = () => {
   showPopup.value = false
@@ -273,13 +256,16 @@ const onMouseClick = (event) => {
       // Update popup position
       popupPosition.value = { x, y }
       
-      // Show popup with point content
+      // Set the current point component
       const pointIndex = intersect.object.userData.pointIndex
       const pathIndex = intersect.object.userData.pathIndex
       const contentIndex = (pathIndex - 1) * 4 + pointIndex
-      popupTitle.value = pointContents[contentIndex].title
-      popupContent.value = pointContents[contentIndex].content
+      currentPoint.value = pointComponents[contentIndex]
+      
       showPopup.value = true
+      
+      // Pause animations
+      isPaused.value = true
       
       break
     }
@@ -289,6 +275,9 @@ const onMouseClick = (event) => {
   if (!clickedPoint && isInPointView) {
     resetCamera()
     closePopup()
+    currentPoint.value = null
+    // Resume animations
+    isPaused.value = false
   }
 }
 
@@ -298,25 +287,28 @@ const animate = () => {
   // Update controls
   controls.update()
   
-  // Update time
-  time += 0.01
-  
-  // Rotate star field slowly
-  if (starField) {
-    starField.rotation.y += 0.0001
-  }
+  // Only update animations if not paused
+  if (!isPaused.value) {
+    // Update time
+    time += 0.01
+    
+    // Rotate star field slowly
+    if (starField) {
+      starField.rotation.y += 0.0001
+    }
 
-  // Rotate paths in opposite directions
-  if (paths) {
-    paths[0].rotation.y += 0.001 // Clockwise rotation for first path
-    paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
-  }
+    // Rotate paths in opposite directions
+    if (paths) {
+      paths[0].rotation.y += 0.001 // Clockwise rotation for first path
+      paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
+    }
 
-  // Update point positions
-  if (points) {
-    points.forEach(point => {
-      updatePointPosition(point, time)
-    })
+    // Update point positions
+    if (points) {
+      points.forEach(point => {
+        updatePointPosition(point, time)
+      })
+    }
   }
   
   renderer.render(scene, camera)
