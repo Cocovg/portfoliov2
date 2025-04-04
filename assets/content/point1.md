@@ -1,8 +1,14 @@
 # Point 1
 
-This is the first point in the upper circle. It represents the beginning of your journey.
+Description for Point 1
 
 ## Additional Content
+
+This is additional content for Point 1.
+
+- Feature 1
+- Feature 2
+- Feature 3
 
 You can add any markdown content here, including:
 - Lists
