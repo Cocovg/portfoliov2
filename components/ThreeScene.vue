@@ -16,13 +16,15 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
 import { Raycaster } from 'three'
 import PointPopup from './PointPopup.vue'
 import StartingScreen from './StartingScreen.vue'
 import PersistentLogo from './PersistentLogo.vue'
 
 const container = ref(null)
-let scene, camera, renderer, model, controls, starField, paths, points
+let scene, camera, renderer, model, controls, starField, paths, points, circularText
 let raycaster = new Raycaster()
 let mouse = new THREE.Vector2()
 let isInPointView = false
@@ -293,10 +295,13 @@ const animate = () => {
       starField.rotation.y += 0.0001
     }
 
-    // Rotate paths in opposite directions
-    if (paths) {
+    // Rotate paths and text in opposite directions
+    if (paths && circularText) {
       paths[0].rotation.y += 0.001 // Clockwise rotation for first path
       paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
+      
+      circularText[0].rotation.y += 0.001 // Rotate upper text with its path
+      circularText[1].rotation.y -= 0.001 // Rotate lower text with its path
     }
 
     // Update point positions
@@ -487,6 +492,21 @@ const init = () => {
     }
   )
   
+  // Load font and create circular text
+  const fontLoader = new FontLoader()
+  fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
+    // Create upper circle text
+    const upperText = createCircularText('PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - ', 3.1, 1.2, font, Math.PI / 3)
+    scene.add(upperText)
+    
+    // Create lower circle text
+    const lowerText = createCircularText('LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - ', 3.1, -1.2, font, -Math.PI / 3)
+    scene.add(lowerText)
+    
+    // Store references for animation
+    circularText = [upperText, lowerText]
+  })
+  
   // Handle window resize
   window.addEventListener('resize', onWindowResize)
 }
@@ -495,6 +515,63 @@ const onWindowResize = () => {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
+}
+
+// Update text configuration for better proportions
+const textConfig = {
+  size: 0.07, // Slightly smaller for better fit
+  height: 0.05, // Keep thickness
+  depth: 0.0002, // Keep depth
+  curveSegments: 16,
+  bevelEnabled: true,
+  bevelThickness: 0.03,
+  bevelSize: 0.008,
+  bevelSegments: 3  
+}
+
+const createCircularText = (text, radius, height, font, rotationOffset = 0) => {
+  const group = new THREE.Group()
+  const textMaterial = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    transparent: true,
+    opacity: 1,
+    emissive: 0x00ffff,
+    emissiveIntensity: 0.4,
+    shininess: 100,
+    specular: 0x00ffff
+  })
+
+  // Calculate the angle step based on text length with reduced spacing
+  const angleStep = (Math.PI * 3) / text.length // Reduced from 2π to 1.5π to bring letters closer
+  
+  // Create individual letters and position them along the circle
+  for (let i = 0; i < text.length; i++) {
+    const geometry = new TextGeometry(text[i], {
+      font: font,
+      ...textConfig
+    })
+    
+    // Center the letter geometry
+    geometry.computeBoundingBox()
+    const centerOffset = new THREE.Vector3()
+    geometry.boundingBox.getCenter(centerOffset)
+    geometry.translate(-centerOffset.x, -centerOffset.y, -centerOffset.z)
+    
+    const letter = new THREE.Mesh(geometry, textMaterial)
+    
+    // Calculate position on circle with adjusted spacing
+    const angle = -i * angleStep + rotationOffset // Reverse the angle direction
+    const x = radius * Math.cos(angle)
+    const z = radius * Math.sin(angle)
+    
+    // Position and rotate letter
+    letter.position.set(x, height, z)
+    
+    
+    group.add(letter)
+  }
+  
+  return group
 }
 
 onMounted(() => {
