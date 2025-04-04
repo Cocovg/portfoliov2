@@ -17,8 +17,6 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { Raycaster } from 'three'
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
 import PointPopup from './PointPopup.vue'
 import StartingScreen from './StartingScreen.vue'
 import PersistentLogo from './PersistentLogo.vue'
@@ -59,45 +57,21 @@ const closePopup = () => {
   showPopup.value = false
 }
 
-const createText = (text, radius, height, color) => {
-  const loader = new FontLoader()
-  return new Promise((resolve) => {
-    loader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
-      const geometry = new TextGeometry(text, {
-        font: font,
-        size: 0.2,
-        height: 0.05,
-        curveSegments: 12,
-        bevelEnabled: true,
-        bevelThickness: 0.01,
-        bevelSize: 0.01,
-        bevelOffset: 0,
-        bevelSegments: 5
-      })
-      geometry.computeBoundingBox()
-      const material = new THREE.MeshPhongMaterial({ 
-        color: color,
-        shininess: 100,
-        specular: 0xffffff,
-        reflectivity: 0.5
-      })
-      const mesh = new THREE.Mesh(geometry, material)
-      
-      // Center the text
-      const center = new THREE.Vector3()
-      geometry.boundingBox.getCenter(center)
-      mesh.position.sub(center)
-      
-      // Position the text at the correct height
-      mesh.position.y = height
-      
-      // Store radius for animation
-      mesh.userData.radius = radius
-      mesh.userData.height = height
-      
-      resolve(mesh)
-    })
-  })
+const createPath = (radius, height, color) => {
+  const points = []
+  const segments = 64 // More segments for smoother circle
+  for (let i = 0; i <= segments; i++) {
+    const angle = (i / segments) * Math.PI * 2
+    points.push(new THREE.Vector3(
+      radius * Math.cos(angle),
+      height,
+      radius * Math.sin(angle)
+    ))
+  }
+  const curve = new THREE.CatmullRomCurve3(points)
+  const geometry = new THREE.TubeGeometry(curve, 100, 0.01, 8, false)
+  const material = new THREE.MeshPhongMaterial({ color: color })
+  return new THREE.Mesh(geometry, material)
 }
 
 const createPoint = (radius, angle, height, color) => {
@@ -340,29 +314,29 @@ const onStartingScreenComplete = () => {
   showStartingScreen.value = false
 }
 
-const init = async () => {
+const init = () => {
   // Create scene
   scene = new THREE.Scene()
   scene.background = new THREE.Color('#0B071B')
   
-  // Create text paths
+  // Create paths
   const radius = 3 // Distance from center
   const path1Height = 1 // Upper circle
   const path2Height = -1 // Lower circle
   
-  // Create text paths with different rotations
-  const text1 = await createText('Welcome to My Portfolio', radius, path1Height, 0xffffff)
-  const text2 = await createText('Explore My Projects', radius, path2Height, 0xffffff)
+  // Create paths with different rotations
+  const path1 = createPath(radius, path1Height, 0xffffff)
+  const path2 = createPath(radius, path2Height, 0xffffff)
   
   // Store paths for animation
-  paths = [text1, text2]
+  paths = [path1, path2]
   
   // Rotate paths to cross each other
-  text1.rotation.y = Math.PI / 4 // 45 degrees
-  text2.rotation.y = -Math.PI / 4 // -45 degrees
+  path1.rotation.y = Math.PI / 4 // 45 degrees
+  path2.rotation.y = -Math.PI / 4 // -45 degrees
   
-  scene.add(text1)
-  scene.add(text2)
+  scene.add(path1)
+  scene.add(path2)
   
   // Create clickable points
   points = []
@@ -470,21 +444,21 @@ const init = async () => {
   scene.add(spotLight2)
 
   // Create reflective materials for paths
-  const text1Material = new THREE.MeshPhongMaterial({
+  const path1Material = new THREE.MeshPhongMaterial({
     color: 0xffffff,
     shininess: 100,
     specular: 0xffffff,
     reflectivity: 0.5
   })
-  text1.material = text1Material
+  path1.material = path1Material
 
-  const text2Material = new THREE.MeshPhongMaterial({
+  const path2Material = new THREE.MeshPhongMaterial({
     color: 0xffffff,
     shininess: 100,
     specular: 0xffffff,
     reflectivity: 0.5
   })
-  text2.material = text2Material
+  path2.material = path2Material
   
   // Load the GLB model
   const loader = new GLTFLoader()
