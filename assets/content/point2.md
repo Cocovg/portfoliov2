@@ -1,6 +1,4 @@
-# Branding - Boris Schmidt
-
-The second point symbolizes growth and development in your path.
+# Boris Schmidt
 
 ## Projectbeschrijving
 
@@ -9,6 +7,14 @@ Voor dit project heb ik samen met mijn team een brandguide gemaakt voor de techn
 Hijzelf gaf ons verschillende ideeën waar wij ons op konden focussen. Zo vond hij de thema's van mysterie en abstractie erg interessant. Daarbij wilde hij niet te veel felle kleuren en vond hij het fijn een goed balans tussen kleuren te zien.
 
 ## Communicatie
+
+Voor onze communicatie gebruikte wij Discord. Hier hadden wij een gezamenlijke server waarin wij nodige onderwerpen en middelen deelde met elkaar. 
+
+Hier deelde wij ook de feedback die wij als groep kregen, notities van lessen en communicatie met docenten. Daarnaast ook de afspraken en hulpmiddelen die handig waren tijdens het project.
+
+Onze designs hebben we in een gezamenlijk board op Figma gemaakt. Op deze manier waren we betrokken bij elkaar en konden we gemakkelijk feedback geven.
+
+In het gehele proces hebben we onze fases gescheiden gehouden en konden wij, voor voornamelijk ons, overzichtelijk blijven werken.
 
 ## Voorbereidende styling
 
@@ -32,8 +38,6 @@ De gekozen stylescape was uiteindelijk begonnen door een teamgenoot Evy Knops, d
 
 Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een korte tijd. Zo ben ik eerst begonnen om ze met pen en papier te tekenen, wat mij wat meer ruimte gaf om ook fouten te maken en sneller te tekenen wat mij interessant leek. Daarna ben ik gaan kijken naar fonts en typografie om te oriënteren naar de opties die daar mogelijk zijn.
 
-### Personas
-
 ## Brandguide
 
 ### Mijn iteraties
@@ -46,7 +50,7 @@ Toch was ik persoonlijk vrij tevreden met het idee en het design. De vormen ware
 
 Zo ben ik verdergegaan met verschillende kleuren te zoeken die wellicht beter zouden passen bij het design, zonder dat we continu moesten denken aan de Burger King, of hamburgers over het algemeen.
 
-Met de lichtere groen ben ik verdergegaan om de pagina's in te delen. Ik was persoonlijk erg tevreden over de verdeling van de pagina's met de abstracte vormen, maar ook over de rust. 
+Met de lichtere groen ben ik verdergegaan om de pagina's in te delen. Ik was persoonlijk erg tevreden over de verdeling van de pagina's met de abstracte vormen, maar ook over de rust.
 
 Nadat ik de docent ons probleem met de groen had uitgelegd en daarbij toch ook wat moeite te hebben met de simpliciteit van het design. Kwam hij met het idee om met witruimtes spelen, zo kwam ik uiteindelijk op het onderstaande idee. Voor mij bleef dit nog speels in design en gaf het nog steeds dat abstracte idee. Waarbij ook de inspiratie van de Canyon naar voren kwam.
 
@@ -74,4 +78,4 @@ In dit project vond ik het voornamelijk ook moeilijk om mijn rol in de groep te 
 
 Vanuit hier denk ik ook dat we als groep meer hebben geleerd door de groep meer te verdelen en zo iedereen zijn eigen taak te geven. Daarop denk ik dus ook in de toekomst meer deze aanpak te gebruiken door ook mijn taken meer te "claimen" en daar ook volledig verantwoordelijk voor te zijn zonder dat deze wordt overgenomen of een halfhartige samenwerking. Ik denk dat dit voor mijn ontwikkeling in designen ook beter is en daarbij ook consequenter als ik feedback krijg over werk waar ik volledig verantwoordelijk voor ben.
 
-Naast de verbeterpunten ben ik ook erg blij geweest met een aantal punten. Zo vond ik de algemene communicatie die wij hadden erg fijn, iedereen hield elkaar heel goed op de hoogte en we konden goed met elkaar over weg. Helaas hadden we wel een enkel persoon in de groep waar we heel weinig van wisten en vond ik het zelf ook moeilijk om die grens aan te geven van wanneer bepaald gedrag genoeg is. Zo zou ik zelf wel sneller docenten wat eerder op de hoogte brengen maar was dit niet iets waar de groep heel enthousiast op in ging. Toch denk ik dit volgende keer wel eerder door te pakken. 
+Naast de verbeterpunten ben ik ook erg blij geweest met een aantal punten. Zo vond ik de algemene communicatie die wij hadden erg fijn, iedereen hield elkaar heel goed op de hoogte en we konden goed met elkaar over weg. Helaas hadden we wel een enkel persoon in de groep waar we heel weinig van wisten en vond ik het zelf ook moeilijk om die grens aan te geven van wanneer bepaald gedrag genoeg is. Zo zou ik zelf wel sneller docenten wat eerder op de hoogte brengen maar was dit niet iets waar de groep heel enthousiast op in ging. Toch denk ik dit volgende keer wel eerder door te pakken.

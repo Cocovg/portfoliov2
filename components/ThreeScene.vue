@@ -31,6 +31,7 @@ let isInPointView = false
 let mouseDownPosition = null
 let hasMoved = false
 let time = 0 // Add time variable for point movement
+let font
 
 // Add starting screen state
 const showStartingScreen = ref(true)
@@ -60,30 +61,76 @@ const closePopup = () => {
 }
 
 const createPath = (radius, height, color) => {
-  const points = []
-  const segments = 64 // More segments for smoother circle
-  for (let i = 0; i <= segments; i++) {
+  const group = new THREE.Group()
+  const segments = 64 // Number of points in the circle
+  const dotSize = 0.02 // Size of each dot
+  const dotSpacing = 0.1 // Space between dots
+  
+  // Create material for dots
+  const dotMaterial = new THREE.MeshPhongMaterial({
+    color: 0x0000aa, // Dark blue color
+    transparent: true,
+    opacity: 0.8,
+    emissive: 0x0000aa, // Dark blue glow
+    emissiveIntensity: 0.2,
+    shininess: 100,
+    specular: 0x00ffff
+  })
+  
+  // Create dots along the circle
+  for (let i = 0; i < segments; i++) {
     const angle = (i / segments) * Math.PI * 2
-    points.push(new THREE.Vector3(
-      radius * Math.cos(angle),
-      height,
-      radius * Math.sin(angle)
-    ))
+    const x = radius * Math.cos(angle)
+    const z = radius * Math.sin(angle)
+    
+    // Create dot geometry
+    const dotGeometry = new THREE.SphereGeometry(dotSize, 8, 8)
+    const dot = new THREE.Mesh(dotGeometry, dotMaterial)
+    
+    // Position the dot
+    dot.position.set(x, height, z)
+    
+    // Add dot to group
+    group.add(dot)
   }
-  const curve = new THREE.CatmullRomCurve3(points)
-  const geometry = new THREE.TubeGeometry(curve, 100, 0.01, 8, false)
-  const material = new THREE.MeshPhongMaterial({ color: color })
-  return new THREE.Mesh(geometry, material)
+  
+  return group
 }
 
-const createPoint = (radius, angle, height, color) => {
-  const geometry = new THREE.SphereGeometry(0.08, 32, 32)
-  const material = new THREE.MeshPhongMaterial({ color: color, opacity: 0.2 })
+const createPoint = (radius, height, color, number) => {
+  // Create text geometry for the number
+  const geometry = new TextGeometry(number.toString(), {
+    font: font,
+    size: 0.25,
+    height: 0.05,
+    depth: 0.02,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.02,
+    bevelSize: 0.02,
+    bevelSegments: 5
+  })
+  
+  // Center the geometry
+  geometry.computeBoundingBox()
+  const centerOffset = new THREE.Vector3()
+  geometry.boundingBox.getCenter(centerOffset)
+  geometry.translate(-centerOffset.x, -centerOffset.y, -centerOffset.z)
+  
+  const material = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    transparent: true,
+    opacity: 1,
+    emissive: 0xffffff,
+    emissiveIntensity: 0.8,
+    shininess: 100,
+    specular: 0xffffff
+  })
+  
   const point = new THREE.Mesh(geometry, material)
-  point.userData.radius = radius // Store radius for animation
-  point.userData.height = height // Store height for animation
-  point.userData.color = color // Store color for animation
-  point.userData.initialAngle = angle // Store initial angle
+  point.userData.radius = radius
+  point.userData.height = height
+  point.userData.color = color
   return point
 }
 
@@ -258,7 +305,7 @@ const onMouseClick = (event) => {
       
       showPopup.value = true
       
-      // Pause animations
+      // Only pause point movements, not text rotation
       isPaused.value = true
       
       break
@@ -285,7 +332,16 @@ const animate = () => {
   // Update controls
   controls.update()
   
-  // Only update animations if not paused
+  // Always rotate paths and text, regardless of pause state
+  if (paths && circularText) {
+    paths[0].rotation.y += 0.001 // Clockwise rotation for first path
+    paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
+    
+    circularText[0].rotation.y += 0.001 // Rotate upper text with its path
+    circularText[1].rotation.y -= 0.001 // Rotate lower text with its path
+  }
+  
+  // Only update point positions if not paused
   if (!isPaused.value) {
     // Update time
     time += 0.01
@@ -293,15 +349,6 @@ const animate = () => {
     // Rotate star field slowly
     if (starField) {
       starField.rotation.y += 0.0001
-    }
-
-    // Rotate paths and text in opposite directions
-    if (paths && circularText) {
-      paths[0].rotation.y += 0.001 // Clockwise rotation for first path
-      paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
-      
-      circularText[0].rotation.y += 0.001 // Rotate upper text with its path
-      circularText[1].rotation.y -= 0.001 // Rotate lower text with its path
     }
 
     // Update point positions
@@ -343,32 +390,51 @@ const init = () => {
   scene.add(path1)
   scene.add(path2)
   
-  // Create clickable points
-  points = []
-  const numPoints = 4
-  const angleStep = (2 * Math.PI) / numPoints
-  
-  // Create points for upper circle (path1)
-  for (let i = 0; i < numPoints; i++) {
-    const angle = i * angleStep + Math.PI / 4 // Add 45 degrees to match path rotation
-    const point = createPoint(radius, angle, path1Height, 0xffffff)
-    point.userData.isPoint = true
-    point.userData.pathIndex = 1
-    point.userData.pointIndex = i
-    points.push(point)
-    scene.add(point)
-  }
-  
-  // Create points for lower circle (path2)
-  for (let i = 0; i < numPoints; i++) {
-    const angle = i * angleStep - Math.PI / 4 // Subtract 45 degrees to match path rotation
-    const point = createPoint(radius, angle, path2Height, 0xffffff)
-    point.userData.isPoint = true
-    point.userData.pathIndex = 2
-    point.userData.pointIndex = i
-    points.push(point)
-    scene.add(point)
-  }
+  // Load font and create points and text
+  const fontLoader = new FontLoader()
+  fontLoader.load('/fonts/helvetiker_regular.typeface.json', (loadedFont) => {
+    font = loadedFont // Store the font for point creation
+    
+    // Create clickable points
+    points = []
+    const numPoints = 4
+    const angleStep = (2 * Math.PI) / numPoints
+    
+    // Create points for upper circle (path1)
+    for (let i = 0; i < numPoints; i++) {
+      const angle = i * angleStep + Math.PI / 4 // Add 45 degrees to match path rotation
+      const point = createPoint(radius, path1Height - 0.3, 0xffffff, i + 1)
+      point.userData.isPoint = true
+      point.userData.pathIndex = 1
+      point.userData.pointIndex = i
+      point.userData.initialAngle = angle
+      points.push(point)
+      scene.add(point)
+    }
+    
+    // Create points for lower circle (path2)
+    for (let i = 0; i < numPoints; i++) {
+      const angle = i * angleStep - Math.PI / 4 // Subtract 45 degrees to match path rotation
+      const point = createPoint(radius, path2Height + 0.3, 0xffffff, i + 5)
+      point.userData.isPoint = true
+      point.userData.pathIndex = 2
+      point.userData.pointIndex = i
+      point.userData.initialAngle = angle
+      points.push(point)
+      scene.add(point)
+    }
+    
+    // Create upper circle text
+    const upperText = createCircularText('PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - ', 3.1, 1.2, font, Math.PI / 3)
+    scene.add(upperText)
+    
+    // Create lower circle text
+    const lowerText = createCircularText('LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - ', 3.1, -1.2, font, -Math.PI / 3)
+    scene.add(lowerText)
+    
+    // Store references for animation
+    circularText = [upperText, lowerText]
+  })
   
   // Add event listeners for mouse events
   window.addEventListener('mousedown', onMouseDown)
@@ -492,21 +558,6 @@ const init = () => {
     }
   )
   
-  // Load font and create circular text
-  const fontLoader = new FontLoader()
-  fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
-    // Create upper circle text
-    const upperText = createCircularText('PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - ', 3.1, 1.2, font, Math.PI / 3)
-    scene.add(upperText)
-    
-    // Create lower circle text
-    const lowerText = createCircularText('LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - ', 3.1, -1.2, font, -Math.PI / 3)
-    scene.add(lowerText)
-    
-    // Store references for animation
-    circularText = [upperText, lowerText]
-  })
-  
   // Handle window resize
   window.addEventListener('resize', onWindowResize)
 }
@@ -567,6 +618,10 @@ const createCircularText = (text, radius, height, font, rotationOffset = 0) => {
     // Position and rotate letter
     letter.position.set(x, height, z)
     
+    // Rotate to align with circle and make text readable from outside
+    letter.rotation.x = 0 // Keep text horizontal
+    letter.rotation.y = angle + Math.PI // Add Math.PI to flip text to be readable
+    letter.rotation.z = 0 // Reset any z rotation
     
     group.add(letter)
   }
