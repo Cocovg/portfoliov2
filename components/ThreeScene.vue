@@ -102,13 +102,13 @@ const createPoint = (radius, height, color, label) => {
   // Create text geometry for the label (number or text)
   const geometry = new TextGeometry(label.toString(), {
     font: font,
-    size: 0.25,
+    size: 0.15,
     height: 0.05,
-    depth: 0.02,
+    depth: 0.0002,
     curveSegments: 12,
     bevelEnabled: true,
     bevelThickness: 0.02,
-    bevelSize: 0.02,
+    bevelSize: 0.009,
     bevelSegments: 5
   })
   
@@ -577,12 +577,12 @@ const onWindowResize = () => {
 // Update text configuration for better proportions
 const textConfig = {
   size: 0.07, // Slightly smaller for better fit
-  height: 0.05, // Keep thickness
-  depth: 0.0002, // Keep depth
+  height: 0.02, // Reduced thickness (was 0.05)
+  depth: 0.00002, // Keep depth
   curveSegments: 16,
   bevelEnabled: true,
-  bevelThickness: 0.03,
-  bevelSize: 0.008,
+  bevelThickness: 0.01, // Reduced bevel thickness (was 0.03)
+  bevelSize: 0.005, // Reduced bevel size (was 0.008)
   bevelSegments: 3  
 }
 
