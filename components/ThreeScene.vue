@@ -22,6 +22,7 @@ import { Raycaster } from 'three'
 import PointPopup from './PointPopup.vue'
 import StartingScreen from './StartingScreen.vue'
 import PersistentLogo from './PersistentLogo.vue'
+import '../assets/styles/ThreeScene.css'
 
 const container = ref(null)
 let scene, camera, renderer, model, controls, starField, paths, points, circularText
@@ -669,12 +670,4 @@ onBeforeUnmount(() => {
 })
 </script>
 
-<style scoped>
-.three-container {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-</style> 
+<style src="../assets/styles/ThreeScene.css"></style>

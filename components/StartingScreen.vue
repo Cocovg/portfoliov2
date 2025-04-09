@@ -22,7 +22,7 @@ onMounted(() => {
   // Start fade after 4 seconds
   setTimeout(() => {
     isFading.value = true
-  }, 1000)
+  }, 3000)
 })
 
 const onTransitionEnd = () => {

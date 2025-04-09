@@ -6,12 +6,8 @@
 
 <script setup>
 import ThreeScene from '@/components/ThreeScene.vue'
+import '@/assets/styles/global.css'
 </script>
 
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 </style> 
