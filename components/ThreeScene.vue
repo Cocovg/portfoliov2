@@ -314,9 +314,13 @@ const onMouseClick = (event) => {
   
   // Only reset if we're in a point view and clicked outside both the popup and points
   if (!clickedPoint && isInPointView) {
-    // Check if click was on the popup
+    // Check if click was on the popup or its content
     const popupElement = document.querySelector('.popup')
-    if (popupElement && !popupElement.contains(event.target)) {
+    const popupContent = document.querySelector('.popup-content')
+    const imageModal = document.querySelector('.image-modal')
+    
+    if (popupElement && !popupElement.contains(event.target) && 
+        !imageModal?.contains(event.target)) {
       resetCamera()
       closePopup()
       currentPoint.value = null

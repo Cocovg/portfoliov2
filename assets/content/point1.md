@@ -10,15 +10,26 @@ Hijzelf gaf ons verschillende ideeën waar wij ons op konden focussen. Zo vond h
 
 Voor onze communicatie gebruikte wij Discord. Hier hadden wij een gezamenlijke server waarin wij nodige onderwerpen en middelen deelde met elkaar. 
 
+![Communicatie in Discord](/img/branding/com-1.png)
+
 Hier deelde wij ook de feedback die wij als groep kregen, notities van lessen en communicatie met docenten. Daarnaast ook de afspraken en hulpmiddelen die handig waren tijdens het project.
+
+![Communicatie in Discord](/img/branding/com-2.png)
+![Communicatie in Discord](/img/branding/com-3.png)
 
 Onze designs hebben we in een gezamenlijk board op Figma gemaakt. Op deze manier waren we betrokken bij elkaar en konden we gemakkelijk feedback geven.
 
+![Communicatie in Discord](/img/branding/com-4.png)
+
 In het gehele proces hebben we onze fases gescheiden gehouden en konden wij, voor voornamelijk ons, overzichtelijk blijven werken.
+
+![Communicatie in Discord](/img/branding/com-5.png)
 
 ## Voorbereidende styling
 
 Tijdens het project heb ik natuurlijk veel moeten designen en daarbij moest ik zoeken naar een stijl en richting waarbij we met het project verder zouden gaan. In dit stuk zal ik meer ingaan op alle aspecten waarin ik iteraties heb ontwikkeld en waaraan ik heb gewerkt. Daarnaast zal ik met mijn denkproces mijn keuzes ondersteunen.
+
+![Communicatie in Discord](/img/branding/sty-1.png)
 
 ### Moodboard
 
@@ -30,13 +41,24 @@ In de groep bespraken we de moodboards en keken we of we hier verschillende them
 
 Zo ging ik met mijn eerste stylescape voornamelijk verder met abstracte thema's en de daar bijhorende kleuren. Bij deze versie wilde ik kijken naar de samenhang van de kleuren en de abstracte vormen van gemengde verf en de Antelope Canyon. Hier kwam voornamelijk de abstracte inspiratie van terug.
 
+![Communicatie in Discord](/img/branding/sty-2.png)
+
 Voordat ik aan mijn tweede stylescape werkte hebben we als groep gekeken naar de selectie die wij nu hadden. Zo zagen we als groep meerdere thema groepen en wilde ik daarbuiten proberen nog een ander soort stylescape te maken. Vanuit hier wilde ik meer kijken naar de ruimte en abstractie. Daar wilde ik planeten en contrast laten zien. Met deze stylescape dacht ik meer out of the box te denken dan de huidige thema's die wij als groep tot nu toe hadden.
 
+![Communicatie in Discord](/img/branding/sty-3.png)
+
 De gekozen stylescape was uiteindelijk begonnen door een teamgenoot Evy Knops, die elementen van andere stylescapes bij elkaar had gebracht. Samen met Evy Knops en Dominique van Waardhuizen hebben we de uiteindelijke stylescape gemaakt.
+
+![Communicatie in Discord](/img/branding/sty-4.png)
 
 ### Logo
 
 Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een korte tijd. Zo ben ik eerst begonnen om ze met pen en papier te tekenen, wat mij wat meer ruimte gaf om ook fouten te maken en sneller te tekenen wat mij interessant leek. Daarna ben ik gaan kijken naar fonts en typografie om te oriënteren naar de opties die daar mogelijk zijn.
+
+![Communicatie in Discord](/img/branding/sty-5.png)
+
+### Personas
+![Communicatie in Discord](/img/branding/sty-6.png)
 
 ## Brandguide
 
@@ -46,27 +68,42 @@ Met de start van de brandguide begon ik met het algemene design voor de pagina's
 
 Het eerste probleem dat we als groep met dit design tegenkwamen was, dat de kleuren wel heel erg leken op die van de Burger King. Zo konden wijzelf moeilijk nog op de branding van Boris focussen.
 
+![Brandguide](/img/branding/bran-1.png)
+
 Toch was ik persoonlijk vrij tevreden met het idee en het design. De vormen waren abstract en de tekst gaf mij de ruimte om rust terug te brengen.
 
 Zo ben ik verdergegaan met verschillende kleuren te zoeken die wellicht beter zouden passen bij het design, zonder dat we continu moesten denken aan de Burger King, of hamburgers over het algemeen.
 
+![Brandguide](/img/branding/bran-2.png)
+
 Met de lichtere groen ben ik verdergegaan om de pagina's in te delen. Ik was persoonlijk erg tevreden over de verdeling van de pagina's met de abstracte vormen, maar ook over de rust.
 
-Nadat ik de docent ons probleem met de groen had uitgelegd en daarbij toch ook wat moeite te hebben met de simpliciteit van het design. Kwam hij met het idee om met witruimtes spelen, zo kwam ik uiteindelijk op het onderstaande idee. Voor mij bleef dit nog speels in design en gaf het nog steeds dat abstracte idee. Waarbij ook de inspiratie van de Canyon naar voren kwam.
+![Brandguide](/img/branding/bran-3.png)
+
+Nadat ik Bram ons probleem met de groen had uitgelegd en daarbij toch ook wat moeite te hebben met de simpliciteit van het design. Kwam hij met het idee om met witruimtes spelen, zo kwam ik uiteindelijk op het onderstaande idee. Voor mij bleef dit nog speels in design en gaf het nog steeds dat abstracte idee. Waarbij ook de inspiratie van de Canyon naar voren kwam.
+
+![Brandguide](/img/branding/bran-4.png)
 
 Uiteindelijk heb ik nog wat extra variaties gemaakt voor verschillende soorten pagina's, met daarbij indelingen voor de content. Voor mij kon ik zo beter vergelijkingen maken en uiteindelijk ook de rust in het design terugbrengen.
 
+![Brandguide](/img/branding/bran-5.png)
 ### Verwerken van groepsopinie
 
 Nadat de groep besloot om toch een andere richting op te gaan heb ik meegewerkt aan het nieuwe design. Dit design was voornamelijk door Evy Knops en Dominique van Waardhuizen gemaakt. Bij dit design sloot ik aan en heb daar aanpassingen aan gemaakt.
 
 In de afbeelding hiernaast staat het design dat was gemaakt door Evy en Dominique. Vanuit hier heb ik verschillende aanpassingen gemaakt. 
 
+![Brandguide](/img/branding/bran-6.png)
+
 Zo heb ik alle foto's weggehaald omdat ik overtuigd was dat een brandguide alleen content van het merk zelf mag gebruiken. Daarnaast heb ik sommige vormen aangepast naar andere vormen en meer gespeeld met de opacity vlakken. Met de nieuwe vormen heeft Evy geholpen.
 
 Onderstaande afbeelding geeft het uiteindelijke design weer. Voor de content heeft Evy voornamelijk geholpen en heeft Dominique geholpen met de teksten. In dit stuk heb ik voornamelijk gedaan met de algehele vormgeving en de elementen die werden geleverd aangepast naar het design van de pagina's.
 
-Voor de voorkant van de brandguide heb ik geprobeerd om met de vormen te spelen en met de feedback van mijn docent een design te maken. Zo wilde ik de witruimte gebruiken om de informatie te laten overkomen en de vorm een intro te geven op de inhoudsopgave van de brandguide. Ook was het belangrijk dat de gebruikte kleuren ook hier werden geïntroduceerd.
+![Brandguide](/img/branding/bran-7.png)
+
+Voor de voorkant van de brandguide heb ik geprobeerd om met de vormen te spelen en met de feedback van mijn docent, Bram, een design te maken. Zo wilde ik de witruimte gebruiken om de informatie te laten overkomen en de vorm een intro te geven op de inhoudsopgave van de brandguide. Ook was het belangrijk dat de gebruikte kleuren ook hier werden geïntroduceerd.
+
+![Brandguide](/img/branding/bran-8.png)
 
 ## Reflectie
 
