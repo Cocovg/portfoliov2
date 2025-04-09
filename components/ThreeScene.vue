@@ -51,10 +51,10 @@ const pointComponents = {
   1: 'point2',
   2: 'point3',
   3: 'point4',
-  4: 'point5',
-  5: 'point6',
-  6: 'point7',
-  7: 'point8'
+  4: 'LO1',
+  5: 'LO2',
+  6: 'LO3',
+  7: 'LO4'
 }
 
 const closePopup = () => {
@@ -98,9 +98,9 @@ const createPath = (radius, height, color) => {
   return group
 }
 
-const createPoint = (radius, height, color, number) => {
-  // Create text geometry for the number
-  const geometry = new TextGeometry(number.toString(), {
+const createPoint = (radius, height, color, label) => {
+  // Create text geometry for the label (number or text)
+  const geometry = new TextGeometry(label.toString(), {
     font: font,
     size: 0.25,
     height: 0.05,
@@ -420,7 +420,8 @@ const init = () => {
     // Create points for lower circle (path2)
     for (let i = 0; i < numPoints; i++) {
       const angle = i * angleStep - Math.PI / 4 // Subtract 45 degrees to match path rotation
-      const point = createPoint(radius, path2Height + 0.3, 0xffffff, i + 5)
+      const pointLabel = 'LO' + (i + 1) // Create LO1, LO2, LO3, LO4 labels
+      const point = createPoint(radius, path2Height + 0.3, 0xffffff, pointLabel)
       point.userData.isPoint = true
       point.userData.pathIndex = 2
       point.userData.pointIndex = i
