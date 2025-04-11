@@ -34,7 +34,7 @@ const emit = defineEmits(['close'])
 const content = ref('')
 
 // Import all markdown files
-const markdownModules = import.meta.glob('@/assets/content/*.md', { as: 'raw' })
+const markdownModules = import.meta.glob('@/assets/content/*.md')
 
 const popupStyle = computed(() => {
   // Get viewport dimensions
@@ -92,13 +92,11 @@ const loadContent = async (pointName) => {
   }
 
   try {
-    const filePath = `/assets/content/${pointName}.md`
-    const module = markdownModules[filePath]
-    if (module) {
-      const rawContent = await module()
-      content.value = rawContent
+    const response = await fetch(`/content/${pointName}.md`)
+    if (response.ok) {
+      content.value = await response.text()
     } else {
-      console.error('Markdown file not found:', filePath)
+      console.error('Markdown file not found:', pointName)
       content.value = '# Error\n\nContent not found.'
     }
   } catch (error) {
