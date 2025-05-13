@@ -18,34 +18,43 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
-import { Raycaster } from 'three'
 import PointPopup from './PointPopup.vue'
 import StartingScreen from './StartingScreen.vue'
 import PersistentLogo from './PersistentLogo.vue'
 import '../assets/styles/ThreeScene.css'
 
+// Constants
+const PATHS_ROTATION_SPEED = 0.001
+const POINT_MOVEMENT_SPEED = 0.05
+const STAR_ROTATION_SPEED = 0.0001
+const CAMERA_TRANSITION_DURATION = 1500
+const DEFAULT_CAMERA_DISTANCE = 5
+const PATH_RADIUS = 3
+const UPPER_PATH_HEIGHT = 1
+const LOWER_PATH_HEIGHT = -1
+const POINT_VERTICAL_OFFSET = 0.3
+const DOT_SIZE = 0.02
+const PATH_SEGMENTS = 64
+
+// Vue refs
 const container = ref(null)
-let scene, camera, renderer, model, controls, starField, paths, points, circularText
-let raycaster = new Raycaster()
-let mouse = new THREE.Vector2()
-let isInPointView = false
-let mouseDownPosition = null
-let hasMoved = false
-let time = 0 // Add time variable for point movement
-let font
-
-// Add starting screen state
 const showStartingScreen = ref(true)
-
-// Add popup state
 const showPopup = ref(false)
 const popupPosition = ref({ x: 0, y: 0 })
 const currentPoint = ref(null)
-
-// Add pause state
 const isPaused = ref(false)
 
-// Update the pointComponents mapping
+// Three.js objects
+let scene, camera, renderer, model, controls, starField, paths, points, circularText
+let raycaster = new THREE.Raycaster()
+let mouse = new THREE.Vector2()
+let font
+let time = 0
+let isInPointView = false
+let mouseDownPosition = null
+let hasMoved = false
+
+// Component mappings
 const pointComponents = {
   0: 'point1',
   1: 'point2',
@@ -58,49 +67,57 @@ const pointComponents = {
   8: 'LO5',
 }
 
+// Text configuration
+const textConfig = {
+  size: 0.07,
+  height: 0.02,
+  depth: 0.00002,
+  curveSegments: 16,
+  bevelEnabled: true,
+  bevelThickness: 0.01,
+  bevelSize: 0.005,
+  bevelSegments: 3  
+}
+
+// Popup management
 const closePopup = () => {
   showPopup.value = false
 }
 
+// Path creation
 const createPath = (radius, height, color) => {
   const group = new THREE.Group()
-  const segments = 64 // Number of points in the circle
-  const dotSize = 0.02 // Size of each dot
-  const dotSpacing = 0.1 // Space between dots
   
   // Create material for dots
   const dotMaterial = new THREE.MeshPhongMaterial({
-    color: 0x0000aa, // Dark blue color
+    color: 0x0000aa,
     transparent: true,
     opacity: 0.8,
-    emissive: 0x0000aa, // Dark blue glow
+    emissive: 0x0000aa,
     emissiveIntensity: 0.2,
     shininess: 100,
     specular: 0x00ffff
   })
   
   // Create dots along the circle
-  for (let i = 0; i < segments; i++) {
-    const angle = (i / segments) * Math.PI * 2
+  for (let i = 0; i < PATH_SEGMENTS; i++) {
+    const angle = (i / PATH_SEGMENTS) * Math.PI * 2
     const x = radius * Math.cos(angle)
     const z = radius * Math.sin(angle)
     
-    // Create dot geometry
-    const dotGeometry = new THREE.SphereGeometry(dotSize, 8, 8)
+    const dotGeometry = new THREE.SphereGeometry(DOT_SIZE, 8, 8)
     const dot = new THREE.Mesh(dotGeometry, dotMaterial)
     
-    // Position the dot
     dot.position.set(x, height, z)
-    
-    // Add dot to group
     group.add(dot)
   }
   
   return group
 }
 
+// Point creation
 const createPoint = (radius, height, color, label) => {
-  // Create text geometry for the label (number or text)
+  // Create text geometry for the label
   const geometry = new TextGeometry(label.toString(), {
     font: font,
     size: 0.15,
@@ -136,27 +153,28 @@ const createPoint = (radius, height, color, label) => {
   return point
 }
 
+// Point position updates
 const updatePointPosition = (point, time) => {
   const radius = point.userData.radius
   const height = point.userData.height
   const initialAngle = point.userData.initialAngle
-  const speed = 0.05 // Base speed of point movement
   
   // Determine direction based on path index
   const direction = point.userData.pathIndex === 1 ? 1 : -1
   
   // Calculate new position based on time and direction
-  const angle = initialAngle + time * speed * direction
+  const angle = initialAngle + time * POINT_MOVEMENT_SPEED * direction
   point.position.x = radius * Math.cos(angle)
   point.position.z = radius * Math.sin(angle)
   point.position.y = height
 }
 
+// Camera controls
 const focusCameraOnPoint = (point) => {
-  isInPointView = true // Set flag when focusing on a point
+  isInPointView = true
   const targetPosition = point.position.clone()
-  const radius = 5
-  const duration = 1500
+  const radius = DEFAULT_CAMERA_DISTANCE
+  const duration = CAMERA_TRANSITION_DURATION
   const startTime = Date.now()
   const startPosition = camera.position.clone()
   
@@ -199,11 +217,13 @@ const focusCameraOnPoint = (point) => {
 }
 
 const resetCamera = () => {
-  isInPointView = false // Reset the flag when resetting camera
-  const radius = 5
-  const duration = 1500
+  isInPointView = false
+  const duration = CAMERA_TRANSITION_DURATION
   const startTime = Date.now()
   const startPosition = camera.position.clone()
+  
+  // Define the target position (front view)
+  const targetPosition = new THREE.Vector3(0, 0, DEFAULT_CAMERA_DISTANCE)
   
   // Calculate start and target angles
   const startAngle = Math.atan2(startPosition.z, startPosition.x)
@@ -223,13 +243,13 @@ const resetCamera = () => {
       ? 4 * progress * progress * progress
       : 1 - Math.pow(-2 * progress + 2, 3) / 2
     
-    // Calculate current angle
-    const currentAngle = startAngle + angleDiff * easeProgress
+    // Calculate current position by directly interpolating between start and target
+    const newX = startPosition.x + (targetPosition.x - startPosition.x) * easeProgress
+    const newY = startPosition.y + (targetPosition.y - startPosition.y) * easeProgress
+    const newZ = startPosition.z + (targetPosition.z - startPosition.z) * easeProgress
     
-    // Update camera position along the circular path
-    camera.position.x = radius * Math.cos(currentAngle)
-    camera.position.z = radius * Math.sin(currentAngle)
-    camera.position.y = startPosition.y * (1 - easeProgress) // Smoothly return to center height
+    // Update camera position
+    camera.position.set(newX, newY, newZ)
     
     // Always look at the model (center)
     controls.target.set(0, 0, 0)
@@ -237,12 +257,19 @@ const resetCamera = () => {
     
     if (progress < 1) {
       requestAnimationFrame(animateCamera)
+    } else {
+      // Ensure we're exactly at the target when done
+      camera.position.copy(targetPosition)
+      controls.update()
     }
   }
   
   animateCamera()
+  // Resume animations when resetting
+  isPaused.value = false
 }
 
+// Mouse event handlers
 const onMouseDown = (event) => {
   mouseDownPosition = {
     x: event.clientX,
@@ -280,7 +307,7 @@ const onMouseClick = (event) => {
   raycaster.setFromCamera(mouse, camera)
   
   // Calculate objects intersecting the picking ray
-  const intersects = raycaster.intersectObjects(scene.children)
+  const intersects = raycaster.intersectObjects(scene.children, true)
   
   let clickedPoint = false
   
@@ -314,24 +341,78 @@ const onMouseClick = (event) => {
     }
   }
   
-  // Only reset if we're in a point view and clicked outside both the popup and points
+  // Reset view if already in point view and clicked outside points and popups
   if (!clickedPoint && isInPointView) {
     // Check if click was on the popup or its content
     const popupElement = document.querySelector('.popup')
     const popupContent = document.querySelector('.popup-content')
     const imageModal = document.querySelector('.image-modal')
     
-    if (popupElement && !popupElement.contains(event.target) && 
-        !imageModal?.contains(event.target)) {
+    // Check if any of the popup elements exist and contain the click target
+    const clickedOnPopup = 
+      (popupElement && popupElement.contains(event.target)) ||
+      (popupContent && popupContent.contains(event.target)) ||
+      (imageModal && imageModal.contains(event.target))
+    
+    if (!clickedOnPopup) {
+      console.log('Resetting camera - clicked outside')
       resetCamera()
       closePopup()
       currentPoint.value = null
-      // Resume animations
       isPaused.value = false
     }
   }
 }
 
+// Circular text
+const createCircularText = (text, radius, height, font, rotationOffset = 0) => {
+  const group = new THREE.Group()
+  const textMaterial = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    transparent: true,
+    opacity: 1,
+    emissive: 0x00ffff,
+    emissiveIntensity: 0.4,
+    shininess: 100,
+    specular: 0x00ffff
+  })
+
+  // Calculate the angle step based on text length with reduced spacing
+  const angleStep = (Math.PI * 3) / text.length
+  
+  // Create individual letters and position them along the circle
+  for (let i = 0; i < text.length; i++) {
+    const geometry = new TextGeometry(text[i], {
+      font: font,
+      ...textConfig
+    })
+    
+    // Center the letter geometry
+    geometry.computeBoundingBox()
+    const centerOffset = new THREE.Vector3()
+    geometry.boundingBox.getCenter(centerOffset)
+    geometry.translate(-centerOffset.x, -centerOffset.y, -centerOffset.z)
+    
+    const letter = new THREE.Mesh(geometry, textMaterial)
+    
+    // Calculate position on circle with adjusted spacing
+    const angle = -i * angleStep + rotationOffset
+    const x = radius * Math.cos(angle)
+    const z = radius * Math.sin(angle)
+    
+    // Position and rotate letter
+    letter.position.set(x, height, z)
+    
+    // Rotate to align with circle and make text readable from outside
+    letter.rotation.y = angle + Math.PI
+    
+    group.add(letter)
+  }
+  
+  return group
+}
+
+// Animation loop
 const animate = () => {
   requestAnimationFrame(animate)
   
@@ -340,11 +421,11 @@ const animate = () => {
   
   // Always rotate paths and text, regardless of pause state
   if (paths && circularText) {
-    paths[0].rotation.y += 0.001 // Clockwise rotation for first path
-    paths[1].rotation.y -= 0.001 // Counter-clockwise rotation for second path
+    paths[0].rotation.y += PATHS_ROTATION_SPEED
+    paths[1].rotation.y -= PATHS_ROTATION_SPEED
     
-    circularText[0].rotation.y += 0.001 // Rotate upper text with its path
-    circularText[1].rotation.y -= 0.001 // Rotate lower text with its path
+    circularText[0].rotation.y += PATHS_ROTATION_SPEED
+    circularText[1].rotation.y -= PATHS_ROTATION_SPEED
   }
   
   // Only update point positions if not paused
@@ -354,7 +435,7 @@ const animate = () => {
     
     // Rotate star field slowly
     if (starField) {
-      starField.rotation.y += 0.0001
+      starField.rotation.y += STAR_ROTATION_SPEED
     }
 
     // Update point positions
@@ -368,95 +449,82 @@ const animate = () => {
   renderer.render(scene, camera)
 }
 
+// Initialization and lifecycle
 const onStartingScreenComplete = () => {
   showStartingScreen.value = false
 }
 
-const init = () => {
-  // Create scene
-  scene = new THREE.Scene()
-  scene.background = new THREE.Color('#0B071B')
+const initPoints = (fontInstance) => {
+  // Create clickable points
+  points = []
+  const numPoints = 4
+  const angleStep = (2 * Math.PI) / numPoints
   
-  // Create paths
-  const radius = 3 // Distance from center
-  const path1Height = 1 // Upper circle
-  const path2Height = -1 // Lower circle
+  // Create points for upper circle (path1)
+  for (let i = 0; i < numPoints; i++) {
+    const angle = i * angleStep + Math.PI / 4
+    // Use project names instead of numbers
+    const pointLabels = ['Branding', 'Cardan I', 'Cardan II', 'Project X']
+    const point = createPoint(PATH_RADIUS, UPPER_PATH_HEIGHT - POINT_VERTICAL_OFFSET, 0xffffff, pointLabels[i])
+    point.userData.isPoint = true
+    point.userData.pathIndex = 1
+    point.userData.pointIndex = i
+    point.userData.initialAngle = angle
+    points.push(point)
+    scene.add(point)
+  }
   
-  // Create paths with different rotations
-  const path1 = createPath(radius, path1Height, 0xffffff)
-  const path2 = createPath(radius, path2Height, 0xffffff)
+  // Create points for lower circle (path2)
+  const lowerNumPoints = 5
+  const lowerAngleStep = (2 * Math.PI) / lowerNumPoints
   
-  // Store paths for animation
-  paths = [path1, path2]
+  for (let i = 0; i < lowerNumPoints; i++) {
+    const angle = i * lowerAngleStep - Math.PI / 5
+    const pointLabel = 'LO' + (i + 1)
+    const point = createPoint(PATH_RADIUS, LOWER_PATH_HEIGHT + POINT_VERTICAL_OFFSET, 0xffffff, pointLabel)
+    point.userData.isPoint = true
+    point.userData.pathIndex = 2
+    point.userData.pointIndex = i
+    point.userData.initialAngle = angle
+    points.push(point)
+    scene.add(point)
+  }
+}
 
+const initCircleTexts = (fontInstance) => {
+  // Create upper circle text
+  const upperText = createCircularText(
+    'PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - ', 
+    PATH_RADIUS + 0.1, 
+    UPPER_PATH_HEIGHT + 0.2, 
+    fontInstance, 
+    Math.PI / 3
+  )
+  scene.add(upperText)
   
-  scene.add(path1)
-  scene.add(path2)
+  // Create lower circle text
+  const lowerText = createCircularText(
+    'LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - ', 
+    PATH_RADIUS + 0.1, 
+    LOWER_PATH_HEIGHT - 0.2, 
+    fontInstance, 
+    -Math.PI / 3
+  )
+  scene.add(lowerText)
   
-  // Load font and create points and text
-  const fontLoader = new FontLoader()
-  fontLoader.load('/fonts/helvetiker_regular.typeface.json', (loadedFont) => {
-    font = loadedFont // Store the font for point creation
-    
-    // Create clickable points
-    points = []
-    const numPoints = 4
-    const angleStep = (2 * Math.PI) / numPoints
-    
-    // Create points for upper circle (path1)
-    for (let i = 0; i < numPoints; i++) {
-      const angle = i * angleStep + Math.PI / 4 // Add 45 degrees to match path rotation
-      const point = createPoint(radius, path1Height - 0.3, 0xffffff, i + 1)
-      point.userData.isPoint = true
-      point.userData.pathIndex = 1
-      point.userData.pointIndex = i
-      point.userData.initialAngle = angle
-      points.push(point)
-      scene.add(point)
-    }
-    
-    // Create points for lower circle (path2)
-    const lowerNumPoints = 5 // Changed to 5 to include LO5
-    const lowerAngleStep = (2 * Math.PI) / lowerNumPoints
-    
-    for (let i = 0; i < lowerNumPoints; i++) {
-      const angle = i * lowerAngleStep - Math.PI / 5 // Subtract to match path rotation
-      const pointLabel = 'LO' + (i + 1) // Create LO1, LO2, LO3, LO4, LO5 labels
-      const point = createPoint(radius, path2Height + 0.3, 0xffffff, pointLabel)
-      point.userData.isPoint = true
-      point.userData.pathIndex = 2
-      point.userData.pointIndex = i
-      point.userData.initialAngle = angle
-      points.push(point)
-      scene.add(point)
-    }
-    
-    // Create upper circle text
-    const upperText = createCircularText('PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - PROJECTEN - ', 3.1, 1.2, font, Math.PI / 3)
-    scene.add(upperText)
-    
-    // Create lower circle text
-    const lowerText = createCircularText('LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - LEERUITKOMSTEN - ', 3.1, -1.2, font, -Math.PI / 3)
-    scene.add(lowerText)
-    
-    // Store references for animation
-    circularText = [upperText, lowerText]
-  })
-  
-  // Add event listeners for mouse events
-  window.addEventListener('mousedown', onMouseDown)
-  window.addEventListener('mousemove', onMouseMove)
-  window.addEventListener('mouseup', onMouseUp)
-  
-  // Create star field
+  // Store references for animation
+  circularText = [upperText, lowerText]
+}
+
+const initStarField = () => {
   const starGeometry = new THREE.BufferGeometry()
-  const starCount = 5000 // Number of stars
+  const starCount = 5000
   const positions = new Float32Array(starCount * 3)
   
   for (let i = 0; i < starCount * 3; i += 3) {
-    positions[i] = (Math.random() - 0.5) * 2000 // x
-    positions[i + 1] = (Math.random() - 0.5) * 2000 // y
-    positions[i + 2] = (Math.random() - 0.5) * 2000 // z
+    positions[i] = (Math.random() - 0.5) * 2000
+    positions[i + 1] = (Math.random() - 0.5) * 2000
+    positions[i + 2] = (Math.random() - 0.5) * 2000
   }
   
   starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
@@ -471,31 +539,15 @@ const init = () => {
   
   starField = new THREE.Points(starGeometry, starMaterial)
   scene.add(starField)
+}
+
+const initLights = () => {
+  // Add main directional light
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+  directionalLight.position.set(1, 1, 1)
+  scene.add(directionalLight)
   
-  // Create camera
-  camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  )
-  camera.position.z = 5
-  
-  // Create renderer
-  renderer = new THREE.WebGLRenderer({ antialias: true })
-  renderer.setSize(window.innerWidth, window.innerHeight)
-  container.value.appendChild(renderer.domElement)
-  
-  // Add OrbitControls
-  controls = new OrbitControls(camera, renderer.domElement)
-  controls.enableDamping = true
-  controls.dampingFactor = 0.05
-  
-  // Add lights
-  const light = new THREE.DirectionalLight(0xffffff, 1)
-  light.position.set(1, 1, 1)
-  scene.add(light)
-  
+  // Add ambient light for overall illumination
   const ambientLight = new THREE.AmbientLight(0x404040)
   scene.add(ambientLight)
   
@@ -504,7 +556,7 @@ const init = () => {
   internalLight.position.set(0, 0, 0)
   scene.add(internalLight)
 
-  // Add reflective lights
+  // Add colored accent lights
   const spotLight1 = new THREE.SpotLight(0x00ffff, 100)
   spotLight1.position.set(5, 5, 5)
   spotLight1.angle = Math.PI / 4
@@ -520,24 +572,9 @@ const init = () => {
   spotLight2.decay = 2
   spotLight2.distance = 200
   scene.add(spotLight2)
+}
 
-  // Create reflective materials for paths
-  const path1Material = new THREE.MeshPhongMaterial({
-    color: 0xffffff,
-    shininess: 100,
-    specular: 0xffffff,
-    reflectivity: 0.5
-  })
-  path1.material = path1Material
-
-  const path2Material = new THREE.MeshPhongMaterial({
-    color: 0xffffff,
-    shininess: 100,
-    specular: 0xffffff,
-    reflectivity: 0.5
-  })
-  path2.material = path2Material
-  
+const loadModel = () => {
   // Load the GLB model
   const loader = new GLTFLoader()
   loader.load(
@@ -564,6 +601,81 @@ const init = () => {
       console.error('Error loading model:', error)
     }
   )
+}
+
+const init = () => {
+  // Create scene
+  scene = new THREE.Scene()
+  scene.background = new THREE.Color('#0B071B')
+  
+  // Create paths
+  const path1 = createPath(PATH_RADIUS, UPPER_PATH_HEIGHT, 0xffffff)
+  const path2 = createPath(PATH_RADIUS, LOWER_PATH_HEIGHT, 0xffffff)
+  
+  // Rotate paths to cross each other
+  path1.rotation.y = Math.PI / 4 // 45 degrees
+  path2.rotation.y = -Math.PI / 4 // -45 degrees
+  
+  // Store paths for animation
+  paths = [path1, path2]
+  
+  scene.add(path1)
+  scene.add(path2)
+  
+  // Add reflective materials for paths
+  const pathMaterial = new THREE.MeshPhongMaterial({
+    color: 0xffffff,
+    shininess: 100,
+    specular: 0xffffff,
+    reflectivity: 0.5
+  })
+  
+  // Load font and create points and text
+  const fontLoader = new FontLoader()
+  fontLoader.load('/fonts/helvetiker_regular.typeface.json', (loadedFont) => {
+    font = loadedFont
+    initPoints(font)
+    initCircleTexts(font)
+  })
+  
+  // Add event listeners for mouse events
+  window.addEventListener('mousedown', onMouseDown)
+  window.addEventListener('mousemove', onMouseMove)
+  window.addEventListener('mouseup', onMouseUp)
+  
+  // Create star field
+  initStarField()
+  
+  // Create camera
+  camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  )
+  camera.position.z = DEFAULT_CAMERA_DISTANCE
+  
+  // Create renderer with antialiasing for smoother edges
+  renderer = new THREE.WebGLRenderer({ 
+    antialias: true,
+    powerPreference: 'high-performance' 
+  })
+  renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)) // Limit pixel ratio for performance
+  container.value.appendChild(renderer.domElement)
+  
+  // Add OrbitControls
+  controls = new OrbitControls(camera, renderer.domElement)
+  controls.enableDamping = true
+  controls.dampingFactor = 0.05
+  controls.maxDistance = 20
+  controls.minDistance = 3
+  
+  // Add lights
+  initLights()
+  
+  // Load 3D model
+  loadModel()
   
   // Handle window resize
   window.addEventListener('resize', onWindowResize)
@@ -575,78 +687,9 @@ const onWindowResize = () => {
   renderer.setSize(window.innerWidth, window.innerHeight)
 }
 
-// Update text configuration for better proportions
-const textConfig = {
-  size: 0.07, // Slightly smaller for better fit
-  height: 0.02, // Reduced thickness (was 0.05)
-  depth: 0.00002, // Keep depth
-  curveSegments: 16,
-  bevelEnabled: true,
-  bevelThickness: 0.01, // Reduced bevel thickness (was 0.03)
-  bevelSize: 0.005, // Reduced bevel size (was 0.008)
-  bevelSegments: 3  
-}
-
-const createCircularText = (text, radius, height, font, rotationOffset = 0) => {
-  const group = new THREE.Group()
-  const textMaterial = new THREE.MeshPhongMaterial({
-    color: 0xffffff,
-    transparent: true,
-    opacity: 1,
-    emissive: 0x00ffff,
-    emissiveIntensity: 0.4,
-    shininess: 100,
-    specular: 0x00ffff
-  })
-
-  // Calculate the angle step based on text length with reduced spacing
-  const angleStep = (Math.PI * 3) / text.length // Reduced from 2π to 1.5π to bring letters closer
-  
-  // Create individual letters and position them along the circle
-  for (let i = 0; i < text.length; i++) {
-    const geometry = new TextGeometry(text[i], {
-      font: font,
-      ...textConfig
-    })
-    
-    // Center the letter geometry
-    geometry.computeBoundingBox()
-    const centerOffset = new THREE.Vector3()
-    geometry.boundingBox.getCenter(centerOffset)
-    geometry.translate(-centerOffset.x, -centerOffset.y, -centerOffset.z)
-    
-    const letter = new THREE.Mesh(geometry, textMaterial)
-    
-    // Calculate position on circle with adjusted spacing
-    const angle = -i * angleStep + rotationOffset // Reverse the angle direction
-    const x = radius * Math.cos(angle)
-    const z = radius * Math.sin(angle)
-    
-    // Position and rotate letter
-    letter.position.set(x, height, z)
-    
-    // Rotate to align with circle and make text readable from outside
-    letter.rotation.x = 0 // Keep text horizontal
-    letter.rotation.y = angle + Math.PI // Add Math.PI to flip text to be readable
-    letter.rotation.z = 0 // Reset any z rotation
-    
-    group.add(letter)
-  }
-  
-  return group
-}
-
-onMounted(() => {
-  init()
-  animate()
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', onWindowResize)
-  window.removeEventListener('mousedown', onMouseDown)
-  window.removeEventListener('mousemove', onMouseMove)
-  window.removeEventListener('mouseup', onMouseUp)
-  // Clean up Three.js resources
+// Cleanup resources
+const cleanupResources = () => {
+  // Dispose of geometries and materials
   if (model) {
     scene.remove(model)
     model.traverse((child) => {
@@ -656,11 +699,13 @@ onBeforeUnmount(() => {
       }
     })
   }
+  
   if (starField) {
     scene.remove(starField)
     starField.geometry.dispose()
     starField.material.dispose()
   }
+  
   if (points) {
     points.forEach(point => {
       scene.remove(point)
@@ -668,7 +713,38 @@ onBeforeUnmount(() => {
       point.material.dispose()
     })
   }
+  
+  if (circularText) {
+    circularText.forEach(textGroup => {
+      scene.remove(textGroup)
+      textGroup.traverse(child => {
+        if (child.isMesh) {
+          child.geometry.dispose()
+          child.material.dispose()
+        }
+      })
+    })
+  }
+  
+  // Dispose of renderer
   renderer.dispose()
+}
+
+// Lifecycle hooks
+onMounted(() => {
+  init()
+  animate()
+})
+
+onBeforeUnmount(() => {
+  // Remove event listeners
+  window.removeEventListener('resize', onWindowResize)
+  window.removeEventListener('mousedown', onMouseDown)
+  window.removeEventListener('mousemove', onMouseMove)
+  window.removeEventListener('mouseup', onMouseUp)
+  
+  // Clean up Three.js resources
+  cleanupResources()
 })
 </script>
 
