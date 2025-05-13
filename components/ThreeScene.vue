@@ -54,7 +54,8 @@ const pointComponents = {
   4: 'LO1',
   5: 'LO2',
   6: 'LO3',
-  7: 'LO4'
+  7: 'LO4',
+  8: 'LO5',
 }
 
 const closePopup = () => {
@@ -387,10 +388,7 @@ const init = () => {
   
   // Store paths for animation
   paths = [path1, path2]
-  
-  // Rotate paths to cross each other
-  path1.rotation.y = Math.PI / 4 // 45 degrees
-  path2.rotation.y = -Math.PI / 4 // -45 degrees
+
   
   scene.add(path1)
   scene.add(path2)
@@ -418,9 +416,12 @@ const init = () => {
     }
     
     // Create points for lower circle (path2)
-    for (let i = 0; i < numPoints; i++) {
-      const angle = i * angleStep - Math.PI / 4 // Subtract 45 degrees to match path rotation
-      const pointLabel = 'LO' + (i + 1) // Create LO1, LO2, LO3, LO4 labels
+    const lowerNumPoints = 5 // Changed to 5 to include LO5
+    const lowerAngleStep = (2 * Math.PI) / lowerNumPoints
+    
+    for (let i = 0; i < lowerNumPoints; i++) {
+      const angle = i * lowerAngleStep - Math.PI / 5 // Subtract to match path rotation
+      const pointLabel = 'LO' + (i + 1) // Create LO1, LO2, LO3, LO4, LO5 labels
       const point = createPoint(radius, path2Height + 0.3, 0xffffff, pointLabel)
       point.userData.isPoint = true
       point.userData.pathIndex = 2
