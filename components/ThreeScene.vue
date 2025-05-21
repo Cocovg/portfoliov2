@@ -489,7 +489,7 @@ const initPoints = (fontInstance) => {
   for (let i = 0; i < numPoints; i++) {
     const angle = i * angleStep + Math.PI / 4
     // Use project names instead of numbers
-    const pointLabels = ['Branding', 'Cardan I', 'Cardan II', 'Project X']
+    const pointLabels = ['Branding', 'UX', 'Development', 'Project X']
     const point = createPoint(PATH_RADIUS, UPPER_PATH_HEIGHT - POINT_VERTICAL_OFFSET, 0xffffff, pointLabels[i])
     point.userData.isPoint = true
     point.userData.pathIndex = 1
@@ -719,23 +719,29 @@ const cleanupResources = () => {
     scene.remove(model)
     model.traverse((child) => {
       if (child.isMesh) {
-        child.geometry.dispose()
-        child.material.dispose()
+        if (child.geometry) child.geometry.dispose()
+        if (child.material) {
+          if (Array.isArray(child.material)) {
+            child.material.forEach(material => material && material.dispose())
+          } else {
+            child.material.dispose()
+          }
+        }
       }
     })
   }
   
   if (starField) {
     scene.remove(starField)
-    starField.geometry.dispose()
-    starField.material.dispose()
+    if (starField.geometry) starField.geometry.dispose()
+    if (starField.material) starField.material.dispose()
   }
   
   if (points) {
     points.forEach(point => {
       scene.remove(point)
-      point.geometry.dispose()
-      point.material.dispose()
+      if (point.geometry) point.geometry.dispose()
+      if (point.material) point.material.dispose()
     })
   }
   
@@ -744,15 +750,21 @@ const cleanupResources = () => {
       scene.remove(textGroup)
       textGroup.traverse(child => {
         if (child.isMesh) {
-          child.geometry.dispose()
-          child.material.dispose()
+          if (child.geometry) child.geometry.dispose()
+          if (child.material) {
+            if (Array.isArray(child.material)) {
+              child.material.forEach(material => material && material.dispose())
+            } else {
+              child.material.dispose()
+            }
+          }
         }
       })
     })
   }
   
   // Dispose of renderer
-  renderer.dispose()
+  if (renderer) renderer.dispose()
 }
 
 // Lifecycle hooks

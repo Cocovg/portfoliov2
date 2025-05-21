@@ -2,12 +2,12 @@
   <div v-if="isVisible" class="popup" :style="popupStyle" @click="handlePopupClick">
     <div class="popup-content" @click.stop>
       <button class="close-button" @click="$emit('close')">×</button>
-      <div v-html="renderedContent" class="markdown-content" @click="handleImageClick"></div>
+      <div v-html="renderedContent" class="markdown-content" @click="handleContentClick"></div>
     </div>
   </div>
   <!-- Image zoom modal -->
   <div v-if="zoomedImage" class="image-modal" @click="closeZoomedImage">
-    <img :src="zoomedImage" alt="Zoomed image" @click.stop>
+    <img :src="zoomedImage" alt="Zoomed image" @click.stop class="full-resolution-image">
   </div>
 </template>
 
@@ -33,8 +33,21 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 const content = ref('')
 
-// Import all markdown files
-const markdownModules = import.meta.glob('@/assets/content/*.md')
+// Configure marked to open links in new tab
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+  headerIds: true,
+  renderer: (() => {
+    const renderer = new marked.Renderer();
+    const linkRenderer = renderer.link;
+    renderer.link = (href, title, text) => {
+      const html = linkRenderer.call(renderer, href, title, text);
+      return html.replace(/^<a /, '<a target="_blank" rel="noopener noreferrer" ');
+    };
+    return renderer;
+  })()
+});
 
 const popupStyle = computed(() => {
   // Get viewport dimensions
@@ -126,10 +139,20 @@ const handlePopupClick = (event) => {
   }
 }
 
-const handleImageClick = (event) => {
+const handleContentClick = (event) => {
+  // Handle image clicks to zoom
   if (event.target.tagName === 'IMG') {
     event.stopPropagation()
+    // Use the original image source for full resolution
     zoomedImage.value = event.target.src
+  }
+  
+  // Handle links to open in new tab
+  if (event.target.tagName === 'A') {
+    event.stopPropagation()
+    // Ensure links open in a new tab
+    event.target.setAttribute('target', '_blank')
+    event.target.setAttribute('rel', 'noopener noreferrer')
   }
 }
 
@@ -140,4 +163,44 @@ const closeZoomedImage = (event) => {
 </script>
 
 <style src="../assets/styles/points.css"></style>
-<style src="../assets/styles/PointPopup.css"></style> 
+<style src="../assets/styles/PointPopup.css"></style>
+
+<style>
+/* Add inline styles for full resolution image display */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.full-resolution-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  cursor: default;
+}
+
+/* Style for links */
+.markdown-content a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  padding-bottom: 2px;
+}
+
+.markdown-content a:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+</style> 
