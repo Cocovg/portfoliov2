@@ -9,6 +9,7 @@
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/W9kLhQFNAco8T1itJXltCu/Project---Cardan?node-id=0-1&t=29QNklvDMsQ6DJmy-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving</a>
+  <a href="/files/UX procesverslag.pdf" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
 </div>
 
 
@@ -151,7 +152,7 @@ Voor mijn onderdelen heb ik de feedback voornamelijk gebruikt in het volgende pr
 ## Reflectie
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
  <span style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO5</span>
- </div>
+</div>
 Voor dit project vond ik de opstart erg lastig. Zo vond ik het lastig om het project te begrijpen, voornamelijk wat er precies van ons werd verwacht. Ook was het lastig dat we van de 4 weken in totaal, we de eerste week verloren doordat niemand echt concrete informatie had en de klant zelf pas op donderdag langskwam met informatie.
 Tijdens de tweede week was het dus veel bezig zijn met het uitvogelen van het project en zo snel mogelijk research en een eerste design te maken. Om vervolgens te presenteren op de vrijdag. Voor mij voelde dit proces erg vreemd omdat het voor mij juist leek alsof research een heel belangrijk en groter onderdeel moest zijn. Vooral omdat het project gericht is op gebruiksvriendelijkheid. Maar vervolgens werd ons al op de tweede/derde dag verteld hier niet te veel tijd aan te besteden. Zo had ik verwacht meer algemene bewustwording naar toegankelijkheid vanuit het project te leren, iets waar we als developers niet vroeg genoeg mee kunnen beginnen.
 Mijn rol hierin vind ik lastig te bepalen, in het proces ben ik zeker nog van plan extra research te doen zodat ik een sterker product kan neerzetten

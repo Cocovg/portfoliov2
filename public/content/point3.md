@@ -8,6 +8,7 @@
 </div>
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/KIVWaDCLVYXIBWR4YJ13M1/Project-Development?node-id=2-2&t=OAVSoPqAwt6y49og-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving</a>
+  <a href="/files/development procesverslag.pdf" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
 </div>
 
 ## Project beschrijving
@@ -15,7 +16,9 @@ In dit project houden we ons bezig met het ontwikkelen van de functie die we in 
 In dit project werkte ik samen met Laurens Kosters en hebben we ons gericht op een functie die vanuit de website een filter kan geven aan een bestaande website of een prefab website die door ons is gemaakt.
  
 ## Communicatie
-<span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+    <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+</div>
 Voor communicatie hebben we voornamelijk Discord en GitHub gebruikt. In Discord deelde we bronnen, werkomgevingen en notities. 
  
 In onze GitHub omgeving, hadden we een project staan waar we onze iteraties en proces konden bijhouden. Doormiddel van meerdere commits konden we meerdere versies bijhouden van elke functie.

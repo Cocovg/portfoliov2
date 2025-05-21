@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, watch, nextTick, onBeforeUnmount } from 'vue'
 import { marked } from 'marked'
 
 const props = defineProps({
@@ -32,6 +32,7 @@ const props = defineProps({
 
 const emit = defineEmits(['close'])
 const content = ref('')
+const popupHeight = ref(400) // Default height, will be updated after content is rendered
 
 // Configure marked to open links in new tab
 marked.setOptions({
@@ -63,8 +64,8 @@ const popupStyle = computed(() => {
   const padding = 20
   
   // Calculate popup dimensions
-  const popupWidth = 500 // min-width increased from 300
-  const popupHeight = 400 // approximate max-height
+  const popupWidth = 500 // min-width 
+  const estimatedHeight = popupHeight.value // Use the measured height or estimate
   
   // Adjust horizontal position
   if (x < popupWidth / 2 + padding) {
@@ -73,30 +74,47 @@ const popupStyle = computed(() => {
     x = viewportWidth - popupWidth / 2 - padding
   }
   
-  // Always position the popup in the lower half of the viewport
-  const minY = viewportHeight * 0.5 // Increased from 0.4 to 0.5 (50% from top)
-  const maxY = viewportHeight - popupHeight / 2 - padding // Maximum Y position
+  // Calculate if popup would extend below viewport
+  const bottomEdge = y + (estimatedHeight / 2)
+  const wouldOverflow = bottomEdge > (viewportHeight - padding)
   
-  // If the click is in the upper half, position the popup at the minimum Y
-  if (y < minY) {
-    y = minY
-  } else if (y > maxY) {
-    y = maxY
+  // If click is in lower half of screen OR popup would overflow bottom, 
+  // position popup ABOVE the click point instead of centered on it
+  if (y > viewportHeight * 0.5 || wouldOverflow) {
+    // Position popup above the click point with enough space
+    y = Math.min(y - (estimatedHeight / 2) - 20, viewportHeight - estimatedHeight - padding)
+    
+    // Make sure it doesn't go too high either
+    y = Math.max(y, padding)
+    
+    return {
+      left: `${x}px`,
+      top: `${y}px`,
+      transform: 'translate(-50%, 0)'
+    }
   }
   
-  // Add additional top padding to account for browser UI
-  const topOffset = 100 // Additional padding from top
-  y = Math.max(y, topOffset)
-  
+  // For clicks in upper half of screen, position popup below click point
   return {
     left: `${x}px`,
-    top: `${y}px`
+    top: `${y}px`,
+    transform: 'translate(-50%, -50%)'
   }
 })
 
 const renderedContent = computed(() => {
   return marked(content.value)
 })
+
+// Update popup height after content is loaded
+const updatePopupHeight = () => {
+  nextTick(() => {
+    const popupElement = document.querySelector('.popup-content')
+    if (popupElement) {
+      popupHeight.value = popupElement.offsetHeight
+    }
+  })
+}
 
 const loadContent = async (pointName) => {
   if (!pointName) {
@@ -108,6 +126,7 @@ const loadContent = async (pointName) => {
     const response = await fetch(`/content/${pointName}.md`)
     if (response.ok) {
       content.value = await response.text()
+      updatePopupHeight() // Update height after content loads
     } else {
       console.error('Markdown file not found:', pointName)
       content.value = '# Error\n\nContent not found.'
@@ -128,6 +147,14 @@ onMounted(() => {
   if (props.currentPoint) {
     loadContent(props.currentPoint)
   }
+  
+  // Add window resize listener to update popup position
+  window.addEventListener('resize', updatePopupHeight)
+})
+
+onBeforeUnmount(() => {
+  // Clean up resize listener
+  window.removeEventListener('resize', updatePopupHeight)
 })
 
 const zoomedImage = ref(null)
@@ -202,5 +229,15 @@ const closeZoomedImage = (event) => {
   color: #ffffff;
   border-bottom-color: #ffffff;
   text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Fix placement issues for popups at bottom of screen */
+.popup {
+  max-height: 80vh;
+  z-index: 999;
+}
+
+.popup-content {
+  max-height: 70vh;
 }
 </style> 

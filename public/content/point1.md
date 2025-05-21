@@ -23,7 +23,9 @@ Hijzelf gaf ons verschillende ideeën waar wij ons op konden focussen. Zo vond h
 
 
 ## Communicatie
-<span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+</div>
 Voor onze communicatie gebruikte wij Discord. Hier hadden wij een gezamenlijke server waarin wij nodige onderwerpen en middelen deelde met elkaar. 
 
 ![Communicatie in Discord](/img/branding/com-1.png)
@@ -34,21 +36,27 @@ Hier deelde wij ook de feedback die wij als groep kregen, notities van lessen en
 ![Communicatie in Discord](/img/branding/com-3.png)
 
 Onze designs hebben we in een gezamenlijk board op Figma gemaakt. Op deze manier waren we betrokken bij elkaar en konden we gemakkelijk feedback geven.
-<a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px;   text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
+</div>
 
 ![Communicatie in Discord](/img/branding/com-4.png)
 
 In het gehele proces hebben we onze fases gescheiden gehouden en konden wij, voor voornamelijk ons, overzichtelijk blijven werken.
-<a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-572&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 2: Brandguide fase</a>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-572&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 2: Brandguide fase</a>
+</div>
 
 ![Communicatie in Discord](/img/branding/com-5.png)
 
 ## Voorbereidende styling
-<a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
   <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
   <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+</div>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
 </div>
 
 Tijdens het project heb ik natuurlijk veel moeten designen en daarbij moest ik zoeken naar een stijl en richting waarbij we met het project verder zouden gaan. In dit stuk zal ik meer ingaan op alle aspecten waarin ik iteraties heb ontwikkeld en waaraan ik heb gewerkt. Daarnaast zal ik met mijn denkproces mijn keuzes ondersteunen.
@@ -89,10 +97,10 @@ Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
   <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
-</div
-
-<a href="https://www.figma.com/design/NjxHdYFQ5Y1eB3sKuXZ1fm/Projecten?node-id=1181-1589&t=DnQ3Ic9si1pSDk7n-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 3: Persoonlijke assets</a>
-
+</div>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <a href="https://www.figma.com/design/NjxHdYFQ5Y1eB3sKuXZ1fm/Projecten?node-id=1181-1589&t=DnQ3Ic9si1pSDk7n-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 3: Persoonlijke assets</a>
+</div>
 
 ### Mijn iteraties
 
