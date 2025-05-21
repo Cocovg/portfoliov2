@@ -24,7 +24,9 @@ Voor ons waren dit goeie punten om bij het project erbij te pakken, zo kunnen we
 
  
 ## Communicatie
-<span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+</div>
 Tijdens dit project hebben we voornamelijk Discord gebruikt om te communiceren. Hier heb ik een server opgestart waar we elkaar up-to-date hielden over aanwezigheid, feedback en documentaties.
  
  ![Communicatie in Discord](/img/ux/com-1.png)
@@ -36,9 +38,17 @@ Alle gedeelde documenten werden hier ook gedeeld zodat wij samen konden werken a
 Voor onze designs gebruikte wij Figma, hierin maakte wij samen onze eigen designs. Zo konden we ook snel feedback aan elkaar geven en gemakkelijk terugkoppelen naar het project.
  
   ![Communicatie in Discord](/img/ux/com-3.png)
+
+#  Teamverband
+Voor een van onze lessen hebben we ook samen gekeken naar wat voor mensen zijn en wat onze raakvlakken waren. We zagen doormiddel van de afbeelding hieronder dat we allemaal elkaar konden aanvullen en we onze eigen specialiteiten hadden.
+
+[]
+
  
 ## Research
-<span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+</div>
 In de research fase was het voornamelijk voor mij erg moeilijk om in te schatten hoe lang we hier mee bezig moesten zijn en daarbij, begreep ik de opdracht niet zo goed.
 Als groep begonnen we eerst aan het projectplan, hier was ik voornamelijk bezig geweest met het doornemen van de huidige vindingen en begrijpen hoe het DOT Framework in elkaar zat en hoe we deze kunnen toepassen in ons project. Toen we als groep op een punt kwamen waar iedereen het project meer begreep en ook wat onderzoek had gedaan, hebben we besloten ons te richten op visuele beperkingen. Vanuit hier hebben we 3 vormen verdeeld onder ons 5 en hebben we hierop onderzoek gedaan. 
 Samen met Dominique heb ik onderzoek gedaan naar kleurenblindheid. Hier hebben we bronnen gezocht en meer bewustzijn naar het effect van de beperking en wat deze beperking voornamelijk heel veel zou helpen in designs.
@@ -76,12 +86,16 @@ Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding e
 
  
 ## Prototype
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
  <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
+ </div>
 Voor het testen van de website had ik een prototype nodig die interactief te bedienen was. Doormiddel van de Figma prototype functie heb ik elementen van de website kunnen linken aan elkaar. De gebruiker kan dan zo het bedoelde pad af gaan.
  
 
 ## Testen
-<span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
+</div>
 Voor mijn test wilde ik me voornamelijk richten op het onderdeel waar ik mee bezig ben geweest, namelijk de handelingen en het complete pad wat een gebruiker moet afleggen om bij het eindproduct te komen. De webpagina’s van het kiezen van de prefab website of een html invoeren en daarbij de prefab website zelf, zijn niet door mij gemaakt. Wel laat ik deze ook door de testers bezoeken om een algehele mening te kunnen krijgen. In dit verslag noteer ik wel alleen feedback die voor mijzelf van toepassing is.
 
 ### De test
@@ -135,7 +149,9 @@ Voor mijn onderdelen heb ik de feedback voornamelijk gebruikt in het volgende pr
 
 
 ## Reflectie
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
  <span style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO5</span>
+ </div>
 Voor dit project vond ik de opstart erg lastig. Zo vond ik het lastig om het project te begrijpen, voornamelijk wat er precies van ons werd verwacht. Ook was het lastig dat we van de 4 weken in totaal, we de eerste week verloren doordat niemand echt concrete informatie had en de klant zelf pas op donderdag langskwam met informatie.
 Tijdens de tweede week was het dus veel bezig zijn met het uitvogelen van het project en zo snel mogelijk research en een eerste design te maken. Om vervolgens te presenteren op de vrijdag. Voor mij voelde dit proces erg vreemd omdat het voor mij juist leek alsof research een heel belangrijk en groter onderdeel moest zijn. Vooral omdat het project gericht is op gebruiksvriendelijkheid. Maar vervolgens werd ons al op de tweede/derde dag verteld hier niet te veel tijd aan te besteden. Zo had ik verwacht meer algemene bewustwording naar toegankelijkheid vanuit het project te leren, iets waar we als developers niet vroeg genoeg mee kunnen beginnen.
 Mijn rol hierin vind ik lastig te bepalen, in het proces ben ik zeker nog van plan extra research te doen zodat ik een sterker product kan neerzetten

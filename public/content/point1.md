@@ -45,9 +45,11 @@ In het gehele proces hebben we onze fases gescheiden gehouden en konden wij, voo
 
 ## Voorbereidende styling
 <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
-<span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
-<span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
-<span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
+  <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
+  <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
+</div>
 
 Tijdens het project heb ik natuurlijk veel moeten designen en daarbij moest ik zoeken naar een stijl en richting waarbij we met het project verder zouden gaan. In dit stuk zal ik meer ingaan op alle aspecten waarin ik iteraties heb ontwikkeld en waaraan ik heb gewerkt. Daarnaast zal ik met mijn denkproces mijn keuzes ondersteunen.
 
@@ -84,8 +86,10 @@ Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een 
 ![Communicatie in Discord](/img/branding/sty-6.png)
 
 ## Brandguide
-<span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
-<span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+  <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
+  <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
+</div
 
 <a href="https://www.figma.com/design/NjxHdYFQ5Y1eB3sKuXZ1fm/Projecten?node-id=1181-1589&t=DnQ3Ic9si1pSDk7n-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 3: Persoonlijke assets</a>
 
@@ -134,7 +138,9 @@ Voor de voorkant van de brandguide heb ik geprobeerd om met de vormen te spelen 
 ![Brandguide](/img/branding/bran-8.png)
 
 ## Reflectie
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
  <span style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO5</span>
+<div>
 In dit semester begonnen we met dit project, daarbij kwam ook een totaal andere sfeer. De lessen waren deze periode vele malen meer inhoudelijker en de extra opdracht van het portfolio was nog even iets waar ik aan moest wennen. Beide opdrachten zijn erg leuk maar daarbij vond ik het lastig welke van de twee een hogere prioriteit had. Daarnaast door de inhoudelijke lessen kon ik lastig mijn tijd indelen om aan de projecten tijdens deze lessen te werken.
 
 In het latere deel van het branding project kwam ik wel meer op een punt waarin ik mijn tijd beter kon indelen en daarbij het niveau van het huidige semester begon te begrijpen. Daarbij was het ook fijn om met docenten te overleggen en ideeën te bespreken.
