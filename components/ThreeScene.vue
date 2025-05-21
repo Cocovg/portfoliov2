@@ -150,6 +150,7 @@ const createPoint = (radius, height, color, label) => {
   point.userData.radius = radius
   point.userData.height = height
   point.userData.color = color
+  point.userData.isBillboard = true // Mark this mesh as a billboard (always facing camera)
   return point
 }
 
@@ -406,6 +407,9 @@ const createCircularText = (text, radius, height, font, rotationOffset = 0) => {
     // Rotate to align with circle and make text readable from outside
     letter.rotation.y = angle + Math.PI
     
+    // Mark this letter as billboarded
+    letter.userData.isBillboard = true
+    
     group.add(letter)
   }
   
@@ -444,6 +448,27 @@ const animate = () => {
         updatePointPosition(point, time)
       })
     }
+  }
+  
+  // Make all billboarded objects face the camera
+  if (points) {
+    points.forEach(point => {
+      if (point.userData.isBillboard) {
+        // Make the text face the camera
+        point.lookAt(camera.position)
+      }
+    })
+  }
+  
+  // Make all circular text letters face the camera
+  if (circularText) {
+    circularText.forEach(textGroup => {
+      textGroup.children.forEach(letter => {
+        if (letter.userData.isBillboard) {
+          letter.lookAt(camera.position)
+        }
+      })
+    })
   }
   
   renderer.render(scene, camera)
