@@ -9,6 +9,7 @@
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/KIVWaDCLVYXIBWR4YJ13M1/Project-Development?node-id=2-2&t=OAVSoPqAwt6y49og-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving</a>
   <a href="/files/development procesverslag.pdf" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
+   <a href="https://github.com/LKosters/Cardan" target="_blank" style="display: inline-block; background-color:rgb(87, 50, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub project</a>
 </div>
 
 ## Project beschrijving
