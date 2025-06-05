@@ -60,11 +60,12 @@ const pointComponents = {
   1: 'point2',
   2: 'point3',
   3: 'point4',
-  4: 'LO1',
-  5: 'LO2',
-  6: 'LO3',
-  7: 'LO4',
-  8: 'LO5',
+  4: 'point5',
+  5: 'LO1',
+  6: 'LO2', 
+  7: 'LO3',
+  8: 'LO4',
+  9: 'LO5',
 }
 
 // Text configuration
@@ -482,14 +483,14 @@ const onStartingScreenComplete = () => {
 const initPoints = (fontInstance) => {
   // Create clickable points
   points = []
-  const numPoints = 4
+  const numPoints = 5
   const angleStep = (2 * Math.PI) / numPoints
   
   // Create points for upper circle (path1)
   for (let i = 0; i < numPoints; i++) {
-    const angle = i * angleStep + Math.PI / 4
+    const angle = i * angleStep + Math.PI / 5
     // Use project names instead of numbers
-    const pointLabels = ['Branding', 'UX', 'Development', 'Project X']
+    const pointLabels = ['Branding', 'UX', 'Development', 'Project X', 'Porftolio']
     const point = createPoint(PATH_RADIUS, UPPER_PATH_HEIGHT - POINT_VERTICAL_OFFSET, 0xffffff, pointLabels[i])
     point.userData.isPoint = true
     point.userData.pathIndex = 1

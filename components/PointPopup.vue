@@ -55,50 +55,50 @@ const popupStyle = computed(() => {
   const viewportWidth = window.innerWidth
   const viewportHeight = window.innerHeight
   
-  // Calculate initial position
-  let x = props.position.x
-  let y = props.position.y
-  
-  // Ensure popup stays within viewport bounds
-  // Add padding from edges (20px)
-  const padding = 20
-  
   // Calculate popup dimensions
   const popupWidth = 500 // min-width 
   const estimatedHeight = popupHeight.value // Use the measured height or estimate
   
-  // Adjust horizontal position
-  if (x < popupWidth / 2 + padding) {
+  // Add padding from edges
+  const padding = 20
+  
+  // Start with clicked position
+  let x = props.position.x
+  let y = props.position.y
+  
+  // Ensure horizontal positioning stays within bounds
+  if (x - (popupWidth / 2) < padding) {
+    // Too close to left edge
     x = popupWidth / 2 + padding
-  } else if (x > viewportWidth - popupWidth / 2 - padding) {
+  } else if (x + (popupWidth / 2) > viewportWidth - padding) {
+    // Too close to right edge
     x = viewportWidth - popupWidth / 2 - padding
   }
   
-  // Calculate if popup would extend below viewport
-  const bottomEdge = y + (estimatedHeight / 2)
-  const wouldOverflow = bottomEdge > (viewportHeight - padding)
+  // Calculate if popup would extend below or above viewport
+  const wouldExtendBelow = (y + (estimatedHeight / 2) > viewportHeight - padding)
+  const wouldExtendAbove = (y - (estimatedHeight / 2) < padding)
   
-  // If click is in lower half of screen OR popup would overflow bottom, 
-  // position popup ABOVE the click point instead of centered on it
-  if (y > viewportHeight * 0.5 || wouldOverflow) {
-    // Position popup above the click point with enough space
-    y = Math.min(y - (estimatedHeight / 2) - 20, viewportHeight - estimatedHeight - padding)
-    
-    // Make sure it doesn't go too high either
-    y = Math.max(y, padding)
-    
-    return {
-      left: `${x}px`,
-      top: `${y}px`,
-      transform: 'translate(-50%, 0)'
-    }
+  let transform = 'translate(-50%, -50%)'
+  
+  if (wouldExtendBelow) {
+    // If it would extend below, position it above the click point
+    // Use a fixed distance from bottom instead of percentage-based position
+    y = viewportHeight - padding - estimatedHeight
+    transform = 'translate(-50%, 0)'
+  } 
+  
+  if (wouldExtendAbove) {
+    // If it would extend above, position it below the click point
+    y = padding
+    transform = 'translate(-50%, 0)'
   }
   
-  // For clicks in upper half of screen, position popup below click point
   return {
     left: `${x}px`,
     top: `${y}px`,
-    transform: 'translate(-50%, -50%)'
+    transform,
+    maxHeight: `${viewportHeight - (padding * 2)}px`
   }
 })
 
