@@ -6,6 +6,7 @@
       :position="popupPosition"
       :current-point="currentPoint"
       @close="closePopup"
+      @navigate-to-point="handlePointNavigation"
     />
     <PersistentLogo />
   </div>
@@ -331,7 +332,7 @@ const onMouseClick = (event) => {
       // Set the current point component
       const pointIndex = intersect.object.userData.pointIndex
       const pathIndex = intersect.object.userData.pathIndex
-      const contentIndex = (pathIndex - 1) * 4 + pointIndex
+      const contentIndex = (pathIndex - 1) * 5 + pointIndex
       currentPoint.value = pointComponents[contentIndex]
       
       showPopup.value = true
@@ -415,6 +416,85 @@ const createCircularText = (text, radius, height, font, rotationOffset = 0) => {
   }
   
   return group
+}
+
+// Add this method before the animate() function
+const handlePointNavigation = ({ pointId, hash }) => {
+  console.log('Navigation requested to:', pointId, hash)
+  
+  // Find the corresponding point index in the pointComponents mapping
+  let targetPointIndex = -1
+  let targetPathIndex = -1
+  
+  // Find the matching point ID in pointComponents
+  Object.entries(pointComponents).forEach(([index, id]) => {
+    if (id === pointId) {
+      // Calculate path and point index based on the index
+      const idx = parseInt(index)
+      if (idx < 5) { // Points 0-4 are on path 1
+        targetPathIndex = 1
+        targetPointIndex = idx
+      } else { // Points 5-9 are on path 2
+        targetPathIndex = 2
+        targetPointIndex = idx - 5
+      }
+    }
+  })
+  
+  console.log('Target indices:', targetPathIndex, targetPointIndex)
+  
+  // If we found a matching point, focus on it
+  if (targetPointIndex >= 0 && targetPathIndex >= 0) {
+    // Find the corresponding 3D point object
+    const targetPoint = points.find(p => 
+      p.userData.pathIndex === targetPathIndex && 
+      p.userData.pointIndex === targetPointIndex
+    )
+    
+    console.log('Found target point:', targetPoint ? 'yes' : 'no')
+    
+    if (targetPoint) {
+      // Close the current popup
+      closePopup()
+      
+      // Focus camera on the target point
+      focusCameraOnPoint(targetPoint)
+      
+      // Calculate screen position of the point
+      const vector = targetPoint.position.clone()
+      vector.project(camera)
+      const x = (vector.x * 0.5 + 0.5) * window.innerWidth
+      const y = (-vector.y * 0.5 + 0.5) * window.innerHeight
+      
+      // Update popup position
+      popupPosition.value = { x, y }
+      
+      // Set the current point
+      currentPoint.value = pointId
+      console.log('Setting current point to:', pointId)
+      
+      // Show the popup
+      showPopup.value = true
+      
+      // Pause animations
+      isPaused.value = true
+      
+      // If there's a hash, we need to scroll to that element after content loads
+      if (hash) {
+        // Use setTimeout to ensure content is loaded before attempting to scroll
+        setTimeout(() => {
+          const element = document.getElementById(hash)
+          console.log('Scrolling to element:', hash, element ? 'found' : 'not found')
+          if (element) {
+            const popupContent = document.querySelector('.popup-content')
+            if (popupContent) {
+              popupContent.scrollTop = element.offsetTop - 20 // Add some padding
+            }
+          }
+        }, 100)
+      }
+    }
+  }
 }
 
 // Animation loop

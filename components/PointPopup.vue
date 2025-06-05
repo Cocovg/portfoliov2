@@ -2,7 +2,13 @@
   <div v-if="isVisible" class="popup" :style="popupStyle" @click="handlePopupClick">
     <div class="popup-content" @click.stop>
       <button class="close-button" @click="$emit('close')">×</button>
-      <div v-html="renderedContent" class="markdown-content" @click="handleContentClick"></div>
+      <div v-if="renderError" class="error-message">
+        <h2>Error Loading Content</h2>
+        <p>{{ renderError }}</p>
+        <button @click="retryLoad" class="retry-button">Retry</button>
+      </div>
+      <div v-else-if="renderedContent" v-html="renderedContent" class="markdown-content" @click="handleContentClick"></div>
+      <div v-else class="loading">Loading content...</div>
     </div>
   </div>
   <!-- Image zoom modal -->
@@ -30,25 +36,46 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['close'])
+const emit = defineEmits(['close', 'navigate-to-point'])
 const content = ref('')
+const renderError = ref(null)
 const popupHeight = ref(400) // Default height, will be updated after content is rendered
 
-// Configure marked to open links in new tab
+// Configure marked with minimal settings
 marked.setOptions({
   breaks: true,
   gfm: true,
-  headerIds: true,
-  renderer: (() => {
-    const renderer = new marked.Renderer();
-    const linkRenderer = renderer.link;
-    renderer.link = (href, title, text) => {
-      const html = linkRenderer.call(renderer, href, title, text);
-      return html.replace(/^<a /, '<a target="_blank" rel="noopener noreferrer" ');
-    };
-    return renderer;
-  })()
+  headerIds: true
 });
+
+// Remove custom renderer and handle links directly in the rendered content
+const handleLinkClicks = () => {
+  // Find all links in the popup content
+  const links = document.querySelectorAll('.popup-content a');
+  
+  // Process each link
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    
+    // Handle internal links (starting with /)
+    if (href && href.startsWith('/')) {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        
+        // Extract point ID and optional hash
+        const path = href.substring(1);
+        const [pointId, hash] = path.split('#');
+        
+        console.log('Internal link clicked:', pointId, hash);
+        emit('navigate-to-point', { pointId, hash });
+      });
+    } else {
+      // External links open in a new tab
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+};
 
 const popupStyle = computed(() => {
   // Get viewport dimensions
@@ -102,9 +129,31 @@ const popupStyle = computed(() => {
   }
 })
 
+// Update the rendered content computed property
 const renderedContent = computed(() => {
-  return marked(content.value)
-})
+  if (!content.value) {
+    return '';
+  }
+  
+  try {
+    // Use default marked configuration
+    return marked(content.value);
+  } catch (error) {
+    console.error('Error rendering markdown:', error);
+    renderError.value = `Error rendering content: ${error.message}`;
+    return '';
+  }
+});
+
+// Update popup height and process links after content is rendered
+watch(renderedContent, () => {
+  if (renderedContent.value) {
+    nextTick(() => {
+      updatePopupHeight();
+      handleLinkClicks();
+    });
+  }
+});
 
 // Update popup height after content is loaded
 const updatePopupHeight = () => {
@@ -116,24 +165,43 @@ const updatePopupHeight = () => {
   })
 }
 
+const retryLoad = () => {
+  renderError.value = null;
+  loadContent(props.currentPoint);
+}
+
 const loadContent = async (pointName) => {
   if (!pointName) {
+    console.log('No point name provided')
     content.value = ''
+    renderError.value = null
     return
   }
 
+  console.log('Loading content for:', pointName)
+  renderError.value = null
+  
   try {
-    const response = await fetch(`/content/${pointName}.md`)
+    // Simple URL construction with validation
+    const contentPath = `/content/${pointName}.md`
+    console.log('Fetching from:', contentPath)
+    
+    const response = await fetch(contentPath)
+    console.log('Response status:', response.status)
+    
     if (response.ok) {
-      content.value = await response.text()
-      updatePopupHeight() // Update height after content loads
+      const text = await response.text()
+      console.log('Content loaded, length:', text.length)
+      content.value = text
     } else {
-      console.error('Markdown file not found:', pointName)
-      content.value = '# Error\n\nContent not found.'
+      console.error('Markdown file not found:', pointName, response.status)
+      renderError.value = `File not found: ${pointName}.md (Status: ${response.status})`
+      content.value = ''
     }
   } catch (error) {
     console.error('Error loading markdown content:', error)
-    content.value = '# Error\n\nFailed to load content.'
+    renderError.value = `Failed to load content: ${error.message}`
+    content.value = ''
   }
 }
 
@@ -172,14 +240,6 @@ const handleContentClick = (event) => {
     event.stopPropagation()
     // Use the original image source for full resolution
     zoomedImage.value = event.target.src
-  }
-  
-  // Handle links to open in new tab
-  if (event.target.tagName === 'A') {
-    event.stopPropagation()
-    // Ensure links open in a new tab
-    event.target.setAttribute('target', '_blank')
-    event.target.setAttribute('rel', 'noopener noreferrer')
   }
 }
 
@@ -239,5 +299,42 @@ const closeZoomedImage = (event) => {
 
 .popup-content {
   max-height: 70vh;
+}
+
+/* Styles for error message */
+.error-message {
+  padding: 20px;
+  color: #ff5555;
+  text-align: center;
+}
+
+.error-message h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.retry-button {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.retry-button:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+/* Loading indicator */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #00ffff;
+  font-style: italic;
 }
 </style> 

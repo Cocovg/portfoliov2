@@ -15,7 +15,7 @@ Zoals Bram mij kan omschrijven, ben ik eigenwijs. Waar ik het ook zeker mee eens
 ### Branding
 
 #### Styling
-#### Bandguide
+#### Brandguide
 
 ### UX - Cardan
 
