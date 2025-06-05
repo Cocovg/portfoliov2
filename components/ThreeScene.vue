@@ -488,10 +488,14 @@ const handlePointNavigation = ({ pointId, hash }) => {
           if (element) {
             const popupContent = document.querySelector('.popup-content')
             if (popupContent) {
-              popupContent.scrollTop = element.offsetTop - 20 // Add some padding
+              // Add a small delay to ensure the content is fully rendered
+              setTimeout(() => {
+                console.log('Scrolling to position:', element.offsetTop)
+                popupContent.scrollTop = element.offsetTop - 20 // Add some padding
+              }, 200)
             }
           }
-        }, 100)
+        }, 300)
       }
     }
   }

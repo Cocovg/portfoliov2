@@ -93,7 +93,7 @@ Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een 
 ### Personas
 ![Communicatie in Discord](/img/branding/sty-6.png)
 
-## Brandguide
+<h2 id="brandguide">Brandguide</h2>
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
   <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>

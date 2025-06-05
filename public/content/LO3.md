@@ -17,5 +17,7 @@ Tijdens dit project heb ik meerdere iteraties voor de styling gemaakt. Zo ben ik
 
 
 ### UX - Cardan
+Hier heb ik meerdere iteraties voor knoppen, paginas en prototypes gemaakt.
 
 ### Development - Cardan
+Bij het verwerken van de feedback heb ik ook nog een paar iteraties voor knoppen in dit project gemaakt.

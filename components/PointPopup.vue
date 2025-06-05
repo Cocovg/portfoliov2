@@ -67,6 +67,8 @@ const handleLinkClicks = () => {
         const [pointId, hash] = path.split('#');
         
         console.log('Internal link clicked:', pointId, hash);
+        
+        // Navigate to the point and scroll to the hash if present
         emit('navigate-to-point', { pointId, hash });
       });
     } else {
@@ -151,6 +153,22 @@ watch(renderedContent, () => {
     nextTick(() => {
       updatePopupHeight();
       handleLinkClicks();
+      
+      // Check if there's a hash in the URL to scroll to
+      const hash = window.location.hash.substring(1);
+      if (hash) {
+        console.log('Looking for hash:', hash);
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            console.log('Found element with hash, scrolling to it');
+            const popupContent = document.querySelector('.popup-content');
+            if (popupContent) {
+              popupContent.scrollTop = element.offsetTop - 20;
+            }
+          }
+        }, 100);
+      }
     });
   }
 });
