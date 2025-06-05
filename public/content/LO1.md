@@ -9,12 +9,11 @@ In dit semester heb ik geleerd te testen en daarop mijn projecten aan te passen.
 
 Met Figma heb ik geleerd functionele prototypes te maken die te doorlopen zijn door gebruikers. Zo kon ik snel het patroon zien hoe gebruikers door bijvoorbeeld websites gaan. Tijdens mijn testen heb ik ook gebruikers hardop hun gedachten laten uitspreken en kon ik begrijpen waar zij op dat moment naar zochten.
 
-Projecten:
-### Branding
-Tijdens het maken van de styling en brandguide heb ik verschillende iteraties gemaakt
+---
+
+## Projecten:
 
 ### UX - Cardan
-Designfase
 
 ### Development - Cardan
 
