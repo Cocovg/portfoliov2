@@ -16,6 +16,5 @@ Dit semester heb ik ook geleerd met het framework Nuxt te werken, dat mij uitein
 ### UX - Cardan
 In dit project heb samen met Laurens gewerkt aan een functie die dient als filter voor kleurenblindheid. Hier hebben we samen gebruikt gemaakt van een gedeelde github waarbij wij elk ons welk naartoe stuurde, zodat dit uiteindelijk een geheel project werd. Zo hebben we een project opgesteld en onze taken verdeeld. Deze taken waren gekoppeld aan een branch in het project waarbij wij de functies daaraan konden koppelen en per functie een branch hadden. Deze branches gaven overzicht over het geheel en zo was het ook moeilijker om mergeconflicten te veroorzaken.
 
-
-
 ### Project X 
+

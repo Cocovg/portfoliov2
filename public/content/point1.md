@@ -63,11 +63,11 @@ Tijdens het project heb ik natuurlijk veel moeten designen en daarbij moest ik z
 
 ![Communicatie in Discord](/img/branding/sty-1.png)
 
-### Moodboard
+<h3 id="moodboard">Moodboard</h3>
 
 Met het moodboard wilde ik voornamelijk op het mysterieuze en natuurlijke terugkomen. Boris zijn enthousiasme lag voornamelijk heel erg in mysterie en natuur, met de daarbij abstracte vormen en dieren. Met deze gedachte wilde ik ook zijn eigen foto's gebruiken om een weg te vinden naar welke kleuren hier het beste bij passen.
 
-### Stylescapes
+<h3 id="stylescapes">Stylescapes</h3>
 
 
 In de groep bespraken we de moodboards en keken we of we hier verschillende thema's uit konden halen, zo kozen we elk een thema die we meer wilde volgen voor onze stylescapes.
@@ -84,7 +84,7 @@ De gekozen stylescape was uiteindelijk begonnen door een teamgenoot Evy Knops, d
 
 ![Communicatie in Discord](/img/branding/sty-4.png)
 
-### Logo
+<h3 id="logo">Logo</h3>
 
 Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een korte tijd. Zo ben ik eerst begonnen om ze met pen en papier te tekenen, wat mij wat meer ruimte gaf om ook fouten te maken en sneller te tekenen wat mij interessant leek. Daarna ben ik gaan kijken naar fonts en typografie om te oriënteren naar de opties die daar mogelijk zijn.
 
