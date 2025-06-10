@@ -12,11 +12,35 @@ Zoals Bram mij kan omschrijven, ben ik eigenwijs. Waar ik het ook zeker mee eens
 ---
 
 ## Projecten: 
-### Branding
+<h3 id="branding">Branding</h3>
+In dit project heb ik initiatief genomen om feedback te vragen en heb ik mijn eigen designvisie kunnen verdedigen terwijl ik open stond voor verbetering.
 
 #### Styling
+Hier heb ik mijn creatieve proces kunnen tonen en feedback kunnen implementeren.
+
 #### Brandguide
+Bij de brandguide heb ik geleerd om mijn keuzes goed te onderbouwen en te communiceren.
 
-### UX - Cardan
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point1#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Branding Project
+  </a>
+</div>
 
-### Development - Cardan
+<h3 id="ux-cardan">UX - Cardan</h3>
+Hier heb ik het initiatief genomen om gebruikerstesten uit te voeren en de feedback proactief verwerkt in mijn designs.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk UX Project
+  </a>
+</div>
+
+<h3 id="development-cardan">Development - Cardan</h3>
+In dit project heb ik feedback uit het UX project verwerkt en ben ik proactief nieuwe testen gaan uitvoeren met docenten en externe testers.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Development Project
+  </a>
+</div>

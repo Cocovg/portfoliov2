@@ -13,8 +13,20 @@ Met Figma heb ik geleerd functionele prototypes te maken die te doorlopen zijn d
 
 ## Projecten:
 
-### UX - Cardan
+<h3 id="ux-cardan">UX - Cardan</h3>
 Tijdens dit project heb ik feedback verwerkt van de klant zelf. Daarnaast heb ik prototypes gemaakt om meer duidelijkheid te krijgen over de gebruiksgemakt van mijn design. Zo heb ik 2 mensen door de website laten lopen en hebben zij mij verschillende feedback gegeven die ik kon toepassen.
 
-### Development - Cardan
-Tijdens dit project kon ik de feedback die ik in het tijdens het UX project had gekregen nogmaals toepassen. Daarnaast hebben we een docent, Anke door de functie laten gaan. Hier kwamen al een paar feedbackpunten uit die we hebben genoteerd. Ook heb ik iemand anders nog door de functie laten lopen die de feedback bevestigde en daarnaast ook nog zelf punten had om te verbeteren. Al deze punten heb ik gezamelijk met Laurens in het project opgelost. 
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk UX Project
+  </a>
+</div>
+
+<h3 id="development-cardan">Development - Cardan</h3>
+Tijdens dit project kon ik de feedback die ik in het tijdens het UX project had gekregen nogmaals toepassen. Daarnaast hebben we een docent, Anke door de functie laten gaan. Hier kwamen al een paar feedbackpunten uit die we hebben genoteerd. Ook heb ik iemand anders nog door de functie laten lopen die de feedback bevestigde en daarnaast ook nog zelf punten had om te verbeteren. Al deze punten heb ik gezamelijk met Laurens in het project opgelost.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Development Project
+  </a>
+</div> 

@@ -12,12 +12,29 @@ Ook heb ik met mijn iPad Procreate aangeschaft zodat ik makkelijk en snel schets
 ---
 
 ## Projecten:
-### Branding
+<h3 id="branding">Branding</h3>
 Tijdens dit project heb ik meerdere iteraties voor de styling gemaakt. Zo ben ik tijdens de stylingfase bezig geweest met een [moodboard](/point1#moodboard), [stylescapes](/point1#stylescapes) en [logo's](/point1#logo) en heb ik bij de [brandguide](/point1#brandguide) meerdere ontwerpen gemaakt, ook samen met andere studenten.
 
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point1#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Branding Project
+  </a>
+</div>
 
-### UX - Cardan
+<h3 id="ux-cardan">UX - Cardan</h3>
 Hier heb ik meerdere iteraties voor knoppen, paginas en prototypes gemaakt.
 
-### Development - Cardan
-Bij het verwerken van de feedback heb ik ook nog een paar iteraties voor knoppen in dit project gemaakt.
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk UX Project
+  </a>
+</div>
+
+<h3 id="development-cardan">Development - Cardan</h3>
+Hier heb ik de feedback uit het UX project verwerkt en heb ik de daadwerkelijke functie gebouwd.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Development Project
+  </a>
+</div>
