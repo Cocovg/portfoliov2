@@ -64,29 +64,37 @@ Met het moodboard wilde ik voornamelijk op het mysterieuze en natuurlijke terugk
 
 <h3 id="stylescapes">Stylescapes</h3>
 
+In de groep bespraken we de moodboards en keken we of we hier verschillende thema’s uit konden halen, zo kozen we elk een thema die we meer wilde volgen voor onze stylescapes.
 
-In de groep bespraken we de moodboards en keken we of we hier verschillende thema's uit konden halen, zo kozen we elk een thema die we meer wilde volgen voor onze stylescapes.
+Zo ging ik met mijn eerste stylescape voornamelijk verder met abstracte thema’s en de daar bijhorende kleuren. Bij deze versie wilde ik kijken naar de samenhang van de kleuren en de abstracte vormen van gemengde verf en de Antelope Canyon. Hier kwam voornamelijk de abstracte inspiratie van terug. Wat ik bij deze iteratie leerde was om mij meer te richten op een enkel concept. Zo was ik bij deze nog erg veel aan het vasthouden aan de moodboard en maakte dit uiteindelijk de stylescape heel druk. Dit kregen we algemeen ook terug te horen door Anke, vanuit haar feedback. Dit ging voornamelijk over welk thema we wilde volgen, mysterie of bijvoorbeeld natuur.
 
-Zo ging ik met mijn eerste stylescape voornamelijk verder met abstracte thema's en de daar bijhorende kleuren. Bij deze versie wilde ik kijken naar de samenhang van de kleuren en de abstracte vormen van gemengde verf en de Antelope Canyon. Hier kwam voornamelijk de abstracte inspiratie van terug.
 
 ![Communicatie in Discord](/img/branding/sty-2.png)
 
-Voordat ik aan mijn tweede stylescape werkte hebben we als groep gekeken naar de selectie die wij nu hadden. Zo zagen we als groep meerdere thema groepen en wilde ik daarbuiten proberen nog een ander soort stylescape te maken. Vanuit hier wilde ik meer kijken naar de ruimte en abstractie. Daar wilde ik planeten en contrast laten zien. Met deze stylescape dacht ik meer out of the box te denken dan de huidige thema's die wij als groep tot nu toe hadden.
+Voordat ik aan mijn tweede stylescape werkte hebben we als groep gekeken naar de selectie die wij nu hadden. Zo zagen we als groep meerdere thema groepen en wilde ik daarbuiten proberen nog een ander soort stylescape te maken. Vanuit hier wilde ik meer kijken naar de ruimte en abstractie. Daar wilde ik planeten en contrast laten zien. Met deze stylescape dacht ik meer out of the box te denken dan de huidige thema’s die wij als groep tot nu toe hadden. In deze iteratie probeerde ik mij al meer te richten op een enkele richting, maar had ik nog moeite met hoe ik de contrasten kon laten zien. Zo ben ik niet heel blij met het kleurgebruik maar wel de beelden.
 
 ![Communicatie in Discord](/img/branding/sty-3.png)
 
-De gekozen stylescape was uiteindelijk begonnen door een teamgenoot Evy Knops, die elementen van andere stylescapes bij elkaar had gebracht. Samen met Evy Knops en Dominique van Waardhuizen hebben we de uiteindelijke stylescape gemaakt.
+De gekozen stylescape was uiteindelijk begonnen door een teamgenoot Evy Knops, die elementen van andere stylescapes bij elkaar had gebracht. Samen met Evy Knops en Dominique van Waardhuizen hebben we de uiteindelijke stylescape gemaakt. Hier hebben we ons voornamelijk veel gericht op aardtonen en abstractie. De ronde en hectische patronen was voor ons een focus die we dan konden meenemen naar de brandguide.
 
 ![Communicatie in Discord](/img/branding/sty-4.png)
 
 <h3 id="logo">Logo</h3>
 
-Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een korte tijd. Zo ben ik eerst begonnen om ze met pen en papier te tekenen, wat mij wat meer ruimte gaf om ook fouten te maken en sneller te tekenen wat mij interessant leek. Daarna ben ik gaan kijken naar fonts en typografie om te oriënteren naar de opties die daar mogelijk zijn.
+Voor de logos kregen we van Bram de uitdaging om er zo veel mogelijk te verzinnen in een korte tijd. Zo ben ik eerst begonnen om ze met pen en papier te tekenen, wat mij wat meer ruimte gaf om ook fouten te maken en sneller te tekenen wat mij interessant leek. Daarna ben ik gaan kijken naar fonts en typografie om te oriënteren naar de opties die daar mogelijk zijn.
+
+Mijn inspiratie kwam het meest van bestaande DJ logo’s. Hier wordt voornamelijk veel zwart en wit gebruikt, al was de stijl niet altijd hetzelfde. Zo wilde ik zelf ook kijken naar de meer “vrije” en “met pen geschreven” logo’s. Deze ogen iets meer nonchalant en zijn heel uniek. Daarnaast maakte ik ook naar “strakke” en minimalistische logo’s, deze ogen heel professioneel en zijn heel duidelijk. Zelf was ik meer fan van de vrije logo’s omdat ik Boris zelf ook als een heel vrij persoon ervaarde. Ook zijn interesses en muziek zelf kwam niet zo serieus over om een heel strak logo te hebben.
+
 
 ![Communicatie in Discord](/img/branding/sty-5.png)
 
 ### Personas
 ![Communicatie in Discord](/img/branding/sty-6.png)
+
+De personas hielpen mij om goed grip te houden op de doelgroep waar ik mij op richtte, en waar Boris zich op wilde richten. Zijn wens was om een doelgroep van 18 tot 40 jaar aan te spreken: mensen die creatief en vrij zijn in hun denken en levensstijl. Mijn focus lag op visueel georiënteerde mensen die hun keuzes mede baseren op uitstraling en ontwerp.
+Vanuit die insteek wilde ik aantrekkelijke en opvallende designs maken die passen bij Boris als persoon én als artiest. Beide personas vertegenwoordigen gewone mensen die gedurende de dag muziek luisteren, maar daar niet te veel tijd of moeite aan willen besteden. Voor hen kan visuele ondersteuning een effectieve trigger zijn om toch even te stoppen, te kijken en een nummer van een onbekendere artiest – zoals Boris – een kans te geven.
+
+
 
 <h2 id="brandguide">Brandguide</h2>
 
@@ -96,14 +104,14 @@ Voor de logos kregen we de uitdaging om er zo veel mogelijk te verzinnen in een 
 
 ### Mijn iteraties
 
-Met de start van de brandguide begon ik met het algemene design voor de pagina's. Zo heb ik de kleuren van de stylescape gebruikt. Voor dit design heeft Evy meegeholpen om de vormen te maken die de pagina's abstract maakt.
+Met de start van de brandguide begon ik met het algemene design voor de pagina’s. Zo heb ik de kleuren van de stylescape gebruikt. Voor dit design heeft Evy meegeholpen om de vormen te maken die de pagina’s abstract maakt.
 
 Het eerste probleem dat we als groep met dit design tegenkwamen was, dat de kleuren wel heel erg leken op die van de Burger King. Zo konden wijzelf moeilijk nog op de branding van Boris focussen.
+
 
 ![Brandguide](/img/branding/bran-1.png)
 
 Toch was ik persoonlijk vrij tevreden met het idee en het design. De vormen waren abstract en de tekst gaf mij de ruimte om rust terug te brengen.
-
 Zo ben ik verdergegaan met verschillende kleuren te zoeken die wellicht beter zouden passen bij het design, zonder dat we continu moesten denken aan de Burger King, of hamburgers over het algemeen.
 
 ![Brandguide](/img/branding/bran-2.png)
@@ -127,9 +135,11 @@ In de afbeelding hiernaast staat het design dat was gemaakt door Evy en Dominiqu
 
 ![Brandguide](/img/branding/bran-6.png)
 
-Zo heb ik alle foto's weggehaald omdat ik overtuigd was dat een brandguide alleen content van het merk zelf mag gebruiken. Daarnaast heb ik sommige vormen aangepast naar andere vormen en meer gespeeld met de opacity vlakken. Met de nieuwe vormen heeft Evy geholpen.
+In de afbeelding hiernaast staat het design dat was gemaakt door Evy en Dominique. Vanuit hier heb ik verschillende aanpassingen gemaakt. 
+Zo heb ik alle foto’s weggehaald omdat ik overtuigd was dat een brandguide alleen content van het merk zelf mag gebruiken. Dit was uiteindelijk ook door Anke bevestigd dat foto’s best als ondersteuning van inspiratie mogen dienen, maar op deze manier het gebruik van foto’s niet helemaal correct is. Zo waren er ook geen legitieme bronnen meer beschikbaar voor de gebruikte foto’s, wat nog meer reden gaf om deze te verwijderen. Daarnaast heb ik sommige vormen aangepast naar andere vormen en meer gespeeld met de opacity vlakken. Met de nieuwe vormen heeft Evy geholpen.
+Daarnaast heb ik de tekstkleuren aangepast, deze vielen weg en waren onduidelijk te lezen. Daarnaast was de ruimte voor daadwerkelijke content heel beperkt en voelde alles veel te druk.
 
-Onderstaande afbeelding geeft het uiteindelijke design weer. Voor de content heeft Evy voornamelijk geholpen en heeft Dominique geholpen met de teksten. In dit stuk heb ik voornamelijk gedaan met de algehele vormgeving en de elementen die werden geleverd aangepast naar het design van de pagina's.
+Onderstaande afbeelding geeft het uiteindelijke design weer. Voor de content heeft Evy voornamelijk geholpen en heeft Dominique geholpen met de teksten. In dit stuk heb ik de algehele vormgeving en de elementen die werden geleverd aangepast naar het design van de pagina’s.
 
 ![Brandguide](/img/branding/bran-7.png)
 

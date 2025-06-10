@@ -95,52 +95,101 @@ Voor het testen van de website had ik een prototype nodig die interactief te bed
 Voor mijn test wilde ik me voornamelijk richten op het onderdeel waar ik mee bezig ben geweest, namelijk de handelingen en het complete pad wat een gebruiker moet afleggen om bij het eindproduct te komen. De webpagina's van het kiezen van de prefab website of een html invoeren en daarbij de prefab website zelf, zijn niet door mij gemaakt. Wel laat ik deze ook door de testers bezoeken om een algehele mening te kunnen krijgen. In dit verslag noteer ik wel alleen feedback die voor mijzelf van toepassing is.
 
 ### De test
+#### Doel van mijn test
+Voor deze test wilde ik me specifiek richten op de onderdelen die ik zelf heb ontwikkeld, namelijk de handelingen en het complete pad dat een gebruiker moet doorlopen om bij het eindproduct te komen: de kleurenblindheidssimulatie. De webpagina's voor het kiezen van een prefab-website of het invoeren van een eigen HTML-URL heb ik niet zelf gemaakt. Toch liet ik testers deze onderdelen ook kort bekijken om een bredere indruk van de gehele ervaring te krijgen. In dit verslag focus ik me echter uitsluitend op de feedback die betrekking heeft op mijn werk.
 
-Gebruiksgemak	Vragen na het pad doorlopen
-Spreek gedachtegang
+---
 
-#### Situatie:
-Je bent een iemand die geïnteresseerd is kleurenblindheid en wil graag zien hoe een persoon met kleurenblindheid dit ervaart. Je ben op de website van Cardan en wil deze simulatie ervaren
+### Testpersonen
+Ik heb mijn test uitgevoerd met twee personen:
+•	Hidde – 20 jaar, voormalig softwarestudent (momenteel niet meer actief in dit vakgebied)
+•	Laurens – 20 jaar, developer en student ICT
 
-Hoe makkelijk, iets wat niet helemaal lekker liep?
-Zou je snel iets anders doen, wat vond je irritant of wilde je iets anders hebben omdat je daar snel naar zoekt?
+---
 
-#### Test 1: Hidde, voormalig software student nu niet meer actief daarmee bezig. 20 jaar.
-Hidde heeft het prototype voor zich en hij verteld mij wat zijn gedachtegang is terwijl hij het doel probeert te bereiken.
+### Opzet van de test
+Situatieschets:
+"Je bent iemand die geïnteresseerd is in kleurenblindheid en je wil graag ervaren hoe een persoon met kleurenblindheid een website bekijkt. Je bevindt je op de website van Cardan en probeert deze simulatie te gebruiken."
+Werkwijze:
+De testers kregen de opdracht om de simulatie op natuurlijke wijze te gebruiken. Terwijl zij het proces doorliepen, spraken ze hun gedachten hardop uit. Ik observeerde hun gedrag en stelde na afloop enkele gerichte vragen over hun ervaring.
+Doelen van de test:
+1.	Inzicht krijgen in het gebruiksgemak van mijn onderdelen.
+2.	Nagaan of de handelingen logisch aanvoelen.
+3.	Feedback verzamelen over mogelijke obstakels of verwarring in de interface.
+4.	Verbeterpunten signaleren voor een volgende versie.
 
-Zelf ziet hij al snel de grote knop op het scherm die mee scrolt en de knop in de balk boven het menu. 
+---
 
-Wanneer hij bij het punt komt om een website te kiezen of deze zelf in te vullen, loopt hij even vast.
+### Resultaten & Observaties
+#### Test 1 – Hidde
+•	Hidde zag meteen de grote knop op het scherm die meescrolde, evenals de knop in de balk boven het menu.
+•	Toen hij bij het punt kwam om een website te kiezen of er zelf één in te vullen, raakte hij even verward. Daarna verliep alles soepel.
+•	Toen ik hem liet rondkijken in de prefab-website, merkte hij op dat het lastig was om de kledingstukken te vinden. Hij had niet verwacht dat "Style Studio" daar naar zou verwijzen.
+•	In het eindgesprek gaf hij aan dat hij het proces over het algemeen makkelijk vond, maar hij gaf aan dat hij op een bepaald moment verward raakte omdat hij niet goed las en andere verwachtingen had (bijvoorbeeld een directe kleurenfilter over de huidige pagina).
+Feedback op mijn werk:
+•	De witruimte op de "Beperk jezelf"-pagina zorgde ervoor dat hij niet doorhad dat er onderaan nog keuzes stonden. Dit maakte de navigatie daar minder intuïtief.
 
-Daarna loopt het soepel.
+---
 
-Ook liet ik hem door de pagina's gaan van de prefab website. Hier vond hij het wel lastig om de kleding, die je kunt bekijken, te vinden. Dit kwam omdat hij niet verwachtte dat de "Style studio" hier naartoe zou refereren.
+#### Test 2 – Laurens
+•	Laurens scrolde eerst even rond en klikte daarna snel op de knop in de bovenste balk. De meescrollende knop was hem niet meteen opgevallen.
+•	Tijdens het kiezen van een beperking wilde hij op het hele blok klikken, maar ontdekte dat alleen de pijl klikbaar was.
+•	De rest van het proces verliep vlot.
+•	Ook Laurens bekeek de prefab-website. Hij vond de "Style Studio" wel snel, maar vond het een onhandige aanduiding.
+Feedback op mijn werk:
+•	De meescrollende knop was visueel nog niet opvallend genoeg.
+•	Op de "Beperk jezelf"-pagina moest de call-to-action om verder te scrollen duidelijker zijn.
+•	Het hele blok voor de beperking zou aanklikbaar moeten zijn, niet alleen de pijl.
+•	De pagina voor het kiezen van een website voelde rommelig aan, met te veel witruimte en een onduidelijke hiërarchie.
+•	De functie om zelf een website in te voeren was niet goed zichtbaar en leek weggepropt.
 
-Hierna vroeg ik hem hoe de ervaring was en of hij makkelijk door de website heen kon gaan. 
+---
 
-Conclusie: De handelingen waren gemakkelijk, hij merkte zelf op dat hij niet echt las en daarom op een bepaald punt even verward werd. Voornamelijk ook omdat hij met andere verwachtingen zat, zoals het direct activeren van een filter over de huidige pagina.
+### Samenvatting van de belangrijkste verbeterpunten
 
-Verbeterpunten m.b.t mijn gemaakte werk: De witruimte op de "Beperk jezelf" pagina, zou iets minder mogen. Zodat het duidelijk is dat daaronder nog keuze is voor de beperkingen.
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
+  <thead>
+    <tr>
+      <th style="padding: 15px; text-align: left; border-bottom: 2px solid #dee2e6; font-weight: bold;">Onderdeel</th>
+      <th style="padding: 15px; text-align: left; border-bottom: 2px solid #dee2e6; font-weight: bold;">Verbeterpunt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Meescrollende knop</td>
+      <td style="padding: 15px; vertical-align: top;">Meer visueel laten opvallen</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Navigatiebalk</td>
+      <td style="padding: 15px; vertical-align: top;">Een extra icoon toevoegen naast de link naar de simulatie</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">"Beperk jezelf" pagina</td>
+      <td style="padding: 15px; vertical-align: top;">
+        • Minder witruimte<br>
+        • Een duidelijke call-to-action om door te scrollen<br>
+        • Volledig aanklikbare blokken
+      </td>
+    </tr>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Websitekeuze-flow</td>
+      <td style="padding: 15px; vertical-align: top;">Verbetering van de hiërarchie in typografie en structuur</td>
+    </tr>
+    <tr>
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">URL-invoerveld</td>
+      <td style="padding: 15px; vertical-align: top;">Beter positioneren (hoger in beeld) om beter op te vallen</td>
+    </tr>
+  </tbody>
+</table>
 
-Test 2: Laurens, werkt developer en studeert ICT. 20 jaar
-Laurens heeft het prototype voor zich en hij verteld mij wat zijn gedachtegang is terwijl hij het doel probeert te bereiken.
+---
 
-Laurens scrolde even door de website om vervolgens de knop in de balk boven het menu te klikken. Dit ging heel direct.
-
-Toen hij de beperking koos, wilde hij op het gehele blok klikken. Alleen de pijl was mogelijk.
-
-Alles loopt vervolgens goed en soepel.
-
-Ook Laurens liet ik nog even kijken of hij wist waar hij de kledingstukken kan bekijken. Waar hij met even kijken snel de "Style Studio" kon vinden, maar vond het een beetje onhandig aangegeven.
-
-Hierna vroeg ik of hij de stappen gemakkelijk kon doorlopen en of hij nog iets aan te merken had.
-
-Conclusie: Knop in de balk was direct gezien, had daarentegen niet de meescrollende knop direct gezien. Op de "Beperk jezelf" waren wat gebruiksvriendelijke aanpassingen nodig. Zo moest deze iets directer en duidelijker. Keuze van de websitepagina was een beetje een rommeltje qua hiërarchie met letters en witruimtes. Ook de eigen websitefunctie was nogal weg gepropt. De prefab website was erg onduidelijk qua het doel en de werking. 
-
-Verbeterpunten m.b.t mijn gemaakte werk: Extra icoon in de balk bij de link. Ook de grote meescrollende knop meer laten opvallen. Op de "Beperkt jezelf" webpagina, meer een call to action om naar beneden te scrollen. Het gehele vak ook aanklikbaar.
-
-Algehele samenvatting:
-Voor mijn onderdelen heb ik de feedback voornamelijk gebruikt in het volgende project van Development. Zo ben ik daar aan de slag gegaan voor een duidelijkere knop die meescrolt op de homepagina. De witruimtes en hiërarchie in lettertypes is aangepast en ook is de functie van de eigen URL-pagina, naar boven verplaatst. Daarnaast hebben we een nieuwe prefab website gemaakt, zodat kleurenblindheid ook veel meer te zien is en daarbij ook het doel van de website duidelijker is.
+### Wat ik met de feedback heb gedaan
+De feedback uit deze test heb ik toegepast in een volgend project binnen het vak Development. Op basis van de input heb ik de volgende aanpassingen gedaan:
+•	De knop die meescrolt op de homepagina is visueel verbeterd zodat deze beter opvalt.
+•	De witruimtes en hiërarchie in de tekst zijn aangepast om de navigatie te verduidelijken.
+•	De functie om een eigen URL in te voeren is verplaatst naar een beter zichtbare plek bovenaan de pagina.
+•	Samen met het team hebben we ook een nieuwe prefab-website ontwikkeld waarin kleurenblindheid beter wordt gesimuleerd en het doel van de tool duidelijker naar voren komt.
 
 
 

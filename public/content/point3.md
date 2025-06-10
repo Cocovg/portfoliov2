@@ -54,20 +54,66 @@ Ten slot ben ik bezig geweest met het maken van de prefab website, de bloemenwin
 
  
 ## Testen
+### Doel van mijn test
+Voor deze test wilde ik onderzoeken hoe een gebruiker de kleurenblindheidssimulatie ervaart wanneer hij of zij uiteindelijk bij de producten van een bloemenwinkel uitkomt. Ik was benieuwd hoe intuïtief de navigatie is, of het proces helder verloopt en waar eventuele verwarring ontstaat. Ook wilde ik kijken of de filters goed werken en of er visuele of functionele obstakels zijn tijdens het gebruik van mijn ontwerp.
 
-Situatie:
-Je bent een iemand die geïnteresseerd is kleurenblindheid en wil graag zien hoe een persoon met kleurenblindheid dit ervaart. Je ben op de website van Cardan en wil deze simulatie ervaren. Je wilt uiteindelijk de producten van de bloemenwinkel bekijken.
+---
 
-Hoe makkelijk, iets wat niet helemaal lekker liep?
-Zou je snel iets anders doen, wat vond je irritant of wilde je iets anders hebben omdat je daar snel naar zoekt?
+### Situatie voor de tester
+"Je bent iemand die geïnteresseerd is in kleurenblindheid en je wilt ervaren hoe een persoon met kleurenblindheid een website bekijkt. Je bent op de website van Cardan en probeert deze simulatie uit. Uiteindelijk wil je bij de producten van een bloemenwinkel terechtkomen."
+Ik observeerde hoe de tester de stappen doorliep en stelde na afloop enkele reflectievragen over gebruiksgemak, verwachtingen en eventuele frustraties.
 
-Verliep gemakkelijk door de eerste stappen van de website, kon alles makkelijk vinden en had geen momenten waar hij stopte. Bij de bloemenwinkel, toen de tutorial startte, probeerde hij al de tutorial te gebruiken. Dit lukte niet en hij begreep gelijk dat hij de tutorial moest afmaken. Bij het testen van de filters was hij onder de indruk. Ook liet ik hem zijn eigen website bezoeken. Hier hebben we meerdere pagina's geprobeerd, maar kwamen merendeels het probleem tegen dat de filter niet over de webpagina kon worden geplaatst. Dit gaf wel voor mij een idee om een disclaimer bij de pagina te zetten.
-Observaties: 
-•	Niet mogelijk om bijvoorbeeld beide kleurenblindheid en kokervisie aan te hebben. 
-•	De filterbalk heeft highlights wanneer actief, deze waren voor hem niet duidelijk. Dit kan aan beide persoon of beeldscherm liggen.
+---
 
-Algemene feedback: Directe en duidelijk ervaring, nog was kleine gebruikersvriendelijke aanpassingen nodig.
- 
+### Testverloop
+•	De eerste stappen van de website werden vlot doorlopen. Alles werd snel gevonden, zonder momenten van verwarring of stilstand.
+•	Bij het openen van de bloemenwinkel begon automatisch een tutorial. De tester probeerde meteen interactie met de tutorial, maar dat werkte nog niet.
+•	Hij begreep echter direct dat de tutorial eerst afgemaakt moest worden voordat hij verder kon, wat positief was.
+•	Toen hij de kleurenblindheidsfilters begon te testen, was hij positief verrast over het effect en hoe goed het werkte.
+•	Ik liet hem ook zijn eigen website invoeren om te testen of de simulatie daar werkte. We probeerden meerdere pagina's, maar op de meeste lukte het niet om de filter correct over de website te plaatsen.
+
+---
+
+### Belangrijke observaties
+•	Het was niet mogelijk om meerdere beperkingen tegelijk te activeren, bijvoorbeeld kleurenblindheid én kokervisie. Dat werd als een beperking ervaren.
+•	De filterbalk geeft visuele highlights aan wanneer een filter actief is, maar die waren voor hem niet goed zichtbaar. Dit kan aan persoonlijke perceptie of aan het beeldscherm liggen.
+
+---
+
+### Algemene feedback en inzichten
+De test gaf mij het inzicht dat de ervaring over het algemeen duidelijk en direct was. De gebruiker begreep intuïtief hoe de tool werkt en vond het proces prettig. Toch zijn er enkele gebruiksvriendelijkheidspunten die ik kan verbeteren.
+
+---
+
+### Verbeterpunten op basis van deze test
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif;">
+  <thead>
+    <tr>
+      <th style="padding: 15px; text-align: left; border-bottom: 2px solid #dee2e6; font-weight: bold;">Onderdeel</th>
+      <th style="padding: 15px; text-align: left; border-bottom: 2px solid #dee2e6; font-weight: bold;">Verbeterpunt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Filterfunctionaliteit</td>
+      <td style="padding: 15px; vertical-align: top;">Mogelijkheid overwegen om meerdere filters tegelijk te activeren</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Filterbalk</td>
+      <td style="padding: 15px; vertical-align: top;">Actieve status visueel duidelijker maken (bijvoorbeeld door sterkere kleuren of animatie)</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #dee2e6;">
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Gebruik op externe websites</td>
+      <td style="padding: 15px; vertical-align: top;">Niet alle websites ondersteunen het filter – ik overweeg een disclaimer toe te voegen bij deze functionaliteit</td>
+    </tr>
+    <tr>
+      <td style="padding: 15px; vertical-align: top; font-weight: 500;">Tutorial</td>
+      <td style="padding: 15px; vertical-align: top;">Interactie pas mogelijk maken ná afronden tutorial – dit was nu verwarrend</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Reflectie
 
 Met dit project heb ik niet heel veel moeite gehad, mede door Laurens maar ook door het niveau. Door mijn voorkennis kon ik al veel en met voldoende gemakt samen aan het project werken en was door het vorige project de scope en doel al erg duidelijk. Ook de ontwikkeling was doormiddel van AI erg gemakkelijk en snel te bereiken.
