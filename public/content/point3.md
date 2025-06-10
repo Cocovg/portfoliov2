@@ -1,15 +1,9 @@
 # Cardan Development 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
-    <span style="display: inline-block; background-color:rgb(181, 136, 38); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO2</span>
-    <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
-    <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
-    <span style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO5</span>
-</div>
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/KIVWaDCLVYXIBWR4YJ13M1/Project-Development?node-id=2-2&t=OAVSoPqAwt6y49og-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving</a>
   <a href="/files/development procesverslag.pdf" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
-   <a href="https://github.com/LKosters/Cardan" target="_blank" style="display: inline-block; background-color:rgb(87, 50, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub project</a>
+   <a href="https://github.com/Cocovg/Cardan" target="_blank" style="display: inline-block; background-color:rgb(88, 52, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub project</a>
+   <a href="https://cardan.cocovanglabbeek.nl/" target="_blank" style="display: inline-block; background-color:rgb(66, 143, 50); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Live website</a>
 </div>
 
 ## Project beschrijving
@@ -17,9 +11,6 @@ In dit project houden we ons bezig met het ontwikkelen van de functie die we in 
 In dit project werkte ik samen met Laurens Kosters en hebben we ons gericht op een functie die vanuit de website een filter kan geven aan een bestaande website of een prefab website die door ons is gemaakt.
  
 ## Communicatie
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
-</div>
 Voor communicatie hebben we voornamelijk Discord en GitHub gebruikt. In Discord deelde we bronnen, werkomgevingen en notities. 
  
 In onze GitHub omgeving, hadden we een project staan waar we onze iteraties en proces konden bijhouden. Doormiddel van meerdere commits konden we meerdere versies bijhouden van elke functie.
@@ -29,17 +20,12 @@ Daarnaast hebben we gebruikt gemaakt van het project onderdeel waarbij wij taken
 Zoals de foto hieronder, zijn de branches gebruikt om de main branch aan te vullen met de functies tot een geheel product. Deze zijn gelinkt aan de taken die wij in het project hier boven gebruikte en konden direct via git de branches aanmaken en mergen met de main branch
  
 ## Design
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
-</div>
 In het vorige project was al een groot deel van het design gemaakt. Ook deze fase heb ik een paar onderdelen gemaakt en verwerkt zoals deze werden gevraagd tijdens de feedback. 
  
 Zo heeft de "Blob" een upgrade gekregen waarbij deze meer opvalt en wat minder als een sticker aanvoelt op de pagina. 
  
 ## Development
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <span style="display: inline-block; background-color:rgb(181, 136, 38); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO2</span>
-</div>
+
 Voor development ben ik zelf begonnen met het opzet van de beginpagina. Deze is nagemaakt met V0.dev. Hier was het mogelijk een screenshot van een bestaande pagina te laten kopiëren, wat vervolgens mij de code gaf om zelf nog aan te passen. De pagina is ook niet volledige 1 op 1, dit was niet volledig nodig voor de ontwikkeling van de website. Wel kan het de klant een goed en realistisch beeld geven over hoe de functie eruitziet op hun pagina.
  
  
@@ -58,9 +44,7 @@ Ten slot ben ik bezig geweest met het maken van de prefab website, de bloemenwin
 
  
 ## Testen
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
-</div>
+
 Situatie:
 Je bent een iemand die geïnteresseerd is kleurenblindheid en wil graag zien hoe een persoon met kleurenblindheid dit ervaart. Je ben op de website van Cardan en wil deze simulatie ervaren. Je wilt uiteindelijk de producten van de bloemenwinkel bekijken.
 
@@ -75,9 +59,7 @@ Observaties:
 Algemene feedback: Directe en duidelijk ervaring, nog was kleine gebruikersvriendelijke aanpassingen nodig.
  
 ## Reflectie
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
- <span style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO5</span>
-</div>
+
 Met dit project heb ik niet heel veel moeite gehad, mede door Laurens maar ook door het niveau. Door mijn voorkennis kon ik al veel en met voldoende gemakt samen aan het project werken en was door het vorige project de scope en doel al erg duidelijk. Ook de ontwikkeling was doormiddel van AI erg gemakkelijk en snel te bereiken.
 Met GitHub heb ik wel efficiënter kunnen leren werken, zo hebben we een taakverdeling gedaan die bij onze tijd en niveau paste en konden we gemakkelijk ons daar op aanpassen. Daarnaast met de meerdere branches en commits was het gemakkelijk weer vorige versies te bezoeken nadat sommige functies niet helemaal werkte zoals verwacht.
 Met onze communicatie zat dit ook heel goed. Beide Laurens en ik kunnen goed en comfortabel met elkaar communiceren wat het gemakkelijk maakt feedback van elkaar ook te verwerken. Ook konden we makkelijk inspringen op elkaars taken wanneer nodig en zo heeft Laurens mij ook voornamelijk goed geholpen wanneer ik met Git er even niet uitkwam.

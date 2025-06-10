@@ -1,11 +1,5 @@
 # Boris Schmidt
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <span style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO1</span>
-    <span style="display: inline-block; background-color:rgb(181, 136, 38); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO2</span>
-    <span style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO3</span>
-    <span style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO4</span>
-    <span style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px;">LO5</span>
-</div>
+
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
