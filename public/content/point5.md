@@ -9,7 +9,9 @@
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/NjxHdYFQ5Y1eB3sKuXZ1fm/Projecten?node-id=1181-1590&t=jLKcDHQLHrBmjhNV-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving</a>
   <a href="/" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
-   <a href="https://github.com/Cocovg/portfoliov2" target="_blank" style="display: inline-block; background-color:rgb(87, 50, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub</a>
+   <a href="https://github.com/Cocovg/portfoliov2" target="_blank" style="display: inline-block; background-color:rgb(87, 50, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub Final version</a>
+   <a href="https://portfolio-school-v1.cocovanglabbeek.nl/" target="_blank" style="display: inline-block; background-color:rgb(74, 241, 138); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Prototype 1</a>
+   <a href="https://github.com/Cocovg/portfolio_school" target="_blank" style="display: inline-block; background-color:rgb(87, 50, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub versie 1</a>
 </div>
 
 ## Inspiratie

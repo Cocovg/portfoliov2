@@ -44,7 +44,7 @@ Voor onze designs gebruikte wij Figma, hierin maakte wij samen onze eigen design
 #  Teamverband
 Voor een van onze lessen hebben we ook samen gekeken naar wat voor mensen zijn en wat onze raakvlakken waren. We zagen doormiddel van de afbeelding hieronder dat we allemaal elkaar konden aanvullen en we onze eigen specialiteiten hadden.
 
-[]
+![Communicatie in Discord](/img/ux/tm-1.png)
 
  
 ## Research
@@ -57,7 +57,15 @@ Samen met Dominique heb ik onderzoek gedaan naar kleurenblindheid. Hier hebben w
    ![Communicatie in Discord](/img/ux/res-2.png)
 
 Vanuit dit onderzoek hebben we de eerste iteraties en het concept bedacht voor het project. 
-## Designfase
+
+## Personas
+![Personas](/img/ux/personas.png)
+
+## Customer Journey
+![CUstomer journey](/img/ux/cusjou-1.png)
+
+
+## Conceptfase
 Voor onze oplossing wilde wij meer naar de simulatie kant gaan. Zo wilde we een neppe website maken die verschillende visuele beperkingen kan simuleren.
 Met mijn design begon ik met een kleine wireframe en een klein design die snel moest aantonen wat voor effect de kleuren kunnen hebben.
 
@@ -74,18 +82,26 @@ Zo was voor mijzelf een belangrijke, dat het proces en lijn van de handelingen n
 
 ## Designfase
  
+ ![Figma overview](/img/ux/des-2.png)
+
 Om verder te bouwen op de feedback, dat de lijn en handelingen duidelijk moesten zijn, heb ik mij voornamelijk gericht op de stappen die leiden naar ons uiteindelijke product. Zo heb ik meerdere iteraties gemaakt voor de eerste stap, een grote onvermijdelijke knop en een link in de bovenste balk. De link was eigenlijk al een suggestie/verzoek van Carolina, dus dit was al snel een definitieve keuze. Voor de grote knop was het voornamelijk de bedoeling dat gebruikers nieuwsgierig worden en ook geïnteresseerd worden in de functie.   
 
+ ![Figma overview](/img/ux/des-3.png)
+
 De styling was zo gemaakt dat deze bij de styling paste van de rest van de website. Ook blijft deze in positie wanneer de gebruiker door de rest van de pagina heen scrolt. 
+
+ ![Figma overview](/img/ux/des-4.png)
   
 Voor het stukje kiezen van de beperking heb ik eerst met wireframes gespeeld om een idee te krijgen van hoe deze keuzes worden weergeven. Zo ging ik eerst voor de optie die ik vaak zag terugkomen bij Cardan op de website. Na feedback van Bram, die zei dat onderdelen op de website meer visueel duidelijk mogen zijn, zodat mensen niet te veel hoeven te lezen. Heb ik besloten toch een ander design te pakken, waarbij er foto's gebruikt worden die de beperking representeren.
 
- 
-Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding en onderste foto's toegevoegd op basis van de keuze van Thijs. Dit was omdat beide Berkan en Thijs de website heel zwart/wit hadden gemaakt en we zo geen kleurenblindheid konden tonen. Met een filter online heb ik de rode kleding, in het midden, kunnen veranderen naar de versie links. 
+ ![Figma overview](/img/ux/des-5.png)
 
+Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding en onderste foto's toegevoegd op basis van de keuze van Thijs. Dit was omdat beide Berkan en Thijs de website heel zwart/wit hadden gemaakt en we zo geen kleurenblindheid konden tonen. Met een filter online heb ik de rode kleding, in het midden, kunnen veranderen naar de versie links. 
 
  
 ## Prototype
+
+ ![Figma overview](/img/ux/pro-1.png)
 
 Voor het testen van de website had ik een prototype nodig die interactief te bedienen was. Doormiddel van de Figma prototype functie heb ik elementen van de website kunnen linken aan elkaar. De gebruiker kan dan zo het bedoelde pad af gaan.
  

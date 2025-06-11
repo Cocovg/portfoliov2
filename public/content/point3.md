@@ -22,15 +22,26 @@ In dit project werkte ik samen met Laurens Kosters en hebben we ons gericht op e
  
 ## Communicatie
 Voor communicatie hebben we voornamelijk Discord en GitHub gebruikt. In Discord deelde we bronnen, werkomgevingen en notities. 
+
+ ![Figma overview](/img/development/com-1.png)
+
  
 In onze GitHub omgeving, hadden we een project staan waar we onze iteraties en proces konden bijhouden. Doormiddel van meerdere commits konden we meerdere versies bijhouden van elke functie.
+
+ ![Figma overview](/img/development/com-2.png)
  
 Daarnaast hebben we gebruikt gemaakt van het project onderdeel waarbij wij taken konden verdelen en bijhouden. Vanuit hier konden wij branches aanmaken per taak/functie. Dit hielp ons om geordend te blijven en een goed overzicht te behouden over het project.
+
+ ![Figma overview](/img/development/com-3.png)
  
 Zoals de foto hieronder, zijn de branches gebruikt om de main branch aan te vullen met de functies tot een geheel product. Deze zijn gelinkt aan de taken die wij in het project hier boven gebruikte en konden direct via git de branches aanmaken en mergen met de main branch
+
+ ![Figma overview](/img/development/com-4.png)
  
 ## Design
 In het vorige project was al een groot deel van het design gemaakt. Ook deze fase heb ik een paar onderdelen gemaakt en verwerkt zoals deze werden gevraagd tijdens de feedback. 
+
+ ![Figma overview](/img/development/des-1.png)
  
 Zo heeft de "Blob" een upgrade gekregen waarbij deze meer opvalt en wat minder als een sticker aanvoelt op de pagina. 
  
@@ -38,19 +49,30 @@ Zo heeft de "Blob" een upgrade gekregen waarbij deze meer opvalt en wat minder a
 
 Voor development ben ik zelf begonnen met het opzet van de beginpagina. Deze is nagemaakt met V0.dev. Hier was het mogelijk een screenshot van een bestaande pagina te laten kopiëren, wat vervolgens mij de code gaf om zelf nog aan te passen. De pagina is ook niet volledige 1 op 1, dit was niet volledig nodig voor de ontwikkeling van de website. Wel kan het de klant een goed en realistisch beeld geven over hoe de functie eruitziet op hun pagina.
  
- 
+![Figma overview](/img/development/dev-1.png)
+![Figma overview](/img/development/dev-2.png)
 
 Vervolgend ben ik gaan werken aan de primaire knop en de functie. In het project noemde wij deze de "blob". Deze is qua design veranderd tijdens deze fase en heeft ook een extra functie gekregen. Daarnaast heb ik van de blob ook een component gemaakt zodat deze gemakkelijk kan worden aangepast zonder te hoeven zoeken naar de bijbehorende code. Daarbij ook is de component gemakkelijk te gebruiken in andere projecten door de component daarin te zetten.
-    
+
+![Figma overview](/img/development/dev-3.png)
+![Figma overview](/img/development/dev-4.png)
+![Figma overview](/img/development/dev-5.png)
+     
 
 Zo is de blob statisch en scrolt mee met de pagina, al beweegt de blob ook wanneer je misklikt op de knop. Wat een gevoel moet geven van irritatie. Iets wat een persoon met een beperking vaak ervaart. 
 
+![Figma overview](/img/development/dev-6.png)
+![Figma overview](/img/development/dev-7.png)
     
 
 Ook heb ik gekeken naar de responsiveness van de knop. Deze moest natuurlijk een stuk kleiner en nogsteeds de functie kunnen behouden. Waar ik als eerste tegen aanliep is de informatie in de blob, dit was niet goed te lezen en daarbij veel te veel voor in een beperkte plek. Zo heb ik alleen de titel behouden en de knop, wat mij al meer opties gaf. Ook heb ik een sluitknop toegevoegd zodat de website nogsteeds prettig kan worden bekeken zonder dat de blob veel informatie zou bedekken.
+
+![Figma overview](/img/development/dev-8.png)
  
 Ten slot ben ik bezig geweest met het maken van de prefab website, de bloemenwinkel. Vanuit de feedback heb ik deze zo gemaakt dat deze bijna helemaal op de winkel van Coppelmans lijkt. Ook dit initiële design heb ik ook V0 gebruikt. Al heb ik al het beeldmateriaal naar Coppelmans verwijderd en nieuwe toegevoegd. Voor het beeldmateriaal heb ik gelet op kleuren en variatie. Ook heb ik bij de website naar benamingen van producten bekeken om deze zo onhandig mogelijk te maken, door geen kleuren te vernoemen. De website is te bedienen door de producten te bekijken, die je vervolgens op de productenpagina kunt filteren, wat in bepaalde modus van de filter niet gebruiksvriendelijk is. Wat een extra effect geeft op de functie.
    
+![Figma overview](/img/development/dev-9.png)
+![Figma overview](/img/development/dev-10.png)
 
  
 ## Testen
