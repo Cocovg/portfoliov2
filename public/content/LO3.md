@@ -23,7 +23,7 @@ Tijdens dit project heb ik meerdere iteraties voor de styling gemaakt. Zo ben ik
 </div>
 
 <h3 id="ux-cardan">UX - Cardan</h3>
-Hier heb ik meerdere iteraties voor knoppen, paginas en prototypes gemaakt.
+Hier heb ik meerdere iteraties voor knoppen, paginas en prototypes gemaakt. 
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -39,3 +39,6 @@ Hier heb ik de feedback uit het UX project verwerkt en heb ik de daadwerkelijke 
     Bekijk Development Project
   </a>
 </div>
+
+<h3 id="development-cardan">Project X</h3>
+Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, dit was voornamelijk omdat functies kapot gingen. Door een nieuwe iteratie te maken zou dit mij tijd besparen en ik kon ik meer leren over de instellingen van de objecten.

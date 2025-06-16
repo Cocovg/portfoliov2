@@ -39,16 +39,13 @@ Zoals de foto hieronder, zijn de branches gebruikt om de main branch aan te vull
  ![Figma overview](/img/development/com-4.png)
  
 ## Design
-In het vorige project was al een groot deel van het design gemaakt. Ook deze fase heb ik een paar onderdelen gemaakt en verwerkt zoals deze werden gevraagd tijdens de feedback. 
-
+In het vorige project was al een groot deel van het design gemaakt. Dus heb ik mij deze fase gericht op met verwerken van feedback in het design van de “Blob”. Hier kreeg ik tijdens de eindpresentatie van het UX project complimenten over het idee en de functie van de blob, maar mocht deze nog meer opvallen. Vanuit de usertests kwam dit ook naar voren en kreeg ik meer feedback over de kleur en de locatie. Zo heb ik met meerdere vormen gespeeld en heb ik variaties met kleur uitgeprobeerd. Van Bram kreeg ik tijdens dit project ook de feedback om hem eventueel schuin te plaatsen. Zelf was ik daar niet zo een fan van omdat ik het niet helemaal bij de rest van de pagina en stijl vond passen en daarnaast wilde ik dat de blob niet als een sticker werd gezien. Daarbij heb ik later in het proces een extra functie voor deze knop bedacht, waar het idee van een sticker niet meer bij zou aansluiten. Omdat deze functie meer beweging veroorzaakt.
  ![Figma overview](/img/development/des-1.png)
- 
-Zo heeft de "Blob" een upgrade gekregen waarbij deze meer opvalt en wat minder als een sticker aanvoelt op de pagina. 
- 
+
 ## Development
 
-Voor development ben ik zelf begonnen met het opzet van de beginpagina. Deze is nagemaakt met V0.dev. Hier was het mogelijk een screenshot van een bestaande pagina te laten kopiëren, wat vervolgens mij de code gaf om zelf nog aan te passen. De pagina is ook niet volledige 1 op 1, dit was niet volledig nodig voor de ontwikkeling van de website. Wel kan het de klant een goed en realistisch beeld geven over hoe de functie eruitziet op hun pagina.
- 
+Voor development ben ik zelf begonnen met het opzet van de beginpagina. Deze is nagemaakt met V0.dev. Hier was het mogelijk een screenshot van een bestaande pagina te laten kopiëren, wat vervolgens mij de code gaf om zelf nog aan te passen. Zo heb ik zelf nog de kleuren aangepast naar de officiële Cardan kleuren, de foto aangepast en font en lettergrootte aangepast. De pagina is ook niet volledige 1 op 1, dit was niet volledig nodig voor de ontwikkeling van de website. Wel kan het de klant een goed en realistisch beeld geven over hoe de functie eruitziet op hun pagina. Hieronder is het beeld van de AI en mijn uiteindelijke versie te zien.
+
 ![Figma overview](/img/development/dev-1.png)
 ![Figma overview](/img/development/dev-2.png)
 
@@ -59,7 +56,7 @@ Vervolgend ben ik gaan werken aan de primaire knop en de functie. In het project
 ![Figma overview](/img/development/dev-5.png)
      
 
-Zo is de blob statisch en scrolt mee met de pagina, al beweegt de blob ook wanneer je misklikt op de knop. Wat een gevoel moet geven van irritatie. Iets wat een persoon met een beperking vaak ervaart. 
+Zo is de blob statisch en scrolt mee met de pagina. Als nieuwe functie beweegt de blob ook wanneer je misklikt op de knop. Wat een gevoel moet geven van irritatie. Iets wat een persoon met een beperking vaak ervaart. 
 
 ![Figma overview](/img/development/dev-6.png)
 ![Figma overview](/img/development/dev-7.png)
@@ -69,8 +66,7 @@ Ook heb ik gekeken naar de responsiveness van de knop. Deze moest natuurlijk een
 
 ![Figma overview](/img/development/dev-8.png)
  
-Ten slot ben ik bezig geweest met het maken van de prefab website, de bloemenwinkel. Vanuit de feedback heb ik deze zo gemaakt dat deze bijna helemaal op de winkel van Coppelmans lijkt. Ook dit initiële design heb ik ook V0 gebruikt. Al heb ik al het beeldmateriaal naar Coppelmans verwijderd en nieuwe toegevoegd. Voor het beeldmateriaal heb ik gelet op kleuren en variatie. Ook heb ik bij de website naar benamingen van producten bekeken om deze zo onhandig mogelijk te maken, door geen kleuren te vernoemen. De website is te bedienen door de producten te bekijken, die je vervolgens op de productenpagina kunt filteren, wat in bepaalde modus van de filter niet gebruiksvriendelijk is. Wat een extra effect geeft op de functie.
-   
+Ten slot ben ik bezig geweest met het maken van de prefab website, de bloemenwinkel. Vanuit de feedback van Carolina, onze stakeholder, heb ik deze zo gemaakt dat deze bijna helemaal op de winkel van Coppelmans lijkt. Carolina vertelde ons dat het haar leuk leek als de website heel confronterend kon zijn. Daarnaast is het ook realistisch omdat de website daadwerkelijk bestaat en bedrijven dus ook echt de fouten maken die ontoegankelijk worden ervaren. Ook dit initiële design heb ik ook V0 gebruikt. Al heb ik al het beeldmateriaal naar Coppelmans verwijderd en nieuwe toegevoegd. Voor het beeldmateriaal heb ik gelet op kleuren en variatie. Ook heb ik bij de website naar benamingen van producten bekeken om deze zo onhandig mogelijk te maken, door geen kleuren te vernoemen. Dit maakt het vrijwel onmogelijk om we weten wat voor kleur een plant heeft. De website is te bedienen door de producten te bekijken, die je vervolgens op de productenpagina kunt filteren, wat in verschillende modus van de filter niet gebruiksvriendelijk is.    
 ![Figma overview](/img/development/dev-9.png)
 ![Figma overview](/img/development/dev-10.png)
 
@@ -138,7 +134,10 @@ De test gaf mij het inzicht dat de ervaring over het algemeen duidelijk en direc
 
 ## Reflectie
 
-Met dit project heb ik niet heel veel moeite gehad, mede door Laurens maar ook door het niveau. Door mijn voorkennis kon ik al veel en met voldoende gemakt samen aan het project werken en was door het vorige project de scope en doel al erg duidelijk. Ook de ontwikkeling was doormiddel van AI erg gemakkelijk en snel te bereiken.
-Met GitHub heb ik wel efficiënter kunnen leren werken, zo hebben we een taakverdeling gedaan die bij onze tijd en niveau paste en konden we gemakkelijk ons daar op aanpassen. Daarnaast met de meerdere branches en commits was het gemakkelijk weer vorige versies te bezoeken nadat sommige functies niet helemaal werkte zoals verwacht.
-Met onze communicatie zat dit ook heel goed. Beide Laurens en ik kunnen goed en comfortabel met elkaar communiceren wat het gemakkelijk maakt feedback van elkaar ook te verwerken. Ook konden we makkelijk inspringen op elkaars taken wanneer nodig en zo heeft Laurens mij ook voornamelijk goed geholpen wanneer ik met Git er even niet uitkwam.
-Wel denk ik dat ik mijzelf de volgende keer ook meer wil uitdagen qua ontwikkeling in het software gedeelte. In dit project heb ik voornamelijk voor tijd en gemak AI gebruikt, maar dit was qua kennis bijvoorbeeld niet nodig geweest. Dus met het volgende project zal ik ernaar streven om meer te leren.
+Bij dit project heb ik relatief weinig moeite ervaren. Dit kwam deels door de samenwerking met Laurens, maar ook doordat het niveau goed aansloot bij mijn huidige kennis. Dankzij mijn voorkennis kon ik met vertrouwen en gemak aan het project werken. Bovendien waren de scope en het doel van het project al duidelijk, mede door ervaringen uit het vorige project. De ontwikkeling verliep vlot, mede dankzij het gebruik van AI, wat het proces aanzienlijk versneld en vereenvoudigd heeft.
+
+Het werken met GitHub heeft mij geholpen om efficiënter te werken. We hebben een taakverdeling gemaakt die aansloot bij ons niveau en beschikbare tijd, wat het mogelijk maakte om flexibel te blijven tijdens de uitvoering. Door het gebruik van meerdere branches en commits konden we gemakkelijk teruggrijpen op eerdere versies wanneer bepaalde functies niet naar verwachting werkten.
+
+Ook de communicatie binnen het team verliep uitstekend. Laurens en ik konden op een prettige en effectieve manier met elkaar communiceren, wat het eenvoudiger maakte om feedback te geven en te ontvangen. We waren daarnaast in staat om elkaars taken op te vangen wanneer nodig. Met name bij het gebruik van Git heeft Laurens mij goed ondersteund wanneer ik er even niet uitkwam.
+
+Voor toekomstige projecten wil ik mijzelf meer uitdagen op het gebied van softwareontwikkeling. In dit project heb ik, uit praktische overwegingen, veel gebruikgemaakt van AI. Hoewel dit functioneel was, had ik het in sommige gevallen ook zonder deze ondersteuning kunnen oplossen. Daarom wil ik bij een volgend project bewuster kiezen voor eigen ontwikkeling, om zo mijn kennis en vaardigheden verder te verdiepen.

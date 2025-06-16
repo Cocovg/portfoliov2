@@ -23,7 +23,7 @@ In dit project heb ik professioneel kunnen samenwerken in een groep en effectief
 </div>
 
 <h3 id="ux-cardan">UX - Cardan</h3>
-Voor Cardan hebben we professioneel onderzoek gedaan en stakeholder management toegepast. We hebben duidelijke rapportages gemaakt en het project gestructureerd aangepakt.
+Voor Cardan heb ik onderzoek gedaan naar kleurenblindheid. Welke vormen en effecten er zijn en wat een persoon met kleurenblindheid veel kan helpen in het bedienen van een website.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
