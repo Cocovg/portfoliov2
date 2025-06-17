@@ -23,7 +23,8 @@ Tijdens dit project heb ik meerdere iteraties voor de styling gemaakt. Zo ben ik
 </div>
 
 <h3 id="ux-cardan">UX - Cardan</h3>
-Hier heb ik meerdere iteraties voor knoppen, paginas en prototypes gemaakt. 
+
+Voor dit project moesten we de opzet maken qua design voor het volgende project, development. Hier heb ik een conceptueel design gemaakt om het concept waarmee we wilde werken te versterken. Na de ontvangen feedback heb ik mij gericht op de flow van de website, waar ik verschillende iteraties heb gemaakt. Deze iteraties gingen over de call-to-action knop, beperk jezelf pagina, waar mensen een beperking kunnen kiezen en heb ik een pagina aangevuld zodat de kleurenblindheid zichtbaar is. Waar ik verschillende versies voor heb gemaakt om een ideale testomgeving te maken. Ook heb ik nog een 
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
