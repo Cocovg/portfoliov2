@@ -24,7 +24,8 @@ Tijdens dit project heb ik meerdere iteraties voor de styling gemaakt. Zo ben ik
 
 <h3 id="ux-cardan">UX - Cardan</h3>
 
-Voor dit project moesten we de opzet maken qua design voor het volgende project, development. Hier heb ik een conceptueel design gemaakt om het concept waarmee we wilde werken te versterken. Na de ontvangen feedback heb ik mij gericht op de flow van de website, waar ik verschillende iteraties heb gemaakt. Deze iteraties gingen over de call-to-action knop, beperk jezelf pagina, waar mensen een beperking kunnen kiezen en heb ik een pagina aangevuld zodat de kleurenblindheid zichtbaar is. Waar ik verschillende versies voor heb gemaakt om een ideale testomgeving te maken. Ook heb ik nog een 
+Voor dit project moesten we de opzet maken qua design voor het volgende project, development. Hier heb ik een conceptueel design gemaakt om het concept waarmee we wilde werken te versterken. Na de ontvangen feedback heb ik mij gericht op de flow van de website, waar ik verschillende iteraties heb gemaakt. Deze iteraties gingen over de [call-to-action knop](/point2#call-to-action), [beperk jezelf pagina](/point2#beperk-jezelf), waar mensen een beperking kunnen kiezen en heb ik een pagina aangevuld in de [style studio](/point2#style-studio) zodat de kleurenblindheid zichtbaar is. Voor deze componenten heb ik verschillende versies gemaakt om een ideale testomgeving te creëren. Zo heb ik uiteindelijk ook een aantal [prototypes](/point2#prototype) gemaakt die aansluiten op de flow en de juiste onderdelen en paginas op een rijtje zet.
+
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -33,7 +34,8 @@ Voor dit project moesten we de opzet maken qua design voor het volgende project,
 </div>
 
 <h3 id="development-cardan">Development - Cardan</h3>
-Hier heb ik de feedback uit het UX project verwerkt en heb ik de daadwerkelijke functie gebouwd.
+
+In dit project heb ik niet enorm veel designs gemaakt. Wel heb ik tijdens de oplevering van het UX project nog feedback ontvangen over de [call-to-action knop](/point3#design). Hiervan heb ik nog een klein aantal iteraties gemaakt om de knop meer te laten opvallen en beter in te passen in het gehele ontwerp.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -42,4 +44,5 @@ Hier heb ik de feedback uit het UX project verwerkt en heb ik de daadwerkelijke 
 </div>
 
 <h3 id="development-cardan">Project X</h3>
+
 Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, dit was voornamelijk omdat functies kapot gingen. Door een nieuwe iteratie te maken zou dit mij tijd besparen en ik kon ik meer leren over de instellingen van de objecten.

@@ -38,7 +38,7 @@ Zoals de foto hieronder, zijn de branches gebruikt om de main branch aan te vull
 
  ![Figma overview](/img/development/com-4.png)
  
-## Design
+<h2 id="design">Design</h2>
 In het vorige project was al een groot deel van het design gemaakt. Dus heb ik mij deze fase gericht op met verwerken van feedback in het design van de "Blob". Hier kreeg ik tijdens de eindpresentatie van het UX project complimenten over het idee en de functie van de blob, maar mocht deze nog meer opvallen. Vanuit de usertests kwam dit ook naar voren en kreeg ik meer feedback over de kleur en de locatie. Zo heb ik met meerdere vormen gespeeld en heb ik variaties met kleur uitgeprobeerd. Van Bram kreeg ik tijdens dit project ook de feedback om hem eventueel schuin te plaatsen. Zelf was ik daar niet zo een fan van omdat ik het niet helemaal bij de rest van de pagina en stijl vond passen en daarnaast wilde ik dat de blob niet als een sticker werd gezien. Daarbij heb ik later in het proces een extra functie voor deze knop bedacht, waar het idee van een sticker niet meer bij zou aansluiten. Omdat deze functie meer beweging veroorzaakt.
  ![Figma overview](/img/development/des-1.png)
 
