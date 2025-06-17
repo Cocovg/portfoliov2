@@ -25,7 +25,7 @@ De uiteindelijke content die ik heb gemaakt is een call to action knop en de geh
 </div>
 
 <h3 id="project-x">Project X</h3>
-Met Project X heb ik een Unity project gestart voor een AR app. Naast alle 
+Met Project X heb ik een Unity project gestart voor een AR app. Hier heb ik geleerd wat ik nodig heb om een AR app te bouwen en welke componenten nodig zijn om functies te maken.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point4#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
