@@ -20,7 +20,7 @@
 In dit project houden we ons bezig met het ontwikkelen van de functie die we in het vorige project hebben ontwikkeld als design. De functie wordt hier werkend en verwerkt de feedback die is gekregen tijdens de oplevering aan de klant. 
 In dit project werkte ik samen met Laurens Kosters en hebben we ons gericht op een functie die vanuit de website een filter kan geven aan een bestaande website of een prefab website die door ons is gemaakt.
  
-## Communicatie
+<h2 id="communicatie">Communicatie</h2>
 Voor communicatie hebben we voornamelijk Discord en GitHub gebruikt. In Discord deelde we bronnen, werkomgevingen en notities. 
 
  ![Figma overview](/img/development/com-1.png)

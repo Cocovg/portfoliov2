@@ -14,16 +14,6 @@ Dit semester heb ik ook geleerd met het framework Nuxt te werken, dat mij uitein
 
 ## Projecten
 
-<h3 id="ux-cardan">UX - Cardan</h3>
-
-In dit project heb ik ontwerpen gemaakt die de basis vormden voor het development-project. Ik heb verschillende componenten ontwikkeld, waaronder een [call-to-action knop](/point2#call-to-action), een [beperk jezelf pagina](/point2#beperk-jezelf) voor het selecteren van beperkingen, en een bijdrage aan de [style studio](/point2#style-studio) pagina.
-
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-  <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
-    Bekijk UX Project
-  </a>
-</div>
-
 <h3 id="development-cardan">Development - Cardan</h3>
 
 In dit project heb ik samen met Laurens gewerkt aan een functie die dient als filter voor kleurenblindheid. Hier hebben we samen gebruik gemaakt van een gedeelde GitHub waarbij wij elk onze bijdrage leverden, zodat dit uiteindelijk een geheel project werd. Zo hebben we een project opgezet en onze taken verdeeld. Deze taken waren gekoppeld aan een branch in het project waarbij wij de functies daaraan konden koppelen en per functie een branch hadden. Deze branches gaven overzicht en zo was het ook moeilijker om merge conflicts te veroorzaken.

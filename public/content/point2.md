@@ -28,7 +28,7 @@ Ze merken dat hun huidige klanten vaak wel een duidelijke ervaring meekrijgen, m
 Voor ons waren dit goeie punten om bij het project erbij te pakken, zo kunnen we bouwen naar een sterk en concreet design.
 
  
-## Communicatie
+<h2 id="communicatie">Communicatie</h2>
 
 Tijdens dit project hebben we voornamelijk Discord gebruikt om te communiceren. Hier heb ik een server opgestart waar we elkaar up-to-date hielden over aanwezigheid, feedback en documentaties.
  
@@ -48,7 +48,7 @@ Voor een van onze lessen hebben we ook samen gekeken naar wat voor mensen zijn e
 ![Communicatie in Discord](/img/ux/tm-1.png)
 
  
-## Research
+<h2 id="research">Research</h2>
 
 In de research fase was het voornamelijk voor mij erg moeilijk om in te schatten hoe lang we hier mee bezig moesten zijn en daarbij, begreep ik de opdracht niet zo goed.
 Als groep begonnen we eerst aan het projectplan, hier was ik voornamelijk bezig geweest met het doornemen van de huidige vindingen en begrijpen hoe het DOT Framework in elkaar zat en hoe we deze kunnen toepassen in ons project. Toen we als groep op een punt kwamen waar iedereen het project meer begreep en ook wat onderzoek had gedaan, hebben we besloten ons te richten op visuele beperkingen. Vanuit hier hebben we 3 vormen verdeeld onder ons 5 en hebben we hierop onderzoek gedaan. 

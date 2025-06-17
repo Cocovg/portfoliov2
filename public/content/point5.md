@@ -60,7 +60,7 @@ Voor de beeldgeving heb ik verschillende inspiraties opgedaan in games:
 
 - **Genshin Impact**: Zwevende kristallen/pilaren met kleine details. Hier zie ik mogelijkheden om naartoe uit te breiden, mocht ik de tijd en kennis hebben dit toe te passen.
 
-## Schetsen
+<h2 id="schetsen">Schetsen</h2>
 Voor mijn proces met beeldvorming zoals dit, vind ik het erg fijn om ook te schetsen. Dit is om zowel mijzelf als andere mijn idee visueel te kunnen laten zien. In deze schetsen heb ik ook gespeeld met wat extra details voor op het kristal.
 ![Inspiratie](/img/portfolio/sch-1.png)
 
@@ -93,7 +93,7 @@ Nu ik iets verder ben in het maken van de 3D scene voel ik dat een andere richti
 
 Zo is Inter nu een geschikte keuze voor de leesbare content. 
 
-## Logo
+<h2 id="logo">Logo</h2>
 
 ![Inspiratie](/img/portfolio/lo-1.png)
 
@@ -111,7 +111,7 @@ Na meningen van medestudenten te horen ben ik uiteindelijk op een variant uitgek
 Met de feedback van Bram is dit meer een illustratie dan een logo, maar ben ik nogsteeds erg blij met het resultaat. Het is een beetje slordig en niet helemaal netjes uitgewerkt, wat juist op de website erg veel charme heeft.
 ![Inspiratie](/img/portfolio/lo-4.png)
 
-## 3D model
+<h2 id="3d-model">3D model</h2>
 
 ### Blender instructies
 [Tutorial link](https://www.youtube.com/watch?v=DVcQwli-WOA)
@@ -140,7 +140,7 @@ Hulp bij uiteindelijke settings: [Tutorial link](https://www.youtube.com/watch?v
 
 Dit waren uiteindelijk de juiste instellingen die ik kon gebruiken voor toekomstige modellen.
 
-## Review 1 / Prototype 1 
+<h2 id="prototype-1">Review 1 / Prototype 1</h2> 
 Voor het initieel opzetten van de scene ben ik gelijk begonnen met een 3D model die ik vorig semester had gemaakt.
 
 ![Inspiratie](/img/portfolio/pro-1.png)
