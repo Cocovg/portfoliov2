@@ -191,7 +191,7 @@ Hier had ik eindelijk een werkend resultaat.
 
 ![Inspiratie](/img/portfolio/pro-11.png)
 
-## Review 2/ Prototype 2
+<h2 id="review-2">Review 2/ Prototype 2</h2>
 Voor prototype 2 was het voornamelijk meer richten op de code en nadat ik feedback van Bram ontving, mij meer richten op het invullen van content.
 
 ![Inspiratie](/img/portfolio/pro2-1.png)
@@ -221,15 +221,13 @@ Vanuit Guido kreeg ik ook de feedback om meer te gaan richten naar gebruiksvrien
 
 ![Inspiratie](/img/portfolio/pro2-7.png)
 
-![Inspiratie](/img/portfolio/pro2-8.png)
-
 Met wat hulp kwam ik ook op een punt waarin ik een fatsoenlijke tekst kon laten meeroteren met de bolletjes en klikbare punten. Voor de content.
 
-![Inspiratie](/img/portfolio/pro2-9.png)
+![Inspiratie](/img/portfolio/pro2-8.png)
 
 Uiteindelijk heb ik ook de bollen vervangen voor cijfers zodat gebruik makkelijker en overzichtelijker is.
 
-## Review 3 / Prototype 2
+<h2 id="review-3">Review 3 / Prototype 2</h2>
 Vanaf dit punt ben ik meer bezig geweest met documentatie en het aantonen van de leerdoelen. Zo heb ik bij de pop-up vensters van de projecten tags en linkjes toegevoegd voor de leerdoelen te koppelen en werkomgevingen.
 
 ![Inspiratie](/img/portfolio/re-1.png)
@@ -238,3 +236,9 @@ De kleuren geven gemakkelijk aan welke onderwerpen zijn gebruikt om een leerdoel
 
 Ook wilde ik de website nogmaals een klein beetje aanpassen. Zo zijn de labels en andere teksten altijd leesbaar voor de gebruiker.
 ![Inspiratie](/img/portfolio/re-2.png)
+
+<h2 id="final">Final</h2>
+Voor de eindfase van het porftolio project was het belangrijk alle nodige feedback en content te verwerken in het geheel. Zo ben ik bezig geweest met het linken van Leeruitkomsten aan onderdelen van projecten zoals iteraties en designs. Daarnaast heb ik mij gericht op de gebruiksvriendelijkheid, zo zijn er meerdere punten beschikbaar waar op kan worden geklikt om de leeruitkomsten en bijbehorende bewijslast snel en gemakkelijk te kunnen zien. Dit was een groot punt vanuit beide Evelien en Guido.
+Tussentijds heb ik met Guido gezeten om naar mijn uitwerking hiervan te kijken en hij gaf aan dat dit snel en direct mijn bewijslast liet zien, precies waar hij naar zocht. Vanuit hier ben ik dus voornamelijk bezig geweest met de bewijslast te linken op deze manier en de gebruiksvriendelijkheid te verhogen. Daarnaast heb ik ook wat teksten aangepast en de nodige foto's toegevoegd.
+
+![Final versie](/img/portfolio/fin-1.png)
