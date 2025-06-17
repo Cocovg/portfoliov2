@@ -43,7 +43,7 @@ Voor onze designs gebruikte wij Figma, hierin maakte wij samen onze eigen design
   ![Communicatie in Discord](/img/ux/com-3.png)
 
 #  Teamverband
-Voor een van onze lessen hebben we ook samen gekeken naar wat voor mensen zijn en wat onze raakvlakken waren. We zagen doormiddel van de afbeelding hieronder dat we allemaal elkaar konden aanvullen en we onze eigen specialiteiten hadden.
+Voor een van onze lessen hebben we ook samen gekeken naar wat voor mensen wij zijn en wat onze raakvlakken waren. We zagen door middel van de afbeelding hieronder dat we allemaal elkaar konden aanvullen en we onze eigen specialiteiten hadden.
 
 ![Communicatie in Discord](/img/ux/tm-1.png)
 
@@ -114,7 +114,7 @@ Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding e
 
  ![Figma overview](/img/ux/pro-1.png)
 
-Voor het testen van de website had ik een prototype nodig die interactief te bedienen was. Doormiddel van de Figma prototype functie heb ik elementen van de website kunnen linken aan elkaar. De gebruiker kan dan zo het bedoelde pad af gaan.
+Voor het testen van de website had ik een prototype nodig die interactief te bedienen was. Door middel van de Figma prototype functie heb ik elementen van het design kunnen linken aan elkaar. De gebruiker kan dan zo het bedoelde pad af gaan.
  
 
 <h2 id="testen-1">Testen</h2>

@@ -5,11 +5,11 @@ Je past professionele werkwijzen toe, zowel individueel als in teamverband, op h
 ---
 
 ## Reflectie
-In groepsverband was het altijd fijn om een opencommunicatiemiddel te hebben zoals Discord. Hier kon iedereen zijn of haar vragen gemakkelijk kwijt en konden we gedeelde documenten van Word of Figma makkelijk delen. Ook onze afspraken en eventuele ziekmeldingen konden hier snel worden gedeeld en was iedereen actueel op de situatie. 
+In groepsverband was het altijd fijn om een open communicatiemiddel te hebben zoals Discord. Hier kon iedereen zijn of haar vragen gemakkelijk kwijt en konden we gedeelde documenten van Word of Figma makkelijk delen. Ook onze afspraken en eventuele ziekmeldingen konden hier snel worden gedeeld en was iedereen actueel op de situatie. 
 
 Daarnaast heb ik ook altijd met mijn groepen gebruik gemaakt van Figma, een design software waar je gemakkelijk en in hoge kwaliteit designs kan maken voor of alleen jezelf of in een groep. Het fijne hier is dat je elkaar aanwezigheid ziet, je dus ook kan presenteren aan elkaar wat je hebt gemaakt en je samen aan een design kunt werken.
 
-Ten slot heb ik gebruik gemaakt van het projectboard op GitHub. Dit projectboard is vergelijkbaar met bijvoorbeeld Trello, hier kon ik met mijn team gemakkelijk taken verdelen en bleeft het project overzichtelijk. Wat dit projectboard in mijn projecten fijner maakte, was dat de taken direct konden worden gekoppeld aan de branches van het project. Zo kan er veilig en met goede versiebeheer een project worden gebouwd
+Ten slot heb ik gebruik gemaakt van het projectboard op GitHub. Dit projectboard is vergelijkbaar met bijvoorbeeld Trello, hier kon ik met mijn team gemakkelijk taken verdelen en bleef het project overzichtelijk. Wat dit projectboard in mijn projecten fijner maakte, was dat de taken direct konden worden gekoppeld aan de branches van het project. Zo kan er veilig en met goede versiebeheer een project worden gebouwd
 
 
 ---

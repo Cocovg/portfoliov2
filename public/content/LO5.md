@@ -5,7 +5,7 @@ Je neemt het initiatief om feedback te vragen en hierop te reflecteren. Je benoe
 ---
 
 ## Reflectie
-Doormiddel van feedback heb ik veel nieuwe dingen kunnen leren. Het overbrengen van een idee, lettergebruik, kleurgebruik en hoe ik mijn eigen werk moet ondersteunen. Doormiddel van de feedpulses en feedback tijdens opleveringen heb ik goed kunnen leren om een product te vormen en deze ook te kunnen ondersteunen door de feedback te gebruiken als argumenten. 
+Door middel van feedback heb ik veel nieuwe dingen kunnen leren. Het overbrengen van een idee, lettergebruik, kleurgebruik en hoe ik mijn eigen werk moet onderbouwen. Door middel van de feedpulses en feedback tijdens opleveringen heb ik goed kunnen leren om een product te vormen en deze ook te kunnen ondersteunen door de feedback te gebruiken als argumenten. 
 
 Ook heb ik dit semester de keuze gemaakt om van de AD naar de bachelor over te stappen. In deze periode heb ik enorm veel geleerd en het ook erg naar mijn zin gehad. Tijdens het aanmelden voor het volgende semester heb ik meerdere nieuwe en interessante onderwerpen gezien, waardoor mijn interesse in de komende semesters is toegenomen. Zo heb ik Anke en Evelien bedankt voor hun hulp en heb ik eerst de decaan gesproken voor advies over DUO en studiekeuze. Uiteindelijk heb ik via de examencommissie succesvol de overstap kunnen maken.
 

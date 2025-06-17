@@ -107,7 +107,7 @@ Vanuit die insteek wilde ik aantrekkelijke en opvallende designs maken die passe
 
 Met de start van de brandguide begon ik met het algemene design voor de pagina’s. Zo heb ik de kleuren van de stylescape gebruikt. Voor dit design heeft Evy meegeholpen om de vormen te maken die de pagina’s abstract maakt.
 
-Het eerste probleem dat we als groep met dit design tegenkwamen was, dat de kleuren wel heel erg leken op die van de Burger King. Zo konden wijzelf moeilijk nog op de branding van Boris focussen.
+Het eerste probleem dat we als groep met dit design tegenkwamen was, dat de kleuren wel heel erg leken op die van de Burger King. Zo konden wij zelf moeilijk nog op de branding van Boris focussen.
 
 
 ![Brandguide](/img/branding/bran-1.png)

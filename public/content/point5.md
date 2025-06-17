@@ -70,7 +70,7 @@ In de volgende tekening wilde ik al meer werken naar de web omgeving die een bez
 
 ## Sitemap
 ![Inspiratie](/img/portfolio/sch-3.png)
-Op mijn eigen domein wil ik de portfolio hosten doormiddel van Vercel. Dit is gemakkelijk en beveiligd. Daarnaast is dit ook goed mijn eigen persoonlijke portfolio, zo kan ik gemakkelijk doorverbinden naar beide websites.
+Op mijn eigen domein wil ik mijn portfolio hosten door middel van Vercel. Dit is gemakkelijk en beveiligd. Daarnaast is dit ook goed mijn eigen persoonlijke portfolio, zo kan ik gemakkelijk doorverbinden naar beide websites.
 
 De tabjes voor projecten en leerdoelen zijn vanzelfsprekend.
 
@@ -108,7 +108,7 @@ Met het aanschaffen van een iPad, kon ik al wat meer creativiteit loslaten en he
 Na meningen van medestudenten te horen ben ik uiteindelijk op een variant uitgekomen die ik stilistisch kon toepassen in mijn portfolio.
 ![Inspiratie](/img/portfolio/lo-3.png)
 
-Met de feedback van Bram is dit meer een illustratie dan een logo, maar ben ik nogsteeds erg blij met het resultaat. Het is een beetje slordig en niet helemaal netjes uitgewerkt, wat juist op de website erg veel charme heeft.
+Met de feedback van Bram is dit meer een illustratie dan een logo, maar ben ik nog steeds erg blij met het resultaat. Het is een beetje slordig en niet helemaal netjes uitgewerkt, wat juist op de website erg veel charme heeft.
 ![Inspiratie](/img/portfolio/lo-4.png)
 
 <h2 id="3d-model">3D model</h2>
@@ -124,7 +124,7 @@ Voor het eerste model wilde ik graag zelf iets simpels maken in Blender. Een sim
 
 ![Inspiratie](/img/portfolio/3d-2.png)
 
-2e poging met andere basiskleur, reflectie meer te zien. Maar nogsteeds erg mat. Hier had ik ook al wat gekleurde lampen toegevoegd in de scene. Zo kon ik de reflectie zien.
+2e poging met andere basiskleur, reflectie meer te zien. Maar nog steeds erg mat. Hier had ik ook al wat gekleurde lampen toegevoegd in de scene. Zo kon ik de reflectie zien.
 
 ![Inspiratie](/img/portfolio/3d-3.png)
 
@@ -161,7 +161,7 @@ Om een test met transparantie aan te gaan en het gebruik van een ander model heb
 
 ![Inspiratie](/img/portfolio/pro-5.png)
 
-Met nog een voorgaand model probeerde ik de eerste versie met de klkbare punten uit. Deze wilde ik meer door elkaar heen laten lopen.
+Met nog een voorgaand model probeerde ik de eerste versie met de klikbare punten uit. Deze wilde ik meer door elkaar heen laten lopen.
 
 ![Inspiratie](/img/portfolio/pro-6.png)
 
@@ -196,7 +196,7 @@ Voor prototype 2 was het voornamelijk meer richten op de code en nadat ik feedba
 
 ![Inspiratie](/img/portfolio/pro2-1.png)
 
-Zo ben ik een nieuw project gestart en heb ik met het platform Cursor gebruikt om efficienter en sneller het resultaat te krijgen wat ik had bereikt bij prototype 1.
+Zo ben ik een nieuw project gestart en heb ik het platform Cursor gebruikt om efficiënter en sneller het resultaat te krijgen wat ik had bereikt bij prototype 1.
 
 ![Inspiratie](/img/portfolio/pro2-2.png)
 

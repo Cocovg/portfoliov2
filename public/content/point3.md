@@ -26,7 +26,7 @@ Voor communicatie hebben we voornamelijk Discord en GitHub gebruikt. In Discord 
  ![Figma overview](/img/development/com-1.png)
 
  
-In onze GitHub omgeving, hadden we een project staan waar we onze iteraties en proces konden bijhouden. Doormiddel van meerdere commits konden we meerdere versies bijhouden van elke functie.
+In onze GitHub omgeving, hadden we een project staan waar we onze iteraties en proces konden bijhouden. Door middel van meerdere commits konden we meerdere versies bijhouden van elke functie.
 
  ![Figma overview](/img/development/com-2.png)
  
@@ -51,7 +51,7 @@ Voor development ben ik zelf begonnen met het opzet van de beginpagina. Deze is 
 
 <h3 id="call-to-action-knop">Call-to-action knop</h3>
 
-Vervolgend ben ik gaan werken aan de primaire knop en de functie. In het project noemde wij deze de "blob". Deze is qua design veranderd tijdens deze fase en heeft ook een extra functie gekregen. Daarnaast heb ik van de blob ook een component gemaakt zodat deze gemakkelijk kan worden aangepast zonder te hoeven zoeken naar de bijbehorende code. Daarbij ook is de component gemakkelijk te gebruiken in andere projecten door de component daarin te zetten.
+Vervolgens ben ik gaan werken aan de primaire knop en de functie. In het project noemde wij deze de "blob". Deze is qua design veranderd tijdens deze fase en heeft ook een extra functie gekregen. Daarnaast heb ik van de blob ook een component gemaakt zodat deze gemakkelijk kan worden aangepast zonder te hoeven zoeken naar de bijbehorende code. Daarbij ook is de component gemakkelijk te gebruiken in andere projecten door de component daarin te zetten.
 
 ![Figma overview](/img/development/dev-3.png)
 ![Figma overview](/img/development/dev-4.png)
@@ -65,7 +65,7 @@ Zo is de blob statisch en scrolt mee met de pagina. Als nieuwe functie beweegt d
     
 ### Responsive
 
-Ook heb ik gekeken naar de responsiveness van de knop. Deze moest natuurlijk een stuk kleiner en nogsteeds de functie kunnen behouden. Waar ik als eerste tegen aanliep is de informatie in de blob, dit was niet goed te lezen en daarbij veel te veel voor in een beperkte plek. Zo heb ik alleen de titel behouden en de knop, wat mij al meer opties gaf. Ook heb ik een sluitknop toegevoegd zodat de website nogsteeds prettig kan worden bekeken zonder dat de blob veel informatie zou bedekken.
+Ook heb ik gekeken naar de responsiveness van de knop. Deze moest natuurlijk een stuk kleiner en nog steeds de functie kunnen behouden. Waar ik als eerste tegen aanliep is de informatie in de blob, dit was niet goed te lezen en daarbij veel te veel voor in een beperkte plek. Zo heb ik alleen de titel behouden en de knop, wat mij al meer opties gaf. Ook heb ik een sluitknop toegevoegd zodat de website nog steeds prettig kan worden bekeken zonder dat de blob veel informatie zou bedekken.
 
 ![Figma overview](/img/development/dev-8.png)
 
