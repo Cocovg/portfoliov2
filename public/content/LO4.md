@@ -7,14 +7,17 @@ Je past professionele werkwijzen toe, zowel individueel als in teamverband, op h
 ## Reflectie
 In groepsverband was het altijd fijn om een opencommunicatiemiddel te hebben zoals Discord. Hier kon iedereen zijn of haar vragen gemakkelijk kwijt en konden we gedeelde documenten van Word of Figma makkelijk delen. Ook onze afspraken en eventuele ziekmeldingen konden hier snel worden gedeeld en was iedereen actueel op de situatie. 
 
-Daarnaast heb ik gebruik gemaakt van het projectboard op GitHub. Hier konden we taken verdelen en linken aan de functionele branches van het project. Zo was het enorm overzichtelijk waar iemand mee aan het werk was of dat er ook actief werd gewerkt. 
+Daarnaast heb ik ook altijd met mijn groepen gebruik gemaakt van Figma, een design software waar je gemakkelijk en in hoge kwaliteit designs kan maken voor of alleen jezelf of in een groep. Het fijne hier is dat je elkaar aanwezigheid ziet, je dus ook kan presenteren aan elkaar wat je hebt gemaakt en je samen aan een design kunt werken.
+
+Ten slot heb ik gebruik gemaakt van het projectboard op GitHub. Dit projectboard is vergelijkbaar met bijvoorbeeld Trello, hier kon ik met mijn team gemakkelijk taken verdelen en bleeft het project overzichtelijk. Wat dit projectboard in mijn projecten fijner maakte, was dat de taken direct konden worden gekoppeld aan de branches van het project. Zo kan er veilig en met goede versiebeheer een project worden gebouwd
+
 
 ---
 
 ## Projecten:
 
 <h3 id="branding">Branding</h3>
-In dit project heb ik professioneel kunnen samenwerken in een groep en effectief kunnen communiceren met de klant Boris Schmidt. We hebben regelmatig feedback verzameld en verwerkt.
+In dit project heb ik samen met mijn groep gewerkt in verschillende media zoals Discord en Figma. 
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point1#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -23,7 +26,7 @@ In dit project heb ik professioneel kunnen samenwerken in een groep en effectief
 </div>
 
 <h3 id="ux-cardan">UX - Cardan</h3>
-Voor Cardan heb ik onderzoek gedaan naar kleurenblindheid. Welke vormen en effecten er zijn en wat een persoon met kleurenblindheid veel kan helpen in het bedienen van een website.
+Voor Cardan heb ik onderzoek gedaan naar kleurenblindheid. Welke vormen en effecten er zijn en wat een persoon met kleurenblindheid veel kan helpen in het bedienen van een website. Daarnaast hebben we als groep samen in word documenten gewerkt aan deze onderzoeken en hebben we gecommuniceerd in Discord. Designs werden in Figma gemaakt.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">

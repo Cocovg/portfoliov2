@@ -46,3 +46,7 @@ In dit project heb ik niet enorm veel designs gemaakt. Wel heb ik tijdens de opl
 <h3 id="development-cardan">Project X</h3>
 
 Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, dit was voornamelijk omdat functies kapot gingen. Door een nieuwe iteratie te maken zou dit mij tijd besparen en ik kon ik meer leren over de instellingen van de objecten.
+
+<h3 id="portfolio">Portfolio</h3>
+
+Met dit portfolio heb ik natuurlijk ook veel iteraties gemaakt van verschillende onderdelen. Zo heb ik iteraties voor mijn concept, 3D model en versies. Zo heb ik een conceptuele versie, waar ik het idee eerst in grote lijnen heb gecodeerd. Daarna heb ik een uiteindelijke versie opgebouwd en mijn content hierin verwerkt. Met elke review heb ik verschillende keuzes gemaakt op dit doet te bereiken.

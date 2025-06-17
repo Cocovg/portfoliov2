@@ -51,7 +51,7 @@ Met Project X heb ik een Unity project gestart voor een AR app. Hier heb ik gele
 
 <h3 id="portfolio">Portfolio</h3>
 
-Dit portfolio zelf is ook een voorbeeld van mijn development skills, waarbij ik Nuxt, Vue en Three.js heb gebruikt om een interactieve 3D ervaring te creëren. Daarnaast heb ik versiebeheer onderhouden op GitHub. Daarnaast heb ik 2 versies waarbij ik bij de eerste het algemene idee heb ontwikkeld en in de tweede versie definitief heb ontwikkeld.
+Dit portfolio zelf is ook een voorbeeld van mijn development skills, waarbij ik Nuxt, Vue en Three.js heb gebruikt om een interactieve 3D ervaring te creëren. Daarnaast heb ik versiebeheer onderhouden op GitHub. Ook heb ik 2 versies waarbij ik bij de [eerste versie](https://github.com/Cocovg/portfolio_school) het algemene idee heb ontwikkeld en in de [tweede versie](https://github.com/Cocovg/portfoliov2) definitief het portfolio heb gebouwd.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">

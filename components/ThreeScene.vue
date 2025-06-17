@@ -574,7 +574,7 @@ const initPoints = (fontInstance) => {
   for (let i = 0; i < numPoints; i++) {
     const angle = i * angleStep + Math.PI / 5
     // Use project names instead of numbers
-    const pointLabels = ['Branding', 'UX', 'Development', 'Project X', 'Porftolio']
+    const pointLabels = ['Branding', 'UX', 'Development', 'Project X', 'Portfolio']
     const point = createPoint(PATH_RADIUS, UPPER_PATH_HEIGHT - POINT_VERTICAL_OFFSET, 0xffffff, pointLabels[i])
     point.userData.isPoint = true
     point.userData.pathIndex = 1

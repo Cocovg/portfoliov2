@@ -32,3 +32,7 @@ Tijdens dit project heb ik de feedback die ik eerder tijdens het UX-project had 
     Bekijk Development Project
   </a>
 </div> 
+
+<h3 id="portfolio">Portfolio</h3>
+
+Voor mijn portfolio kreeg ik natuurlijk ook elke 5 weken een review op mijn portfolio. Dit was niet alleen de content, maar kreeg ik ook (in)direct feedback over het bedienen van de website. 
