@@ -101,7 +101,8 @@ Voor het stukje kiezen van de beperking heb ik eerst met wireframes gespeeld om 
 
 Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding en onderste foto's toegevoegd op basis van de keuze van Thijs. Dit was omdat beide Berkan en Thijs de website heel zwart/wit hadden gemaakt en we zo geen kleurenblindheid konden tonen. Met een filter online heb ik de rode kleding, in het midden, kunnen veranderen naar de versie links. 
 
- 
+<a id="prototype"></a>
+
 ## Prototype
 
  ![Figma overview](/img/ux/pro-1.png)
@@ -109,7 +110,7 @@ Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding e
 Voor het testen van de website had ik een prototype nodig die interactief te bedienen was. Doormiddel van de Figma prototype functie heb ik elementen van de website kunnen linken aan elkaar. De gebruiker kan dan zo het bedoelde pad af gaan.
  
 
-## Testen
+## Testen {#testen-1}
 
 Voor mijn test wilde ik me voornamelijk richten op het onderdeel waar ik mee bezig ben geweest, namelijk de handelingen en het complete pad wat een gebruiker moet afleggen om bij het eindproduct te komen. De webpagina's van het kiezen van de prefab website of een html invoeren en daarbij de prefab website zelf, zijn niet door mij gemaakt. Wel laat ik deze ook door de testers bezoeken om een algehele mening te kunnen krijgen. In dit verslag noteer ik wel alleen feedback die voor mijzelf van toepassing is.
 

@@ -14,7 +14,8 @@ Met Figma heb ik geleerd functionele prototypes te maken die te doorlopen zijn d
 ## Projecten:
 
 <h3 id="ux-cardan">UX - Cardan</h3>
-Tijdens dit project heb ik actief feedback verwerkt van de opdrachtgever. Daarnaast heb ik verschillende prototypes ontwikkeld om meer inzicht te krijgen in het gebruiksgemak van mijn ontwerp. Om dit te toetsen, heb ik twee gebruikers gevraagd om door de website te navigeren. Op basis van hun ervaringen gaven zij waardevolle feedback, die ik vervolgens heb toegepast om het ontwerp verder te optimaliseren.
+
+Tijdens dit project heb ik actief feedback verwerkt van de opdrachtgever. Daarnaast heb ik verschillende prototypes ontwikkeld om meer inzicht te krijgen in het gebruiksgemak van mijn ontwerp. Bekijk de [prototypes](/point2#prototype) die hiervoor zijn gemaakt. Om dit te [testen](/point2#testen-1), heb ik twee gebruikers gevraagd om door de website te navigeren. Op basis van hun ervaringen gaven zij waardevolle feedback, die ik vervolgens heb toegepast om het ontwerp verder te optimaliseren.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -23,7 +24,8 @@ Tijdens dit project heb ik actief feedback verwerkt van de opdrachtgever. Daarna
 </div>
 
 <h3 id="development-cardan">Development - Cardan</h3>
-Tijdens dit project heb ik de feedback die ik eerder tijdens het UX-project had ontvangen opnieuw kunnen toepassen. Daarnaast hebben we onze functionaliteit laten testen door een docent, Anke. Zij gaf ons direct enkele waardevolle feedbackpunten, die we zorgvuldig hebben genoteerd. Vervolgens heb ik de functionaliteit door een andere gebruiker laten testen, die de eerdere feedback bevestigde en daarnaast aanvullende verbeterpunten aandroeg. Al deze aandachtspunten heb ik samen met Laurens besproken en vervolgens in het project verwerkt.
+
+Tijdens dit project heb ik de feedback die ik eerder tijdens het UX-project had ontvangen opnieuw kunnen toepassen. Daarnaast hebben we onze functionaliteit laten testen door een docent, Anke. Zij gaf ons direct enkele waardevolle feedbackpunten, die we zorgvuldig hebben genoteerd. Vervolgens heb ik de functionaliteit door een andere gebruiker laten [testen](/point3#testen-2), die de eerdere feedback bevestigde en daarnaast aanvullende verbeterpunten aandroeg. Al deze aandachtspunten heb ik samen met Laurens besproken en vervolgens in het project verwerkt.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
