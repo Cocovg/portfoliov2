@@ -35,4 +35,10 @@ Tijdens dit project heb ik de feedback die ik eerder tijdens het UX-project had 
 
 <h3 id="portfolio">Portfolio</h3>
 
-Voor mijn portfolio kreeg ik natuurlijk ook elke 5 weken een review op mijn portfolio. Dit was niet alleen de content, maar kreeg ik ook (in)direct feedback over het bedienen van de website. 
+Voor mijn portfolio kreeg ik natuurlijk ook elke 5 weken een review op mijn portfolio. Dit was niet alleen de content, maar kreeg ik ook (in)direct feedback over het bedienen van de website.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Portfolio Project
+  </a>
+</div>

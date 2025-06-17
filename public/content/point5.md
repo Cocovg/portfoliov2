@@ -3,7 +3,11 @@
 # Media-S2 Procesverslag portfolio
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+    <a href="/LO1#portfolio" style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO1</a>
     <a href="/LO2#portfolio" style="display: inline-block; background-color:rgb(181, 136, 38); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO2</a>
+    <a href="/LO3#portfolio" style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO3</a>
+    <a href="/LO4#portfolio" style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO4</a>
+    <a href="/LO5#portfolio" style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO5</a>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">

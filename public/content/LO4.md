@@ -17,7 +17,8 @@ Ten slot heb ik gebruik gemaakt van het projectboard op GitHub. Dit projectboard
 ## Projecten:
 
 <h3 id="branding">Branding</h3>
-In dit project heb ik samen met mijn groep gewerkt in verschillende media zoals Discord en Figma. 
+
+In dit project heb ik samen met mijn groep gewerkt en [gecommuniceerd](/point1#communicatie) in verschillende media zoals Discord en Figma. In Figma waren we dichtbij betrokken in elkaars werk en maakte we gezamelijke beslissingen rondom het project. Zo zijn we met moodboard gestard en hebben we themas verdeeld bij de stylescapes. Hierna hebben we werk verdeeld onder groepen en zijn we in onze kleinere groepen verder gegaan met de content die moest worden gemaakt.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point1#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -26,6 +27,7 @@ In dit project heb ik samen met mijn groep gewerkt in verschillende media zoals 
 </div>
 
 <h3 id="ux-cardan">UX - Cardan</h3>
+
 Voor Cardan heb ik onderzoek gedaan naar kleurenblindheid. Welke vormen en effecten er zijn en wat een persoon met kleurenblindheid veel kan helpen in het bedienen van een website. Daarnaast hebben we als groep samen in word documenten gewerkt aan deze onderzoeken en hebben we gecommuniceerd in Discord. Designs werden in Figma gemaakt.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
@@ -35,10 +37,21 @@ Voor Cardan heb ik onderzoek gedaan naar kleurenblindheid. Welke vormen en effec
 </div>
 
 <h3 id="development-cardan">Development - Cardan</h3>
+
 In dit project hebben we professionele development practices toegepast, inclusief proper Git workflow, code reviews en projectmanagement.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
     Bekijk Development Project
+  </a>
+</div>
+
+<h3 id="portfolio">Portfolio</h3>
+
+Voor mijn portfolio heb ik professionele werkwijzen toegepast bij de ontwikkeling, inclusief versiebeheer met GitHub, systematische feedback verwerking na elke review, en goede documentatie van het proces.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Portfolio Project
   </a>
 </div>

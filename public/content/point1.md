@@ -3,6 +3,7 @@
 # Boris Schmidt
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
+    <a href="/LO1#branding" style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO1</a>
     <a href="/LO3#branding" style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO3</a>
     <a href="/LO4#branding" style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO4</a>
     <a href="/LO5#branding" style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO5</a>
@@ -23,7 +24,7 @@ Hijzelf gaf ons verschillende ideeën waar wij ons op konden focussen. Zo vond h
 
 
 
-## Communicatie
+<h2 id="communicatie">Communicatie</h2>
 
 Voor onze communicatie gebruikte wij Discord. Hier hadden wij een gezamenlijke server waarin wij nodige onderwerpen en middelen deelde met elkaar. 
 
@@ -147,7 +148,7 @@ Voor de voorkant van de brandguide heb ik geprobeerd om met de vormen te spelen 
 
 ![Brandguide](/img/branding/bran-8.png)
 
-## Reflectie
+<h2 id="reflectie">Reflectie</h2>
 
 In dit semester begonnen we met dit project, daarbij kwam ook een totaal andere sfeer. De lessen waren deze periode vele malen meer inhoudelijker en de extra opdracht van het portfolio was nog even iets waar ik aan moest wennen. Beide opdrachten zijn erg leuk maar daarbij vond ik het lastig welke van de twee een hogere prioriteit had. Daarnaast door de inhoudelijke lessen kon ik lastig mijn tijd indelen om aan de projecten tijdens deze lessen te werken.
 

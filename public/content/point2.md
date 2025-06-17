@@ -57,9 +57,9 @@ Samen met Dominique heb ik onderzoek gedaan naar kleurenblindheid. Hier hebben w
   ![Communicatie in Discord](/img/ux/res-1.png)
   ![Communicatie in Discord](/img/ux/res-2.png)
 
-  <a href="/files/onderzoek visuele beperkingen.pdf" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
+  <a href="C\files\projectplan.pdf" target="_blank" style="display: inline-block; background-color:rgb(60, 154, 186); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Procesverslag PDF</a>
 
-Vanuit dit onderzoek hebben we de eerste iteraties en het concept bedacht voor het project. 
+
 
 ## Personas
 ![Personas](/img/ux/personas.png)
@@ -219,12 +219,12 @@ De feedback uit deze test heb ik toegepast in een volgend project binnen het vak
 
 
 
-## Reflectie
+<h2 id="reflectie">Reflectie</h2>
 De opstart van dit project vond ik behoorlijk uitdagend. In het begin had ik moeite om het project goed te begrijpen, vooral omdat niet duidelijk was wat er precies van ons werd verwacht. Daarnaast verloren we kostbare tijd in de eerste week, doordat er weinig concrete informatie beschikbaar was. De opdrachtgever kwam pas op donderdag langs om toelichting te geven, waardoor we pas laat echt konden beginnen.
 Tijdens de tweede week hebben we vooral veel tijd besteed aan het verkennen van het project, het uitvoeren van de eerste onderzoeken en het opstellen van een voorlopig ontwerp. Dit moesten we aan het einde van de week al presenteren. Het proces voelde voor mij onlogisch: gezien de focus op gebruiksvriendelijkheid had ik verwacht dat er meer ruimte zou zijn voor uitgebreid onderzoek. Er werd ons echter al op dag twee of drie verteld dat we hier niet te veel tijd aan moesten besteden. Dat vond ik jammer, want ik had gehoopt meer inzicht te krijgen in algemene bewustwording rondom toegankelijkheid — een belangrijk onderwerp dat voor developers van groot belang is.
 Na het eerste contact met de klant kreeg ik waardevolle feedback: het was belangrijk om goed na te denken over de handelingen en de gebruikersflow binnen de website. Hier ben ik vervolgens intensief mee aan de slag gegaan, waarbij ik meerdere iteraties heb doorlopen. Uiteindelijk heb ik een duidelijke en gebruiksvriendelijke flow weten te ontwerpen, waar ik tevreden over ben. Ook over mijn bijdrage aan het eindresultaat kijk ik met een goed gevoel terug.
 
-### Groepsreflectie
+<h3 id="groepsreflectie">Groepsreflectie</h3>
 De samenwerking binnen ons team verliep over het algemeen goed. In een groep van vijf waren er vier leden die goed communiceerden en taken op een effectieve manier konden verdelen. De samenwerking met Tom, het vijfde groepslid, verliep echter moeizaam. Tijdens het vorige project had ik al ervaren dat communicatie en het nemen van verantwoordelijkheid bij hem een probleem vormden. Ik heb hierover destijds met Evelien gesproken om advies te krijgen hoe ik hiermee in de toekomst beter kon omgaan.
 Op basis van dat gesprek heb ik tijdens dit project geprobeerd het verantwoordelijkheidsgevoel beter af te bakenen. Bij de taakverdeling zorgde ik ervoor dat Tom eigen, duidelijk afgebakende taken kreeg. Het idee was dat als hij zijn werk niet zou doen of deadlines zou missen, dit zijn verantwoordelijkheid zou blijven. Dit bleek effectief: Tom voldeed wederom niet aan zijn verplichtingen en was uiteindelijk ook niet aanwezig bij de eindpresentatie. Omdat onze eigen taken wel op orde waren, voelde ik me hierdoor minder belast en hoefde ik me niet namens de groep te verantwoorden voor zijn aandeel. Uiteindelijk is hij gestopt met het project en de opleiding, waardoor dit geen verdere impact had op onze voortgang.
 Een extra uitdaging ontstond doordat ook een ander groepslid, Dominique, tijdelijk afwezig was. Hierdoor moesten we enkele aanpassingen doen aan het ontwerp, maar dit konden we relatief soepel opvangen. Berkan en Thijs werkten intensief samen aan hun prefab website en een aanvullende pagina. Ik liep hierbij tegen een probleem aan: het design was visueel niet effectief omdat het alleen uit zwarte en witte elementen bestond. Hierdoor werd het moeilijk om aspecten van kleurenblindheid — mijn toegewezen onderwerp — goed te illustreren. Hoewel ik dit tijdig had aangegeven, kreeg ik uiteindelijk de taak om de kleuren aan te passen. Aangezien dit bij mijn deel hoorde, heb ik hier extra tijd in gestoken. Gelukkig had dit geen negatieve invloed op de kwaliteit van mijn eindproducten.

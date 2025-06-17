@@ -137,7 +137,7 @@ De test gaf mij het inzicht dat de ervaring over het algemeen duidelijk en direc
   </tbody>
 </table>
 
-## Reflectie
+<h2 id="reflectie">Reflectie</h2>
 
 Bij dit project heb ik relatief weinig moeite ervaren. Dit kwam deels door de samenwerking met Laurens, maar ook doordat het niveau goed aansloot bij mijn huidige kennis. Dankzij mijn voorkennis kon ik met vertrouwen en gemak aan het project werken. Bovendien waren de scope en het doel van het project al duidelijk, mede door ervaringen uit het vorige project. De ontwikkeling verliep vlot, mede dankzij het gebruik van AI, wat het proces aanzienlijk versneld en vereenvoudigd heeft.
 

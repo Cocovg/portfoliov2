@@ -15,13 +15,9 @@ Voor mijn volgende semester had ik eerst gekozen voor Media Creation, voornameli
 
 ## Projecten: 
 <h3 id="branding">Branding</h3>
-In dit project heb ik initiatief genomen om feedback te vragen en heb ik mijn eigen designvisie kunnen verdedigen terwijl ik open stond voor verbetering.
 
-#### Styling
-Hier heb ik mijn creatieve proces kunnen tonen en feedback kunnen implementeren.
+Voor dit project zaten we in een best grote groep van 7 man. We werkte over het algemeen goed samen en hebben een mooi product kunnen maken. In mijn [reflectie](/point1#reflectie) zal ik hier ook verder over praten en mijn gesprek met Evelien ook highlighten waar ik haar vroeg voor advies. Zo was er een student die niet heel goed zijn bijdrage toonde, ik had advies nodig over hoe ik dit in de toekomst aan moet pakken. 
 
-#### Brandguide
-Bij de brandguide heb ik geleerd om mijn keuzes goed te onderbouwen en te communiceren.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point1#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -30,7 +26,8 @@ Bij de brandguide heb ik geleerd om mijn keuzes goed te onderbouwen en te commun
 </div>
 
 <h3 id="ux-cardan">UX - Cardan</h3>
-Hier heb ik het initiatief genomen om gebruikerstesten uit te voeren en de feedback proactief verwerkt in mijn designs.
+
+In het UX project kwamen we wat kleine groepsobstakels tegen die ikzelf en als groep goed hebben kunnen overkomen. In mijn [reflectie](/point2#reflectie) zal ik dieper ingaan op het proces van het project en de [groepsdynamiek](/point2#groepsreflectie) die plaatsvond.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -39,10 +36,20 @@ Hier heb ik het initiatief genomen om gebruikerstesten uit te voeren en de feedb
 </div>
 
 <h3 id="development-cardan">Development - Cardan</h3>
-In dit project heb ik feedback uit het UX project verwerkt en ben ik proactief nieuwe testen gaan uitvoeren met docenten en externe testers.
+
+In dit project heb ik voornamelijk veel geleerd en kunnen [reflecteren](/point3#reflectie) op development en het ontwikkelen van de website. Tijdens dit project heb ik samengewerkt met Laurens, met wie ik al vaker op een vorige opleiding heb samengewerkt. Zo was het samenwerken heel makkelijk en vloeiend en heb ik meer kunnen leren over een goeie opzet voor het project. 
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
     Bekijk Development Project
+  </a>
+</div>
+
+<h3 id="portfolio">Portfolio</h3>
+Voor mijn portfolio heb ik continu feedback gevraagd en verwerkt. Gedurende het semester heb ik regelmatige reviews gehad en gewerkt aan het verbeteren van het ontwerp, de inhoud en de functionaliteit van het portfolio.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Portfolio Project
   </a>
 </div>
