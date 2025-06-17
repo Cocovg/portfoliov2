@@ -137,6 +137,10 @@ De test gaf mij het inzicht dat de ervaring over het algemeen duidelijk en direc
   </tbody>
 </table>
 
+<h2 id="oplevering">Oplevering</h2>
+
+Tijdens de oplevering van het volledige product hebben we onze stakeholder, Carolina de website laten bekijken. Zo hebben we samen de functie van de bewegende knop ontdekt en hebben we uitgelegd hoe de filter werkt en waarom er ook sommige beperkingen zijn. Carolina was heel positief over de website en gaf nog een paar tips om het geheel uit te breiden. Zo zou ze ook de functie van voorleessoftware willen, zodat ook gebruikers kunnen ervaren hoe het is om onbereikbare stukken van de website te kunnen bedienen nadat de filter is gebruikt. Ook een scan of rapport van een bestaande website zou leuk zijn zodat gebruikers gelijk de confrontatie aan kunnen. Tot slot had ze nog een paar kleine puntjes zoals het liefst informele tekst en een punt achter een titel weg te laten. Voor beide Laurens en mij was dit natuurlijk erg fijn om te horen. 
+
 <h2 id="reflectie">Reflectie</h2>
 
 Bij dit project heb ik relatief weinig moeite ervaren. Dit kwam deels door de samenwerking met Laurens, maar ook doordat het niveau goed aansloot bij mijn huidige kennis. Dankzij mijn voorkennis kon ik met vertrouwen en gemak aan het project werken. Bovendien waren de scope en het doel van het project al duidelijk, mede door ervaringen uit het vorige project. De ontwikkeling verliep vlot, mede dankzij het gebruik van AI, wat het proces aanzienlijk versneld en vereenvoudigd heeft.

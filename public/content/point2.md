@@ -75,10 +75,11 @@ Met mijn design begon ik met een kleine wireframe en een klein design die snel m
  ![Communicatie in Discord](/img/ux/des-1.png)
  
  
-## Eerste klantcontact
+<h2 id="eerste-klantcontact">Eerste klantcontact</h2>
 Bij de eerste presentatie met de klant heb ik voornamelijk het woord genomen met hulp van Thijs en Berkan. We waren met 3 van ons aanwezig om het gesprek aan te gaan. Hier hebben we ons idee uitgelegd en de richting waar wij naartoe willen werken. 
  
   ![Communicatie in Discord](/img/ux/klan-1.png)
+
 
 Vanuit dit gesprek kregen we nuttige feedback die we kunnen toepassen op onze designs.
 Zo was voor mijzelf een belangrijke, dat het proces en lijn van de handelingen nog duidelijker moest. Ook mochten we meer confronterend zijn met onze designs. 
@@ -116,7 +117,7 @@ Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding e
 Voor het testen van de website had ik een prototype nodig die interactief te bedienen was. Doormiddel van de Figma prototype functie heb ik elementen van de website kunnen linken aan elkaar. De gebruiker kan dan zo het bedoelde pad af gaan.
  
 
-## Testen {#testen-1}
+<h2 id="testen-1">Testen</h2>
 
 Voor mijn test wilde ik me voornamelijk richten op het onderdeel waar ik mee bezig ben geweest, namelijk de handelingen en het complete pad wat een gebruiker moet afleggen om bij het eindproduct te komen. De webpagina's van het kiezen van de prefab website of een html invoeren en daarbij de prefab website zelf, zijn niet door mij gemaakt. Wel laat ik deze ook door de testers bezoeken om een algehele mening te kunnen krijgen. In dit verslag noteer ik wel alleen feedback die voor mijzelf van toepassing is.
 
@@ -217,14 +218,20 @@ De feedback uit deze test heb ik toegepast in een volgend project binnen het vak
 •	De functie om een eigen URL in te voeren is verplaatst naar een beter zichtbare plek bovenaan de pagina.
 •	Samen met het team hebben we ook een nieuwe prefab-website ontwikkeld waarin kleurenblindheid beter wordt gesimuleerd en het doel van de tool duidelijker naar voren komt.
 
+<h2 id="oplevering">Oplevering</h2>
 
+![Oplevering](/img/ux/pre-1.jpg)
+
+Tijdens de oplevering heb ik samen met mijn groepje het concept en de gemaakte producten gepresenteerd. Hier sprak ik zelf over het gehele concept en heb ik de pagina's besproken waar ik mee bezig ben geweest. Waarin Dominique en Berkan hun onderdelen voorlegde aan de stakeholder, Carolina en Bram, onze docent. Na deze presentatie kregen we feedback, waarin Carolina enthousiast was over de knop die ik had ontworpen en wilde vond ze het concept erg leuk maar wilde net wat meer verdieping. Ook vond ze het idee van de prefab website erg sterk en was erg geneigd naar het idee van een bestaande website maken, wat Dominique had gemaakt. De prefab website van de kleding vond ze minder sterk en wilde dus dat in het volgende project meer gericht werd op een realistische website die veel lijkt op een bestaande website.
 
 <h2 id="reflectie">Reflectie</h2>
+
 De opstart van dit project vond ik behoorlijk uitdagend. In het begin had ik moeite om het project goed te begrijpen, vooral omdat niet duidelijk was wat er precies van ons werd verwacht. Daarnaast verloren we kostbare tijd in de eerste week, doordat er weinig concrete informatie beschikbaar was. De opdrachtgever kwam pas op donderdag langs om toelichting te geven, waardoor we pas laat echt konden beginnen.
 Tijdens de tweede week hebben we vooral veel tijd besteed aan het verkennen van het project, het uitvoeren van de eerste onderzoeken en het opstellen van een voorlopig ontwerp. Dit moesten we aan het einde van de week al presenteren. Het proces voelde voor mij onlogisch: gezien de focus op gebruiksvriendelijkheid had ik verwacht dat er meer ruimte zou zijn voor uitgebreid onderzoek. Er werd ons echter al op dag twee of drie verteld dat we hier niet te veel tijd aan moesten besteden. Dat vond ik jammer, want ik had gehoopt meer inzicht te krijgen in algemene bewustwording rondom toegankelijkheid — een belangrijk onderwerp dat voor developers van groot belang is.
 Na het eerste contact met de klant kreeg ik waardevolle feedback: het was belangrijk om goed na te denken over de handelingen en de gebruikersflow binnen de website. Hier ben ik vervolgens intensief mee aan de slag gegaan, waarbij ik meerdere iteraties heb doorlopen. Uiteindelijk heb ik een duidelijke en gebruiksvriendelijke flow weten te ontwerpen, waar ik tevreden over ben. Ook over mijn bijdrage aan het eindresultaat kijk ik met een goed gevoel terug.
 
 <h3 id="groepsreflectie">Groepsreflectie</h3>
+
 De samenwerking binnen ons team verliep over het algemeen goed. In een groep van vijf waren er vier leden die goed communiceerden en taken op een effectieve manier konden verdelen. De samenwerking met Tom, het vijfde groepslid, verliep echter moeizaam. Tijdens het vorige project had ik al ervaren dat communicatie en het nemen van verantwoordelijkheid bij hem een probleem vormden. Ik heb hierover destijds met Evelien gesproken om advies te krijgen hoe ik hiermee in de toekomst beter kon omgaan.
 Op basis van dat gesprek heb ik tijdens dit project geprobeerd het verantwoordelijkheidsgevoel beter af te bakenen. Bij de taakverdeling zorgde ik ervoor dat Tom eigen, duidelijk afgebakende taken kreeg. Het idee was dat als hij zijn werk niet zou doen of deadlines zou missen, dit zijn verantwoordelijkheid zou blijven. Dit bleek effectief: Tom voldeed wederom niet aan zijn verplichtingen en was uiteindelijk ook niet aanwezig bij de eindpresentatie. Omdat onze eigen taken wel op orde waren, voelde ik me hierdoor minder belast en hoefde ik me niet namens de groep te verantwoorden voor zijn aandeel. Uiteindelijk is hij gestopt met het project en de opleiding, waardoor dit geen verdere impact had op onze voortgang.
 Een extra uitdaging ontstond doordat ook een ander groepslid, Dominique, tijdelijk afwezig was. Hierdoor moesten we enkele aanpassingen doen aan het ontwerp, maar dit konden we relatief soepel opvangen. Berkan en Thijs werkten intensief samen aan hun prefab website en een aanvullende pagina. Ik liep hierbij tegen een probleem aan: het design was visueel niet effectief omdat het alleen uit zwarte en witte elementen bestond. Hierdoor werd het moeilijk om aspecten van kleurenblindheid — mijn toegewezen onderwerp — goed te illustreren. Hoewel ik dit tijdig had aangegeven, kreeg ik uiteindelijk de taak om de kleuren aan te passen. Aangezien dit bij mijn deel hoorde, heb ik hier extra tijd in gestoken. Gelukkig had dit geen negatieve invloed op de kwaliteit van mijn eindproducten.

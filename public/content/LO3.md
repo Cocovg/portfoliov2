@@ -49,7 +49,7 @@ Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik m
 
 <h3 id="portfolio">Portfolio</h3>
 
-Met dit portfolio heb ik natuurlijk ook veel iteraties gemaakt van verschillende onderdelen. Zo heb ik iteraties voor mijn [concept](/point5#schetsen), [logos](/point5#logo), [3D model](/point5#3d-model) en [versies](/point5#prototype-1). Zo heb ik een conceptuele versie, waar ik het idee eerst in grote lijnen heb gecodeerd. Daarna heb ik een uiteindelijke versie opgebouwd en mijn content hierin verwerkt. Met elke review heb ik verschillende keuzes gemaakt op dit doet te bereiken.
+Met dit portfolio heb ik natuurlijk ook veel iteraties gemaakt van verschillende onderdelen. Zo heb ik iteraties voor mijn [concept](/point5#schetsen), [logos](/point5#logo), [3D model](/point5#3d-model) en [versies](/point5#prototype-1). Zo heb ik een conceptuele versie, waar ik het idee eerst in grote lijnen heb gemaakt. Daarna heb ik een uiteindelijke versie opgebouwd en mijn content hierin verwerkt. Met elke review heb ik verschillende keuzes gemaakt op dit doet te bereiken.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">

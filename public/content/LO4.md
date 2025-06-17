@@ -28,7 +28,7 @@ In dit project heb ik samen met mijn groep gewerkt en [gecommuniceerd](/point1#c
 
 <h3 id="ux-cardan">UX - Cardan</h3>
 
-Voor Cardan heb ik [onderzoek](/point2#research) gedaan naar kleurenblindheid. Welke vormen en effecten er zijn en wat een persoon met kleurenblindheid veel kan helpen in het bedienen van een website. Daarnaast hebben we als groep samen in word documenten gewerkt aan deze onderzoeken en hebben we [gecommuniceerd](/point2#communicatie) in Discord. Designs werden in Figma gemaakt.
+Voor Cardan heb ik [onderzoek](/point2#research) gedaan naar kleurenblindheid. Welke vormen en effecten er zijn en wat een persoon met kleurenblindheid veel kan helpen in het bedienen van een website. Daarnaast hebben we als groep samen in word documenten gewerkt aan deze onderzoeken en hebben we [gecommuniceerd](/point2#communicatie) in Discord. Designs werden in Figma gemaakt. Ten slotte heb ik 2 keer voor de klant gepresenteerd en de presentaties voorbereid. Bij de [eerste presentatie](/point2#eerste-klantcontact) kregen we feedback op ons concept die we verder hebben uitgwerkt, waar we bij de [tweede presentatie](/point2#oplevering) de resultaten opleverden.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
@@ -38,7 +38,7 @@ Voor Cardan heb ik [onderzoek](/point2#research) gedaan naar kleurenblindheid. W
 
 <h3 id="development-cardan">Development - Cardan</h3>
 
-In dit project hebben we veel mondeling [gecommuniceerd](/point3#communicatie). We hadden wel wat omgevingen gebruikt voor het delen van documenten en aantekeningen. Daarnaast hebben we een projectboard geopend om taken te verdelen, zodat we deze konden gebruiken om samen het project te bouwen met verschillende branches.
+In dit project hebben we veel mondeling [gecommuniceerd](/point3#communicatie). We hadden wel wat omgevingen gebruikt voor het delen van documenten en aantekeningen. Daarnaast hebben we een projectboard geopend om taken te verdelen, zodat we deze konden gebruiken om samen het project te bouwen met verschillende branches. Tot slot heb ik ook samen met Laurens een [oplevering](/point3#oplevering) met stakeholder, Carolina gehad waar we fijne feedback kregen met zelfs uitbreidingen die de functie nog beter zou kunnen maken.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
