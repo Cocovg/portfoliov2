@@ -18,12 +18,9 @@ Dit semester heb ik ook geleerd met het framework Nuxt te werken, dat mij uitein
 
 In dit project heb ik samen met Laurens gewerkt aan een functie die dient als filter voor kleurenblindheid. Hier hebben we samen gebruik gemaakt van een gedeelde GitHub waarbij wij elk onze bijdrage leverden, zodat dit uiteindelijk een geheel project werd. Zo hebben we een project opgezet en onze taken verdeeld. Deze taken waren gekoppeld aan een branch in het project waarbij wij de functies daaraan konden koppelen en per functie een branch hadden. Deze branches gaven overzicht en zo was het ook moeilijker om merge conflicts te veroorzaken.
 
-De uiteindelijke content die ik heb gemaakt is een call-to-action knop en de gehele prefab website, voorpagina en productpagina. Daarnaast is ook alles responsive.
+De uiteindelijke content die ik heb gemaakt is een [call-to-action knop](/point3#call-to-action-knop), de [voorpagina](/point3#voorpagina) en de gehele [prefab website](/point3#prefab-website). Daarnaast is ook alles responsive.
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-  <a href="/point2#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
-    Bekijk UX Project
-  </a>
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
     Bekijk Development Project
   </a>
