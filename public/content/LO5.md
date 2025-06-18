@@ -46,6 +46,7 @@ In dit project heb ik voornamelijk veel geleerd en kunnen [reflecteren](/point3#
 </div>
 
 <h3 id="portfolio">Portfolio</h3>
+
 Voor mijn portfolio heb ik continu feedback gevraagd en verwerkt. Gedurende het semester heb ik regelmatige reviews gehad en gewerkt aan het verbeteren van het ontwerp, de inhoud en de functionaliteit van het portfolio.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">

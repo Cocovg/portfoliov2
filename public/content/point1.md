@@ -36,6 +36,7 @@ Hier deelde wij ook de feedback die wij als groep kregen, notities van lessen en
 ![Communicatie in Discord](/img/branding/com-3.png)
 
 Onze designs hebben we in een gezamenlijk board op Figma gemaakt. Op deze manier waren we betrokken bij elkaar en konden we gemakkelijk feedback geven.
+
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-38&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px;   text-decoration: none; border-radius: 4px;">Figma omgeving 1: Design fase</a>
 </div>
@@ -43,6 +44,7 @@ Onze designs hebben we in een gezamenlijk board op Figma gemaakt. Op deze manier
 ![Communicatie in Discord](/img/branding/com-4.png)
 
 In het gehele proces hebben we onze fases gescheiden gehouden en konden wij, voor voornamelijk ons, overzichtelijk blijven werken.
+
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
   <a href="https://www.figma.com/design/k2iGEoQb9xfIsQkrIZQYFl/Boris-Schmidt?node-id=970-572&t=wmTCioxJv5jsTlOH-1" target="_blank" style="display: inline-block; background-color: #4a54f1; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">Figma omgeving 2: Brandguide fase</a>
 </div>
@@ -57,9 +59,10 @@ In het gehele proces hebben we onze fases gescheiden gehouden en konden wij, voo
 
 Tijdens het project heb ik natuurlijk veel moeten designen en daarbij moest ik zoeken naar een stijl en richting waarbij we met het project verder zouden gaan. In dit stuk zal ik meer ingaan op alle aspecten waarin ik iteraties heb ontwikkeld en waaraan ik heb gewerkt. Daarnaast zal ik met mijn denkproces mijn keuzes ondersteunen.
 
-![Communicatie in Discord](/img/branding/sty-1.png)
 
 <h3 id="moodboard">Moodboard</h3>
+
+![Communicatie in Discord](/img/branding/sty-1.png)
 
 Met het moodboard wilde ik voornamelijk op het mysterieuze en natuurlijke terugkomen. Boris zijn enthousiasme lag voornamelijk heel erg in mysterie en natuur, met de daarbij abstracte vormen en dieren. Met deze gedachte wilde ik ook zijn eigen foto's gebruiken om een weg te vinden naar welke kleuren hier het beste bij passen.
 
@@ -90,6 +93,7 @@ Mijn inspiratie kwam het meest van bestaande DJ logo’s. Hier wordt voornamelij
 ![Communicatie in Discord](/img/branding/sty-5.png)
 
 ### Personas
+
 ![Communicatie in Discord](/img/branding/sty-6.png)
 
 De personas hielpen mij om goed grip te houden op de doelgroep waar ik mij op richtte, en waar Boris zich op wilde richten. Zijn wens was om een doelgroep van 18 tot 40 jaar aan te spreken: mensen die creatief en vrij zijn in hun denken en levensstijl. Mijn focus lag op visueel georiënteerde mensen die hun keuzes mede baseren op uitstraling en ontwerp.

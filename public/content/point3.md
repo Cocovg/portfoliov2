@@ -21,6 +21,7 @@ In dit project houden we ons bezig met het ontwikkelen van de functie die we in 
 In dit project werkte ik samen met Laurens Kosters en hebben we ons gericht op een functie die vanuit de website een filter kan geven aan een bestaande website of een prefab website die door ons is gemaakt.
  
 <h2 id="communicatie">Communicatie</h2>
+
 Voor communicatie hebben we voornamelijk Discord en GitHub gebruikt. In Discord deelde we bronnen, werkomgevingen en notities. 
 
  ![Figma overview](/img/development/com-1.png)
@@ -39,11 +40,15 @@ Zoals de foto hieronder, zijn de branches gebruikt om de main branch aan te vull
  ![Figma overview](/img/development/com-4.png)
  
 <h2 id="design">Design</h2>
+
 In het vorige project was al een groot deel van het design gemaakt. Dus heb ik mij deze fase gericht op met verwerken van feedback in het design van de "Blob". Hier kreeg ik tijdens de eindpresentatie van het UX project complimenten over het idee en de functie van de blob, maar mocht deze nog meer opvallen. Vanuit de usertests kwam dit ook naar voren en kreeg ik meer feedback over de kleur en de locatie. Zo heb ik met meerdere vormen gespeeld en heb ik variaties met kleur uitgeprobeerd. Van Bram kreeg ik tijdens dit project ook de feedback om hem eventueel schuin te plaatsen. Zelf was ik daar niet zo een fan van omdat ik het niet helemaal bij de rest van de pagina en stijl vond passen en daarnaast wilde ik dat de blob niet als een sticker werd gezien. Daarbij heb ik later in het proces een extra functie voor deze knop bedacht, waar het idee van een sticker niet meer bij zou aansluiten. Omdat deze functie meer beweging veroorzaakt.
+
  ![Figma overview](/img/development/des-1.png)
 
 ## Development
+
 <h3 id="voorpagina">Voorpagina</h3>
+
 Voor development ben ik zelf begonnen met het opzet van de beginpagina. Deze is nagemaakt met V0.dev. Hier was het mogelijk een screenshot van een bestaande pagina te laten kopiëren, wat vervolgens mij de code gaf om zelf nog aan te passen. Zo heb ik zelf nog de kleuren aangepast naar de officiële Cardan kleuren, de foto aangepast en font en lettergrootte aangepast. De pagina is ook niet volledige 1 op 1, dit was niet volledig nodig voor de ontwikkeling van de website. Wel kan het de klant een goed en realistisch beeld geven over hoe de functie eruitziet op hun pagina. Hieronder is het beeld van de AI en mijn uiteindelijke versie te zien.
 
 ![Figma overview](/img/development/dev-1.png)
@@ -72,12 +77,15 @@ Ook heb ik gekeken naar de responsiveness van de knop. Deze moest natuurlijk een
 <h3 id="prefab-website">Prefab website</h3>
  
 Ten slot ben ik bezig geweest met het maken van de prefab website, de bloemenwinkel. Vanuit de feedback van Carolina, onze stakeholder, heb ik deze zo gemaakt dat deze bijna helemaal op de winkel van Coppelmans lijkt. Carolina vertelde ons dat het haar leuk leek als de website heel confronterend kon zijn. Daarnaast is het ook realistisch omdat de website daadwerkelijk bestaat en bedrijven dus ook echt de fouten maken die ontoegankelijk worden ervaren. Ook dit initiële design heb ik ook V0 gebruikt. Al heb ik al het beeldmateriaal naar Coppelmans verwijderd en nieuwe toegevoegd. Voor het beeldmateriaal heb ik gelet op kleuren en variatie. Ook heb ik bij de website naar benamingen van producten bekeken om deze zo onhandig mogelijk te maken, door geen kleuren te vernoemen. Dit maakt het vrijwel onmogelijk om we weten wat voor kleur een plant heeft. De website is te bedienen door de producten te bekijken, die je vervolgens op de productenpagina kunt filteren, wat in verschillende modus van de filter niet gebruiksvriendelijk is.    
+
 ![Figma overview](/img/development/dev-9.png)
 ![Figma overview](/img/development/dev-10.png)
 
  
-## Testen {#testen-2}
+<h2 id="testen-2">Testen</h2>
+
 ### Doel van mijn test
+
 Voor deze test wilde ik onderzoeken hoe een gebruiker de kleurenblindheidssimulatie ervaart wanneer hij of zij uiteindelijk bij de producten van een bloemenwinkel uitkomt. Ik was benieuwd hoe intuïtief de navigatie is, of het proces helder verloopt en waar eventuele verwarring ontstaat. Ook wilde ik kijken of de filters goed werken en of er visuele of functionele obstakels zijn tijdens het gebruik van mijn ontwerp.
 
 ---

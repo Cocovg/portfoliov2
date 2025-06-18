@@ -96,21 +96,19 @@ Om verder te bouwen op de feedback, dat de lijn en handelingen duidelijk moesten
 
 De styling was zo gemaakt dat deze bij de styling paste van de rest van de website. Ook blijft deze in positie wanneer de gebruiker door de rest van de pagina heen scrolt. 
 
- ![Figma overview](/img/ux/des-4.png)
-
  <h3 id="beperk-jezelf">Beperk jezelf pagina</h3>
+
+  ![Figma overview](/img/ux/des-4.png)
   
 Voor het stukje kiezen van de beperking heb ik eerst met wireframes gespeeld om een idee te krijgen van hoe deze keuzes worden weergeven. Zo ging ik eerst voor de optie die ik vaak zag terugkomen bij Cardan op de website. Na feedback van Bram, die zei dat onderdelen op de website meer visueel duidelijk mogen zijn, zodat mensen niet te veel hoeven te lezen. Heb ik besloten toch een ander design te pakken, waarbij er foto's gebruikt worden die de beperking representeren.
 
- ![Figma overview](/img/ux/des-5.png)
-
  <h3 id="style-studio">Style studio</h3>
+
+  ![Figma overview](/img/ux/des-5.png)
 
 Voor de prefab website die gemaakt was door Berkan, heb ik nog zelf de kleding en onderste foto's toegevoegd op basis van de keuze van Thijs. Dit was omdat beide Berkan en Thijs de website heel zwart/wit hadden gemaakt en we zo geen kleurenblindheid konden tonen. Met een filter online heb ik de rode kleding, in het midden, kunnen veranderen naar de versie links. 
 
-<a id="prototype"></a>
-
-## Prototype
+<h2 id="prototype">Prototype</h2>
 
  ![Figma overview](/img/ux/pro-1.png)
 

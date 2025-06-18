@@ -12,6 +12,7 @@ Ook heb ik met mijn iPad Procreate aangeschaft zodat ik makkelijk en snel schets
 ---
 
 ## Projecten:
+
 <h3 id="branding">Branding</h3>
 
 Tijdens dit project heb ik meerdere iteraties voor de styling gemaakt. Zo ben ik tijdens de stylingfase bezig geweest met een [moodboard](/point1#moodboard), [stylescapes](/point1#stylescapes) en [logo's](/point1#logo) en heb ik bij de [brandguide](/point1#brandguide) meerdere ontwerpen gemaakt, ook samen met andere studenten.
