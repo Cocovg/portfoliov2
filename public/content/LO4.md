@@ -46,6 +46,16 @@ In dit project hebben we veel mondeling [gecommuniceerd](/point3#communicatie). 
   </a>
 </div>
 
+<h3 id="portfolio">Project X</h3>
+
+In dit project had ik samen met Guido gekeken naar mijn projectplan en heb ik daar doelen en concepten kunnen opstellen die mij helpen mijn product te maken. Voor het maken van mijn producten heb ik onderzoek gedaan naar welke middelen ik nodig had en hoe ik producten zoals mijn [3d model](/point5#3d-model) en [unity opzet](/point4#opzet) moest maken.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Portfolio Project
+  </a>
+</div>
+
 <h3 id="portfolio">Portfolio</h3>
 
 Voor mijn portfolio heb ik voornamelijk in het begin met het ontwikkelen van het visuele veel om feedback gevraagd aan beide docenten en medestudenten. Voor de content en ook gebruiksvriendelijkheid heb ik naar de reviews gekeken en deze feedback toegepast voor een fijner en gemakkelijke bediening.

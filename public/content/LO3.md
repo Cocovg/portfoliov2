@@ -46,7 +46,7 @@ In dit project heb ik niet enorm veel designs gemaakt. Wel heb ik tijdens de opl
 
 <h3 id="development-cardan">Project X</h3>
 
-Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, dit was voornamelijk omdat functies kapot gingen. Door een nieuwe iteratie te maken zou dit mij tijd besparen en ik kon ik meer leren over de instellingen van de objecten.
+Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, zoals [prototype 1](/point4#prototype-1) en [prototype 2](/point4#prototype-2), voor het uitbreiden van de app zelf. Maar ook omdat Unity zijn beperkingen heeft en het moeilijk maakte om naar vorige versies te gaan. Daarnaast heb ik ook [concepten](/point4#concept), [UI designs](/point4#ui) en een [3D model](/point4#3d-model) ontwikkeld. Waarbij ik tijdens de prototype fase ook meerdere versies van de bloemen heb moeten maken.
 
 <h3 id="portfolio">Portfolio</h3>
 
