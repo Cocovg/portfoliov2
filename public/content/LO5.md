@@ -57,7 +57,7 @@ Voor dit project was het doel totaal iets anders te doen dan dat ik de rest van 
 
 <h3 id="portfolio">Portfolio</h3>
 
-Voor mijn portfolio heb ik continu feedback gevraagd en verwerkt. Gedurende het semester heb ik regelmatige reviews gehad en gewerkt aan het verbeteren van het ontwerp, de inhoud en de functionaliteit van het portfolio.
+Voor mijn portfolio heb ik continu feedback gevraagd en verwerkt. Gedurende het semester heb ik regelmatige reviews gehad ([review 1](/point5#prototype-1), [review 2](/point5#review-2), [review 3](/point5#review-3)) en gewerkt aan het verbeteren van het ontwerp, de inhoud en de functionaliteit van het portfolio. Ook heb ik nog een klein beetje [gereflecteerd](/point5#conclusie) bij de conclusie.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point5#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">

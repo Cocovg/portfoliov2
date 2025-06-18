@@ -61,6 +61,7 @@ Voor de beeldgeving heb ik verschillende inspiraties opgedaan in games:
 - **Genshin Impact**: Zwevende kristallen/pilaren met kleine details. Hier zie ik mogelijkheden om naartoe uit te breiden, mocht ik de tijd en kennis hebben dit toe te passen.
 
 <h2 id="schetsen">Schetsen</h2>
+
 Voor mijn proces met beeldvorming zoals dit, vind ik het erg fijn om ook te schetsen. Dit is om zowel mijzelf als andere mijn idee visueel te kunnen laten zien. In deze schetsen heb ik ook gespeeld met wat extra details voor op het kristal.
 ![Inspiratie](/img/portfolio/sch-1.png)
 
@@ -141,6 +142,7 @@ Hulp bij uiteindelijke settings: [Tutorial link](https://www.youtube.com/watch?v
 Dit waren uiteindelijk de juiste instellingen die ik kon gebruiken voor toekomstige modellen.
 
 <h2 id="prototype-1">Review 1 / Prototype 1</h2> 
+
 Voor het initieel opzetten van de scene ben ik gelijk begonnen met een 3D model die ik vorig semester had gemaakt.
 
 ![Inspiratie](/img/portfolio/pro-1.png)
@@ -192,6 +194,7 @@ Hier had ik eindelijk een werkend resultaat.
 ![Inspiratie](/img/portfolio/pro-11.png)
 
 <h2 id="review-2">Review 2/ Prototype 2</h2>
+
 Voor prototype 2 was het voornamelijk meer richten op de code en nadat ik feedback van Bram ontving, mij meer richten op het invullen van content.
 
 ![Inspiratie](/img/portfolio/pro2-1.png)
@@ -228,6 +231,7 @@ Met wat hulp kwam ik ook op een punt waarin ik een fatsoenlijke tekst kon laten 
 Uiteindelijk heb ik ook de bollen vervangen voor cijfers zodat gebruik makkelijker en overzichtelijker is.
 
 <h2 id="review-3">Review 3 / Prototype 2</h2>
+
 Vanaf dit punt ben ik meer bezig geweest met documentatie en het aantonen van de leerdoelen. Zo heb ik bij de pop-up vensters van de projecten tags en linkjes toegevoegd voor de leerdoelen te koppelen en werkomgevingen.
 
 ![Inspiratie](/img/portfolio/re-1.png)
@@ -238,7 +242,15 @@ Ook wilde ik de website nogmaals een klein beetje aanpassen. Zo zijn de labels e
 ![Inspiratie](/img/portfolio/re-2.png)
 
 <h2 id="final">Final</h2>
+
 Voor de eindfase van het porftolio project was het belangrijk alle nodige feedback en content te verwerken in het geheel. Zo ben ik bezig geweest met het linken van Leeruitkomsten aan onderdelen van projecten zoals iteraties en designs. Daarnaast heb ik mij gericht op de gebruiksvriendelijkheid, zo zijn er meerdere punten beschikbaar waar op kan worden geklikt om de leeruitkomsten en bijbehorende bewijslast snel en gemakkelijk te kunnen zien. Dit was een groot punt vanuit beide Evelien en Guido.
 Tussentijds heb ik met Guido gezeten om naar mijn uitwerking hiervan te kijken en hij gaf aan dat dit snel en direct mijn bewijslast liet zien, precies waar hij naar zocht. Vanuit hier ben ik dus voornamelijk bezig geweest met de bewijslast te linken op deze manier en de gebruiksvriendelijkheid te verhogen. Daarnaast heb ik ook wat teksten aangepast en de nodige foto's toegevoegd.
 
 ![Final versie](/img/portfolio/fin-1.png)
+
+<h2 id="Conclusie">Conclusie</h2>
+
+Tot slot is dit portfolio nu eindelijk af. Tijdens dit project heb ik enorm veel kunnen leren over de mogelijkheden van websites. Zo heb ik elementen kunnen toevoegen die ik ook enorm leuk vond om te maken, zoals de 3D elementen als het kristal en de paden. Ik ben heel blij met hoe het product er nu uiteindelijk uit ziet en ben ook heel blij met de uiteindelijke werking van alle functies. 
+
+Voor de volgende keer, nu ik weet hoe de portfolios in elkaar zitten, zal ik wat beter plannen rondom mijn content en ontwikkelen. Zo heb ik vaak wel te weinig tijd gestoken in het maken van de content en had ik meer balans moeten vinden tussen de opdrachten en het portfolio. Zo had ik op het einde toch nog redelijk wat te maken en te corrigeren. Waardoor ik ook uiteindelijk minder tijd nog had om aan mijn Project X inhoudelijk te werken.
+
