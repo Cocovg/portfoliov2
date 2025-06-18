@@ -3,16 +3,11 @@
 # Project X - AR Bloementuin
 
 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-    <a href="/LO1#project-x" style="display: inline-block; background-color:rgb(219, 52, 52); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO1</a>
     <a href="/LO2#project-x" style="display: inline-block; background-color:rgb(181, 136, 38); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO2</a>
     <a href="/LO3#project-x" style="display: inline-block; background-color:rgb(43, 159, 76); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO3</a>
     <a href="/LO4#project-x" style="display: inline-block; background-color:rgb(33, 75, 225); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO4</a>
-    <a href="/LO5#project-x" style="display: inline-block; background-color:rgb(219, 52, 194); color: white; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-right: 5px; text-decoration: none;">LO5</a>
 </div>
 
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 20px 0;">
-  <a href="https://github.com/Cocovg/ar-bloementuin" target="_blank" style="display: inline-block; background-color: rgb(88, 52, 143); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px;">GitHub Repository</a>
-</div>
 
 ## Projectplan
 
@@ -188,7 +183,7 @@ Als vervanging heb ik continu de app "gebuild", waarbij ik langere periodes moes
 Wat mij uiteindelijk ook tegenzat was versiebeheer. Unity was toch even anders werken en gaat maar een klein aantal stappen terug wanneer je handeling probeert ongedaan te krijgen. Dus ik verloor vaak werkende builds doordat ik niet genoeg ongedaan kreeg. Daarnaast snapte ik niet helemaal hoe ik op GitHub het versiebeheer daar kon regelen. Iets wat ik zeker beter even had kunnen opzoeken.
 
 
-![concept](/img/proX/pro-1.png)
+![concept](/img/proX/pro-1.jpg)
 
 <h2 id="prototype-1">Prototype 1</h2>
 
@@ -202,14 +197,14 @@ Met deze videos kreeg ik de basiskennis over de GameObjects in de zijbalk en kon
 
 Hierna ben ik bezig geweest met het zelf plaatsen van de bloem. Waar ik met behulp van AI en bronnen een stuk vooruit was gekomen. Zo kon ik steeds een enkele bloem plaatsen maar werd de vorige verwijderd. Doormiddel van mijn code aan te passen in het bestand waar ik aangeef bloemen te willen plaatsen, heb ik de restrictie weggehaald van een enkele bloem. Daarna heb ik aangegeven meerdere bloemen te willen plaatsen in een ruimte en dit loste het probleem snel op.
 
-![concept](/img/proX/pro-6.png)
-![concept](/img/proX/pro-2.png)
+![concept](/img/proX/pro-6.jpg)
+![concept](/img/proX/pro-2.jpg)
 
 Wat mij snel opviel is de grootte van de bloemen, deze waren enorm. Hier moest ik terug Blender in om het model te verkleinen.
 
 Naast dat ik de bloemen had aangepast in grootte, heb ik ook de kleuren aangepast zodat de bloemen op madeliefjes lijken. In deze versie viel mij alleen op dat de schaduwen wel heel dramatisch geplaatst werden. Zo probeerde ik ook een versie uit waar ik de lichtbron uit de scene haalde, helaas werden de bloemen hier heel plat en saai.
 
-![concept](/img/proX/pro-3.png)
+![concept](/img/proX/pro-3.jpg)
 
 Uiteindelijk heb ik dit prototype vrij stuk gemaakt toen ik een startmenu wilde maken die gebruikers de app lieten starten of beëindigen. De "planes" van de app waren niet meer te zien en de bloemen konden niet meer geplaatst worden.
 
@@ -222,8 +217,8 @@ Het probleem begon zo complex te worden dat ik er met AI ook niet meer uitkwam. 
 Na wat camera instellingen te wijzigen, kreeg ik wel mijn planes terug en kon ik een enkel object plaatsen. Maar waren de planes niet voldoende gekoppeld aan mijn omgeving en bleven deze vaak hangen aan een vaste locatie op mijn scherm.
 
 
-![concept](/img/proX/pro-4.png)
-![concept](/img/proX/pro-5.png)
+![concept](/img/proX/pro-4.jpg)
+![concept](/img/proX/pro-5.jpg)
 
 <h2 id="reflectie">Reflectie</h2>
 

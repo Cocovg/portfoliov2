@@ -45,6 +45,16 @@ In dit project heb ik voornamelijk veel geleerd en kunnen [reflecteren](/point3#
   </a>
 </div>
 
+<h3 id="portfolio">Project X</h3>
+
+Voor dit project was het doel totaal iets anders te doen dan dat ik de rest van dit semester heb gedaan. Zo Wilde ik al een langere tijd een Ar app ontwikkelen. Met deze app kon ik weer dieper duiken in beide 3D modelleren en Unity. Daarnaast heb ik ook weer met C# gewerkt. Tijdens dit project heb ik verschillende ervaringen gehad rondom elk onderdeel, in mijn [reflectie](/point4#reflectie) heb ik zo beschreven waar ik meer op moet richten in de toekomst.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point4#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Project X
+  </a>
+</div>
+
 <h3 id="portfolio">Portfolio</h3>
 
 Voor mijn portfolio heb ik continu feedback gevraagd en verwerkt. Gedurende het semester heb ik regelmatige reviews gehad en gewerkt aan het verbeteren van het ontwerp, de inhoud en de functionaliteit van het portfolio.

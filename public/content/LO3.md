@@ -46,7 +46,13 @@ In dit project heb ik niet enorm veel designs gemaakt. Wel heb ik tijdens de opl
 
 <h3 id="development-cardan">Project X</h3>
 
-Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, zoals [prototype 1](/point4#prototype-1) en [prototype 2](/point4#prototype-2), voor het uitbreiden van de app zelf. Maar ook omdat Unity zijn beperkingen heeft en het moeilijk maakte om naar vorige versies te gaan. Daarnaast heb ik ook [concepten](/point4#concept), [UI designs](/point4#ui) en een [3D model](/point4#3d-model) ontwikkeld. Waarbij ik tijdens de prototype fase ook meerdere versies van de bloemen heb moeten maken.
+Voor dit project heb ik een Unity project gemaakt voor een AR app. Hier heb ik meerdere iteraties van de app gemaakt, zoals [prototype 1](/point4#prototype-1) en [prototype 2](/point4#prototype-2), voor het uitbreiden van de app zelf. Maar ook omdat Unity zijn beperkingen heeft en het moeilijk maakte om naar vorige versies te gaan. Daarnaast heb ik ook [concepten](/point4#concept), [UI designs](/point4#ui), [logo designs](/point4#logo) en een [3D model](/point4#3d-model) ontwikkeld. Waarbij ik tijdens de prototype fase ook meerdere versies van de bloemen heb moeten maken.
+
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+  <a href="/point4#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
+    Bekijk Project X
+  </a>
+</div>
 
 <h3 id="portfolio">Portfolio</h3>
 
