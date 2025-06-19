@@ -43,6 +43,7 @@ In dit project hebben we veel mondeling [gecommuniceerd](/point3#communicatie). 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
   <a href="/point3#top" style="display: inline-block; background-color: #4a54f1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(74, 84, 241, 0.3);">
     Bekijk Development Project
+    
   </a>
 </div>
 
